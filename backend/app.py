@@ -97,8 +97,9 @@ else:
     print("Cargando índice FAISS existente...")
     db = FAISS.load_local(INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
 
-# Modelo local de IA gratuito (mistral - optimizado para PC menos potentes)
-MODEL_NAME = "mistral"
+# Modelo local de IA gratuito (tinyllama - el MÁS ligero, funciona en cualquier PC)
+# Solo 637MB de RAM - ideal para PCs con recursos limitados
+MODEL_NAME = "tinyllama"
 OLLAMA_URL = "http://localhost:11434"
 
 
@@ -130,8 +131,8 @@ def call_ollama_api(prompt: str) -> str:
             return result.get("response", "").strip()
         elif response.status_code == 500 and "memory" in response.text.lower():
             # Si falla por memoria, sugerir modelo más ligero
-            print(f"[ERROR] Mistral necesita más RAM. Prueba con: ollama pull phi3:mini")
-            return "⚠️ El modelo Mistral necesita más RAM. Por favor:\n1. Cierra otras aplicaciones\n2. O usa un modelo más ligero ejecutando en terminal:\n   ollama pull phi3:mini\nLuego reinicia el servidor backend."
+            print("[ERROR] El modelo necesita más RAM. Considera usar tinyllama o gemma:2b")
+            return "⚠️ El modelo necesita más RAM. Por favor:\n1. Cierra otras aplicaciones\n2. O cambia a un modelo más ligero en backend/app.py:\n   MODEL_NAME = 'tinyllama' o 'gemma:2b'\nLuego reinicia el servidor backend."
         else:
             error_msg = f"Error {response.status_code}: {response.text}"
             print(f"[ERROR] Ollama API: {error_msg}")
