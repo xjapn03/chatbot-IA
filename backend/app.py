@@ -97,9 +97,9 @@ else:
     print("Cargando índice FAISS existente...")
     db = FAISS.load_local(INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
 
-# Modelo local de IA gratuito (tinyllama - el MÁS ligero, funciona en cualquier PC)
-# Solo 637MB de RAM - ideal para PCs con recursos limitados
-MODEL_NAME = "tinyllama"
+# Modelo local de IA (gemma:2b - balance perfecto calidad/velocidad para Ryzen 5 5500U)
+# Ryzen 5 5500U con 16GB RAM puede manejar modelos medianos sin problema
+MODEL_NAME = "gemma:2b"
 OLLAMA_URL = "http://localhost:11434"
 
 
@@ -109,7 +109,7 @@ def call_ollama_api(prompt: str) -> str:
     Retorna el texto de la respuesta.
     """
     try:
-        # Parámetros optimizados para PC con poca RAM
+        # Parámetros optimizados para Ryzen 5 5500U (16GB RAM, 6 cores)
         response = requests.post(
             f"{OLLAMA_URL}/api/generate",
             json={
@@ -117,13 +117,16 @@ def call_ollama_api(prompt: str) -> str:
                 "prompt": prompt,
                 "stream": False,
                 "options": {
-                    "num_ctx": 1024,        # Reducir contexto (de 2048 default)
-                    "num_gpu": 0,           # Forzar CPU (más lento pero usa menos VRAM)
-                    "num_thread": 4,        # Limitar threads
-                    "num_batch": 128        # Reducir batch size
+                    "num_ctx": 2048,        # Contexto normal (mejor comprensión)
+                    "num_gpu": 1,           # Usar iGPU Vega (2GB) para acelerar
+                    "num_thread": 6,        # Usar los 6 cores de la Ryzen 5
+                    "num_batch": 512,       # Batch más grande = más rápido
+                    "temperature": 0.7,     # Respuestas más coherentes
+                    "top_p": 0.9,
+                    "top_k": 40
                 }
             },
-            timeout=180  # Aumentar timeout porque CPU es más lento
+            timeout=60  # Reducir timeout - tu PC es rápido
         )
         
         if response.status_code == 200:
@@ -176,9 +179,12 @@ def chat():
             context = ""
 
         prompt = (
-            "Responde brevemente la pregunta usando SOLO la información del contexto. "
-            "Si no está en el contexto, di 'No se encontró la respuesta en los documentos proporcionados.'\n\n"
-            f"Contexto:\n{context}\n\nPregunta: {message}\n\nRespuesta:"
+            "Eres un asistente experto en NICSP. Responde la pregunta de forma CONCISA y DIRECTA usando SOLO la información del contexto proporcionado.\n"
+            "Si la pregunta es un saludo simple (hola, cómo estás, etc), responde brevemente de forma amigable.\n"
+            "Si la pregunta no está relacionada con el contexto, di: 'No tengo información sobre eso en mis documentos NICSP.'\n\n"
+            f"Contexto NICSP:\n{context}\n\n"
+            f"Pregunta: {message}\n\n"
+            "Respuesta (máximo 3 párrafos):"
         )
 
         answer = call_ollama_api(prompt)
