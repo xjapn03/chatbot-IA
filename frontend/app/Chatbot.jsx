@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 function Chatbot() {
@@ -6,36 +8,67 @@ function Chatbot() {
 
   const sendMessage = async () => {
     if (!input.trim()) return;
-    const newMessage = { sender: "user", text: input };
+    const newMessage = { sender: "user", text: input, id: Date.now() };
     setMessages([...messages, newMessage]);
-
-    const res = await fetch("http://localhost:5000/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: input }),
-    });
-
-    const data = await res.json();
-    setMessages((prev) => [...prev, { sender: "bot", text: data.response }]);
     setInput("");
+
+    try {
+      const res = await fetch("http://localhost:5000/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: input }),
+      });
+
+      const data = await res.json();
+      setMessages((prev) => [...prev, { sender: "bot", text: data.response || "Sin respuesta", id: Date.now() }]);
+    } catch (error) {
+      setMessages((prev) => [...prev, { sender: "bot", text: "Error al conectar con el servidor", id: Date.now() }]);
+      console.error("Error:", error);
+    }
   };
 
   return (
-    <div className="chat-container">
-      <div className="messages">
-        {messages.map((msg, i) => (
-          <div key={i} className={msg.sender}>
-            <b>{msg.sender === "user" ? "Tú" : "Bot"}:</b> {msg.text}
+    <div className="flex flex-col h-[600px] max-h-[70vh]">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
+        {messages.length === 0 && (
+          <div className="text-center text-gray-500 dark:text-gray-400 mt-8">
+            <p>¡Hola! Pregúntame sobre las NICSP</p>
+          </div>
+        )}
+        {messages.map((msg) => (
+          <div 
+            key={msg.id} 
+            className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}
+          >
+            <div className={`max-w-[80%] rounded-lg px-4 py-2 ${
+              msg.sender === "user" 
+                ? "bg-blue-500 text-white" 
+                : "bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-600"
+            }`}>
+              <p className="text-sm font-semibold mb-1">
+                {msg.sender === "user" ? "Tú" : "Bot"}
+              </p>
+              <p className="text-sm whitespace-pre-wrap">{msg.text}</p>
+            </div>
           </div>
         ))}
       </div>
-      <div className="input-area">
+      <div className="flex gap-2 mt-4">
         <input
+          type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyPress={(e) => e.key === "Enter" && sendMessage()}
           placeholder="Haz una pregunta sobre las NICSP..."
+          className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
         />
-        <button onClick={sendMessage}>Enviar</button>
+        <button 
+          onClick={sendMessage}
+          className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={!input.trim()}
+        >
+          Enviar
+        </button>
       </div>
     </div>
   );

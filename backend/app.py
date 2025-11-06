@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from langchain.vectorstores import FAISS
 from langchain.embeddings import SentenceTransformerEmbeddings
 from langchain.llms import Ollama
@@ -8,6 +9,7 @@ from langchain.docstore.document import Document
 import os
 
 app = Flask(__name__)
+CORS(app)  # Habilitar CORS para permitir peticiones del frontend
 
 # Ruta base de datos vectorial y documentos
 DATA_PATH = "data/docs"
@@ -37,9 +39,12 @@ qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=db.as_retriever())
 
 @app.post("/chat")
 def chat():
-    message = request.json["message"]
+    message = request.json.get("message", "")
+    if not message:
+        return jsonify({"error": "No message provided"}), 400
+    
     result = qa_chain({"query": message})
-    return jsonify({"reply": result["result"]})
+    return jsonify({"response": result["result"]})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
