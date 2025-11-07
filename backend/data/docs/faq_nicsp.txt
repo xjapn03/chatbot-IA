@@ -1,0 +1,79 @@
+=== PREGUNTAS FRECUENTES SOBRE LAS NICSP ===
+
+P: ¿Qué son las NICSP?
+R: Las Normas Internacionales de Contabilidad del Sector Público (NICSP) son un conjunto de estándares emitidos por el IPSASB (International Public Sector Accounting Standards Board) bajo la supervisión de la IFAC. Su objetivo es armonizar la contabilidad del sector público a nivel internacional, promoviendo la transparencia y la rendición de cuentas.
+
+---
+
+P: ¿Cuál es el propósito principal de las NICSP?
+R: El propósito principal de las NICSP es mejorar la calidad, comparabilidad y transparencia de la información financiera del sector público, permitiendo una rendición de cuentas más clara y una mejor toma de decisiones en la gestión de recursos públicos.
+
+---
+
+P: ¿Qué diferencia hay entre las NICSP y las NIIF?
+R: Las NICSP aplican al sector público y se enfocan en la rendición de cuentas y la sostenibilidad fiscal, mientras que las NIIF aplican al sector privado y se enfocan en la rentabilidad y la presentación ante inversionistas. Además, las NICSP incluyen activos como infraestructura pública y bienes patrimoniales, que no suelen reconocerse bajo NIIF.
+
+---
+
+P: ¿Cuál es la diferencia entre la base contable del devengo y la base del efectivo?
+R: En la base del devengo, las transacciones se reconocen cuando ocurren, independientemente de cuándo se recibe o paga el dinero. En la base del efectivo, solo se reconocen cuando se realiza el cobro o el pago.
+
+---
+
+P: ¿Qué estados financieros principales deben presentarse según las NICSP?
+R: Los principales estados financieros bajo las NICSP son:
+1. Estado de situación financiera (balance general)
+2. Estado de rendimiento financiero
+3. Estado de cambios en el patrimonio neto
+4. Estado de flujos de efectivo
+5. Notas a los estados financieros
+
+---
+
+P: ¿Qué características diferencian al sector público del privado según las NICSP?
+R: El sector público tiene fines no lucrativos, está sujeto a leyes presupuestarias y su objetivo principal es prestar servicios a la ciudadanía, no generar ganancias. Además, sus recursos provienen de impuestos, tasas y contribuciones.
+
+---
+
+P: ¿Cuáles son las características cualitativas de la información financiera según las NICSP?
+R: Las características cualitativas son: relevancia, representación fiel, comparabilidad, comprensibilidad, verificabilidad y oportunidad.
+
+---
+
+P: ¿Qué organismo internacional emite las NICSP y bajo qué entidad actúa?
+R: Las NICSP son emitidas por el IPSASB (International Public Sector Accounting Standards Board), que actúa bajo la supervisión de la IFAC (Federación Internacional de Contadores).
+
+---
+
+P: ¿Qué beneficios trae la adopción de las NICSP en el sector público?
+R: Los principales beneficios son mayor transparencia, mejor rendición de cuentas, comparabilidad entre países, fortalecimiento de la confianza internacional y una gestión financiera más eficiente.
+
+---
+
+P: ¿Qué países latinoamericanos han adoptado o están en proceso de adopción de las NICSP?
+R: Países como Colombia, Chile, Perú y Uruguay han avanzado en la adopción de las NICSP, con apoyo del BID y otros organismos internacionales.
+
+---
+
+P: ¿Qué desafíos enfrentan los gobiernos al implementar las NICSP?
+R: Entre los desafíos más comunes están la falta de capacitación técnica, la valoración de activos históricos, la integración entre contabilidad y presupuesto, y la adaptación de sistemas contables antiguos.
+
+---
+
+P: ¿Cuál es la base de medición más común en las NICSP?
+R: La base más utilizada es el costo histórico, aunque también se aplican el valor razonable, el valor presente y el costo corriente dependiendo del tipo de activo o pasivo.
+
+---
+
+P: ¿Qué finalidad tienen las notas a los estados financieros?
+R: Las notas proporcionan información adicional necesaria para entender correctamente los estados financieros, explicando políticas contables, criterios de medición y detalles de las partidas más relevantes.
+
+---
+
+P: ¿Qué entidades son responsables de aplicar las NICSP en Colombia?
+R: En Colombia, la Contaduría General de la Nación (CGN) lidera el proceso de adopción mediante los Marcos Normativos de Entidades de Gobierno basados en las NICSP.
+
+---
+
+P: ¿Por qué las NICSP se consideran un cambio cultural en la gestión pública?
+R: Porque promueven una gestión basada en evidencia, transparencia y responsabilidad sobre los recursos públicos, más allá del simple cumplimiento contable.

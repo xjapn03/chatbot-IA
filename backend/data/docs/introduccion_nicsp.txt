@@ -1,0 +1,12 @@
+=== INTRODUCCIÓN A LAS NICSP ===
+
+Las Normas Internacionales de Contabilidad del Sector Público (NICSP) fueron creadas con el propósito de mejorar la calidad, transparencia y comparabilidad de la información financiera de las entidades del sector público en todo el mundo.
+
+Antes de su adopción, cada país aplicaba normas contables diferentes, lo que dificultaba comparar los estados financieros de gobiernos y entidades públicas. Las NICSP establecen un marco contable uniforme que promueve la rendición de cuentas y la confianza ciudadana.
+
+El organismo responsable de emitir las NICSP es el IPSASB (International Public Sector Accounting Standards Board), que actúa bajo la supervisión de la IFAC (Federación Internacional de Contadores). El IPSASB se encarga de desarrollar normas contables específicas para el sector público, basadas en el principio de devengo.
+
+Objetivos principales:
+- Fortalecer la rendición de cuentas del sector público.
+- Mejorar la comparabilidad y la transparencia.
+- Facilitar la toma de decisiones informadas por parte de gobiernos, ciudadanos y organismos internacionales.

@@ -1,0 +1,106 @@
+=== ÍNDICE SEMÁNTICO AMPLIADO DE LAS NICSP ===
+
+Este índice resume los principales temas cubiertos en los documentos del marco NICSP, sirviendo como mapa semántico para la búsqueda contextual dentro del sistema de conocimiento.
+
+---
+
+SECCIÓN 1: ESTRUCTURA GENERAL Y ORIGEN
+- Las NICSP (Normas Internacionales de Contabilidad del Sector Público) son emitidas por el IPSASB (International Public Sector Accounting Standards Board), bajo la supervisión de la IFAC (Federación Internacional de Contadores).
+- Su objetivo es armonizar la contabilidad pública a nivel mundial, promoviendo la transparencia, la rendición de cuentas y la comparabilidad entre gobiernos.
+- Se aplican principalmente a entidades gubernamentales, organismos públicos y entes que gestionan recursos del Estado.
+
+---
+
+SECCIÓN 2: CLASIFICACIÓN Y PRINCIPALES NORMAS
+- **NICSP 1:** Presentación de estados financieros.
+- **NICSP 2:** Estado de flujos de efectivo.
+- **NICSP 3:** Políticas contables, cambios y corrección de errores.
+- **NICSP 12:** Inventarios.
+- **NICSP 17:** Propiedades, planta y equipo.
+- **NICSP 19:** Provisiones y contingencias.
+- **NICSP 23:** Ingresos no provenientes de transacciones con contraprestación (impuestos, donaciones, transferencias).
+- **NICSP 24:** Presentación de información presupuestaria.
+- **NICSP 25:** Beneficios a empleados.
+- **NICSP 31:** Activos intangibles.
+- **NICSP 33:** Adopción inicial de la base de devengo.
+- **NICSP 42:** Entidades controladas y combinaciones contables.
+
+---
+
+SECCIÓN 3: PRINCIPIOS Y CONCEPTOS CLAVE
+- **Base del devengo:** los hechos económicos se reconocen cuando ocurren, no cuando se paga o cobra efectivo.
+- **Base de efectivo:** los hechos económicos se registran solo cuando hay movimiento de dinero.
+- **Principios fundamentales del sector público:**
+  - Transparencia
+  - Rendición de cuentas
+  - Comparabilidad
+  - Relevancia
+  - Fiabilidad
+- **Elementos básicos de los estados financieros:**
+  - Activos, pasivos, patrimonio neto, ingresos y gastos.
+- **Bases de medición:** costo histórico, costo corriente, valor realizable, valor presente, valor razonable.
+
+---
+
+SECCIÓN 4: DIFERENCIAS ENTRE NICSP Y NIIF
+- Las **NICSP** se centran en la rendición de cuentas, sostenibilidad fiscal y transparencia del gasto público.
+- Las **NIIF** se enfocan en la rentabilidad y la presentación ante inversionistas y accionistas.
+- En las NICSP:
+  - Los usuarios principales son los ciudadanos, organismos de control y gobiernos.
+  - Se incluyen activos públicos, bienes culturales y de infraestructura.
+  - La financiación proviene de impuestos y transferencias, no de capital privado.
+
+---
+
+SECCIÓN 5: ESTADOS FINANCIEROS SEGÚN LAS NICSP
+- Estado de situación financiera (balance general).
+- Estado de rendimiento financiero.
+- Estado de cambios en el patrimonio neto.
+- Estado de flujos de efectivo.
+- Notas explicativas y políticas contables.
+- (Opcional) Estado de ejecución presupuestaria, común en América Latina.
+
+---
+
+SECCIÓN 6: ADOPCIÓN E IMPLEMENTACIÓN
+- El proceso de adopción incluye:
+  - Diagnóstico inicial y análisis de brechas.
+  - Plan de transición hacia la base del devengo.
+  - Capacitación del personal contable.
+  - Actualización de sistemas de información y software contable.
+- La transición completa puede requerir varios años, dependiendo del tamaño del gobierno y su madurez contable.
+
+---
+
+SECCIÓN 7: BENEFICIOS Y DESAFÍOS DE LAS NICSP
+**Beneficios principales:**
+- Transparencia y confianza pública.
+- Mejora en la toma de decisiones.
+- Facilita auditorías y control fiscal.
+- Comparabilidad internacional.
+- Acceso a financiamiento internacional.
+
+**Desafíos comunes:**
+- Falta de personal capacitado.
+- Valoración de activos antiguos o sin costo de adquisición.
+- Integración contable-presupuestal.
+- Resistencia institucional y limitaciones tecnológicas.
+
+---
+
+SECCIÓN 8: APLICACIÓN REGIONAL Y CONTEXTO LATINOAMERICANO
+- En Colombia, la **Contaduría General de la Nación (CGN)** lidera la adopción mediante los **Marcos Normativos para Entidades de Gobierno** basados en las NICSP.
+- Países como Chile, Perú y Uruguay también avanzan en su implementación con apoyo del BID y del FMI.
+- El enfoque regional resalta la importancia de la transparencia fiscal, la responsabilidad y la sostenibilidad en el uso de los recursos públicos.
+
+---
+
+SECCIÓN 9: EJEMPLOS PRÁCTICOS
+- Ejemplo: si un gobierno recibe una donación de equipos médicos:
+  - Bajo base de efectivo: no se registra nada hasta que se reciba dinero.
+  - Bajo base de devengo: se reconoce un activo (equipos médicos) y un ingreso no transaccional (donación), mostrando el aumento real del patrimonio público.
+- Este ejemplo demuestra cómo las NICSP reflejan fielmente la realidad económica del sector público.
+
+---
+
+FIN DEL ÍNDICE SEMÁNTICO
