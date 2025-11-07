@@ -1,0 +1,37 @@
+=== RESUMEN SINTÉTICO DE LAS NICSP ===
+
+1. ¿Por qué surgieron las NICSP?
+Las NICSP surgieron para armonizar la información financiera del sector público a nivel mundial, facilitando la comparación, transparencia y rendición de cuentas entre gobiernos. Antes, cada país usaba sus propias normas, dificultando la evaluación internacional.
+
+2. Diferencia entre base de devengo y base de efectivo:
+- Base de devengo: registra transacciones cuando ocurren, independientemente del cobro o pago.
+- Base de efectivo: registra transacciones solo cuando hay movimiento de dinero (entrada o salida de efectivo).
+
+3. Beneficios de las NICSP:
+- Mayor transparencia y rendición de cuentas.
+- Comparabilidad internacional entre entidades públicas.
+- Mejor toma de decisiones y evaluación del desempeño.
+- Confianza de organismos internacionales y ciudadanía.
+
+4. Organismos emisores:
+Las NICSP son emitidas por el IPSASB (International Public Sector Accounting Standards Board), bajo la supervisión de la IFAC (Federación Internacional de Contadores).
+
+5. Estados financieros principales según NICSP 1:
+- Estado de situación financiera
+- Estado de rendimiento financiero
+- Estado de cambios en el patrimonio neto
+- Estado de flujos de efectivo
+- Notas a los estados financieros
+
+6. Principios fundamentales:
+- Transparencia
+- Rendición de cuentas
+- Comparabilidad
+- Relevancia
+- Fiabilidad
+
+7. Diferencias con las NIIF:
+Las NICSP están adaptadas al sector público, considerando presupuestos gubernamentales, activos culturales, ingresos no transaccionales y objetivos no lucrativos. Las NIIF se enfocan en el sector privado y la rentabilidad.
+
+---
+Este resumen sirve para que el chatbot responda de forma concisa y precisa sobre las NICSP.
