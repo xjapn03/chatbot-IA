@@ -2,11 +2,13 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_text_splitters import CharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 import requests
 import os
 import traceback
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
 app = Flask(__name__)
 CORS(app)  # Habilitar CORS para permitir peticiones del frontend
@@ -16,91 +18,101 @@ DATA_PATH = "data/docs"
 INDEX_PATH = "data/nicsp_index"
 
 # Embeddings gratuitos
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+
+# --- Funciones auxiliares para lectura de archivos ---
+def read_pdf(path):
+    try:
+        import fitz
+        doc = fitz.open(path)
+        return "\n".join(page.get_text() for page in doc)
+    except Exception as e:
+        print(f"No se pudo leer PDF {path}: {e}")
+        return ""
+
+def read_docx(path):
+    try:
+        import docx
+        d = docx.Document(path)
+        return "\n".join(p.text for p in d.paragraphs)
+    except Exception as e:
+        print(f"No se pudo leer DOCX {path} (instala python-docx para soporte): {e}")
+        return ""
+
+def read_text_like(path):
+    for enc in ("utf-8", "latin-1", "cp1252"):
+        try:
+            with open(path, encoding=enc) as f:
+                return f.read()
+        except Exception:
+            continue
+    print(f"No se pudo decodificar {path} con utf-8/latin-1/cp1252; omitiendo.")
+    return ""
+
+def read_generic(path):
+    try:
+        with open(path, "rb") as f:
+            data = f.read()
+        for enc in ("utf-8", "latin-1", "cp1252"):
+            try:
+                return data.decode(enc)
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"No se pudo leer {path}: {e}")
+    return ""
 
 # Construir o cargar índice
 if not os.path.exists(INDEX_PATH):
     print("Generando base de conocimiento FAISS...")
     docs = []
 
+    import re
+    def clean_text(text):
+        text = re.sub(r'\s+', ' ', text)
+        text = text.strip()
+        return text
+
     def read_text_file(path):
-        """Leer un archivo y devolver texto. Soporta .txt, .md, .csv, .json, .pdf y .docx (si está python-docx).
-        Intenta varias codificaciones antes de fallar.
-        """
+        """Lee un archivo y devuelve su texto según la extensión."""
         _, ext = os.path.splitext(path)
         ext = ext.lower()
-
-        # PDF (usa PyMuPDF / fitz)
         if ext == ".pdf":
-            try:
-                import fitz
-                doc = fitz.open(path)
-                text = []
-                for page in doc:
-                    text.append(page.get_text())
-                return "\n".join(text)
-            except Exception as e:
-                print(f"No se pudo leer PDF {path}: {e}")
-                return ""
-
-        # DOCX (opcional)
+            return read_pdf(path)
         if ext == ".docx":
-            try:
-                import docx
-                d = docx.Document(path)
-                return "\n".join([p.text for p in d.paragraphs])
-            except Exception as e:
-                print(f"No se pudo leer DOCX {path} (instala python-docx para soporte): {e}")
-                return ""
-
-        # Text-like files: probar múltiples codificaciones
+            return read_docx(path)
         if ext in (".txt", ".md", ".csv", ".json"):
-            for enc in ("utf-8", "latin-1", "cp1252"):
-                try:
-                    with open(path, encoding=enc) as f:
-                        return f.read()
-                except Exception:
-                    continue
-            print(f"No se pudo decodificar {path} con utf-8/latin-1/cp1252; omitiendo.")
-            return ""
-
-        # Intento genérico: leer como binario y decodificar
-        try:
-            with open(path, "rb") as f:
-                data = f.read()
-            for enc in ("utf-8", "latin-1", "cp1252"):
-                try:
-                    return data.decode(enc)
-                except Exception:
-                    continue
-        except Exception as e:
-            print(f"No se pudo leer {path}: {e}")
-        return ""
+            return read_text_like(path)
+        return read_generic(path)
 
     for file in os.listdir(DATA_PATH):
         file_path = os.path.join(DATA_PATH, file)
         if os.path.isdir(file_path):
             continue
 
-        text = read_text_file(file_path)
+        text = clean_text(read_text_file(file_path))
         if not text or not text.strip():
             print(f"Omitiendo archivo vacío o no legible: {file}")
             continue
 
-        chunks = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100).split_text(text)
+        splitter = RecursiveCharacterTextSplitter(
+            chunk_size=800,
+            chunk_overlap=100,
+            separators=["\n\n", "\n", ".", " ", ""]
+        )
+        chunks = splitter.split_text(text)
         for chunk in chunks:
             docs.append(Document(page_content=chunk, metadata={"source": file}))
-
+        # Fin del for: ahora creamos el índice FAISS
     db = FAISS.from_documents(docs, embeddings)
     db.save_local(INDEX_PATH)
 else:
     print("Cargando índice FAISS existente...")
     db = FAISS.load_local(INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
 
-# Modelo local de IA (gemma:2b - balance perfecto calidad/velocidad para Ryzen 5 5500U)
-# Ryzen 5 5500U con 16GB RAM puede manejar modelos medianos sin problema
 MODEL_NAME = "gemma:2b"
-OLLAMA_URL = "http://localhost:11434"
+#instancia en AWS
+OLLAMA_URL = "http://98.95.116.221:11434"
 
 
 def call_ollama_api(prompt: str) -> str:
@@ -109,7 +121,6 @@ def call_ollama_api(prompt: str) -> str:
     Retorna el texto de la respuesta.
     """
     try:
-        # Parámetros optimizados para Ryzen 5 5500U (16GB RAM, 6 cores)
         response = requests.post(
             f"{OLLAMA_URL}/api/generate",
             json={
@@ -117,10 +128,9 @@ def call_ollama_api(prompt: str) -> str:
                 "prompt": prompt,
                 "stream": False,
                 "options": {
-                    "num_ctx": 2048,        # Contexto normal (mejor comprensión)
-                    "num_gpu": 1,           # Usar iGPU Vega (2GB) para acelerar
-                    "num_thread": 6,        # Usar los 6 cores de la Ryzen 5
-                    "num_batch": 512,       # Batch más grande = más rápido
+                    "num_ctx": 512,         # Contexto mínimo para pruebas
+                    "num_thread": 2,        # Igual al número de vCPU
+                    "num_batch": 32,        # Batch mínimo para pruebas
                     "temperature": 0.7,     # Respuestas más coherentes
                     "top_p": 0.9,
                     "top_k": 40
@@ -159,15 +169,21 @@ def chat():
         # Recuperar los documentos más relevantes
         docs = []
         try:
-            # Método común en FAISS wrapper
-            docs = db.similarity_search(message, k=4)
+            docs = db.similarity_search(message, k=6)
         except Exception:
-            # fallback a otro nombre de método
             try:
-                docs_with_score = db.similarity_search_with_score(message, k=4)
+                docs_with_score = db.similarity_search_with_score(message, k=6)
                 docs = [d for d, s in docs_with_score]
             except Exception:
                 docs = []
+
+        # Re-ranking local
+        if docs:
+            query_embedding = embeddings.embed_query(message)
+            doc_embeddings = embeddings.embed_documents([d.page_content for d in docs])
+            scores = cosine_similarity([query_embedding], doc_embeddings)[0]
+            ranked = sorted(zip(scores, docs), reverse=True, key=lambda x: x[0])
+            docs = [doc for _, doc in ranked[:3]]
 
         # Construir contexto a partir de los documentos recuperados
         if docs:
@@ -179,17 +195,19 @@ def chat():
             context = ""
 
         prompt = (
-            "Eres un asistente experto en NICSP. Responde la pregunta de forma CONCISA y DIRECTA usando SOLO la información del contexto proporcionado.\n"
-            "Si la pregunta es un saludo simple (hola, cómo estás, etc), responde brevemente de forma amigable.\n"
-            "Si la pregunta no está relacionada con el contexto, di: 'No tengo información sobre eso en mis documentos NICSP.'\n\n"
-            f"Contexto NICSP:\n{context}\n\n"
-            f"Pregunta: {message}\n\n"
-            "Respuesta (máximo 3 párrafos):"
+            "Eres un experto en las Normas Internacionales de Contabilidad del Sector Público (NICSP).\n"
+            "Responde SOLO usando la información del contexto.\n"
+            "Si no hay información suficiente, responde: 'No tengo información sobre eso en mis documentos NICSP.'\n"
+            "Evita suposiciones o información inventada.\n\n"
+            f"Contexto relevante:\n{context}\n\n"
+            f"Pregunta del usuario: {message}\n\n"
+            "Respuesta (máximo 3 párrafos, clara y precisa):"
         )
 
         answer = call_ollama_api(prompt)
         return jsonify({"response": answer})
     except Exception as e:
+        print("[ERROR chat]:", traceback.format_exc())
         return jsonify({"error": f"Error interno: {e}"}), 500
 
 if __name__ == "__main__":
