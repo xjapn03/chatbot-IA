@@ -1,30 +1,44 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Chatbot() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [dots, setDots] = useState(0);
+
+  useEffect(() => {
+    let interval;
+    if (loading) {
+      interval = setInterval(() => {
+        setDots((prev) => (prev < 2 ? prev + 1 : 0));
+      }, 500);
+    } else {
+      setDots(0);
+    }
+    return () => clearInterval(interval);
+  }, [loading]);
 
   const sendMessage = async () => {
     if (!input.trim()) return;
     const newMessage = { sender: "user", text: input, id: Date.now() };
     setMessages([...messages, newMessage]);
     setInput("");
-
+    setLoading(true);
     try {
       const res = await fetch("http://localhost:5000/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
       });
-
       const data = await res.json();
       setMessages((prev) => [...prev, { sender: "bot", text: data.response || "Sin respuesta", id: Date.now() }]);
     } catch (error) {
       setMessages((prev) => [...prev, { sender: "bot", text: "Error al conectar con el servidor", id: Date.now() }]);
       console.error("Error:", error);
     }
+    setLoading(false);
   };
 
   return (
@@ -52,6 +66,14 @@ function Chatbot() {
             </div>
           </div>
         ))}
+        {loading && (
+          <div className="flex justify-start">
+            <div className="max-w-[80%] rounded-lg px-4 py-2 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-600">
+              <p className="text-sm font-semibold mb-1">Bot</p>
+              <p className="text-sm whitespace-pre-wrap">.{'.'.repeat(dots)}</p>
+            </div>
+          </div>
+        )}
       </div>
       <div className="flex gap-2 mt-4">
         <input
