@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 
+
 function Chatbot() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [dots, setDots] = useState(0);
+  const [typingMessage, setTypingMessage] = useState(null); // Para animación de escritura
 
   useEffect(() => {
     let interval;
@@ -19,6 +21,33 @@ function Chatbot() {
     }
     return () => clearInterval(interval);
   }, [loading]);
+
+  // Función auxiliar para actualizar el texto del mensaje animado
+  function updateTypingMessage(id, fullText, i) {
+    setMessages((prev) => prev.map((msg) =>
+      msg.id === id
+        ? { ...msg, text: fullText.slice(0, i) }
+        : msg
+    ));
+  }
+
+  // Animación de escritura para el mensaje del bot (menos anidación)
+  useEffect(() => {
+    if (typingMessage && typingMessage.fullText) {
+      let i = 0;
+      setMessages((prev) => [...prev, { sender: "bot", text: "", id: typingMessage.id }]);
+      function handleTyping() {
+        i++;
+        updateTypingMessage(typingMessage.id, typingMessage.fullText, i);
+        if (i >= typingMessage.fullText.length) {
+          setTypingMessage(null);
+          clearInterval(interval);
+        }
+      }
+      const interval = setInterval(handleTyping, 18); // velocidad de escritura
+      return () => clearInterval(interval);
+    }
+  }, [typingMessage]);
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -33,9 +62,16 @@ function Chatbot() {
         body: JSON.stringify({ message: input }),
       });
       const data = await res.json();
-      setMessages((prev) => [...prev, { sender: "bot", text: data.response || "Sin respuesta", id: Date.now() }]);
+      // Animación de escritura para el bot
+      setTypingMessage({
+        id: Date.now() + 1,
+        fullText: data.response || "Sin respuesta",
+      });
     } catch (error) {
-      setMessages((prev) => [...prev, { sender: "bot", text: "Error al conectar con el servidor", id: Date.now() }]);
+      setMessages((prev) => [
+        ...prev,
+        { sender: "bot", text: "Error al conectar con el servidor", id: Date.now() },
+      ]);
       console.error("Error:", error);
     }
     setLoading(false);
@@ -50,15 +86,17 @@ function Chatbot() {
           </div>
         )}
         {messages.map((msg) => (
-          <div 
-            key={msg.id} 
+          <div
+            key={msg.id}
             className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}
           >
-            <div className={`max-w-[80%] rounded-lg px-4 py-2 ${
-              msg.sender === "user" 
-                ? "bg-blue-500 text-white" 
-                : "bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-600"
-            }`}>
+            <div
+              className={`max-w-[80%] rounded-lg px-4 py-2 ${
+                msg.sender === "user"
+                  ? "bg-blue-500 text-white"
+                  : "bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-600"
+              }`}
+            >
               <p className="text-sm font-semibold mb-1">
                 {msg.sender === "user" ? "Tú" : "Bot"}
               </p>
