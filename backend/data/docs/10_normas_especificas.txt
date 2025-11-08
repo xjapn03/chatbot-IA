@@ -1,0 +1,28 @@
+# NORMAS NICSP ESPECÍFICAS
+
+NICSP 1 - PRESENTACIÓN DE ESTADOS FINANCIEROS:
+- Establece los requisitos para la presentación de estados financieros
+- Define la estructura y contenido mínimo requerido
+- Incluye lineamientos sobre revelaciones
+
+NICSP 2 - ESTADO DE FLUJOS DE EFECTIVO:
+- Requiere la presentación de un estado de flujos de efectivo
+- Clasifica flujos en operacionales, de inversión y financiación
+- Permite método directo o indirecto
+
+NICSP 3 - POLÍTICAS CONTABLES, CAMBIOS EN ESTIMACIONES Y ERRORES:
+- Regula la selección y aplicación de políticas contables
+- Establece el tratamiento de cambios en estimaciones contables
+- Define cómo corregir errores en estados financieros
+- Promueve consistencia y comparabilidad de la información
+
+NICSP 23 - INGRESOS POR TRANSACCIONES SIN CONTRAPRESTACIÓN:
+- Aborda ingresos sin contraprestación directa
+- Aplica a impuestos, transferencias, donaciones y contribuciones
+- Establece criterios para reconocimiento y medición
+- Incluye revelaciones específicas para estos ingresos
+
+NICSP 42 - ENTIDADES CONTROLADAS Y COMBINACIONES CONTABLES:
+- Define criterios para identificar control sobre otras entidades
+- Establece requisitos para consolidación de estados financieros
+- Regula combinaciones de entidades del sector público

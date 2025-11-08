@@ -1,0 +1,36 @@
+# BASES DE MEDICIÓN EN NICSP
+
+LAS NICSP RECONOCEN CINCO BASES DE MEDICIÓN OFICIALES:
+
+1. COSTO HISTÓRICO:
+   - Valor original de adquisición o construcción
+   - Aplica principalmente a: propiedades, planta y equipo; activos intangibles; inventarios
+
+2. VALOR RAZONABLE:
+   - Precio que se recibiría al vender un activo o pagar un pasivo en transacción ordenada
+   - Aplica principalmente a: instrumentos financieros; activos biológicos; inversiones
+
+3. VALOR PRESENTE:
+   - Valor descontado de los flujos de efectivo futuros esperados
+   - Aplica principalmente a: pasivos de largo plazo; provisiones; activos por impuestos diferidos
+
+4. COSTO CORRIENTE:
+   - Monto que se necesitaría para reponer el activo en condiciones actuales
+   - Aplica principalmente a: algunos tipos de inventarios; en contextos de hiperinflación
+
+5. VALOR NETO REALIZABLE:
+   - Precio de venta estimado menos costos de terminación y venta
+   - Aplica principalmente a: inventarios; activos no corrientes mantenidos para la venta
+
+APLICACIÓN PRÁCTICA POR TIPO DE ELEMENTO:
+- Propiedades, planta y equipo: Generalmente costo histórico
+- Instrumentos financieros: Generalmente valor razonable
+- Pasivos de largo plazo: Generalmente valor presente
+- Inventarios: El menor entre costo y valor neto realizable
+- Activos intangibles: Costo histórico o valor razonable si hay mercado activo
+
+LAS SIGUIENTES NO SON BASES DE MEDICIÓN RECONOCIDAS EN NICSP:
+- Valor de activos históricos e infraestructura (no es base de medición)
+- Eventos económicos (no es base de medición)
+- Resultados financieros (no es base de medición)
+- Consolidación (no es base de medición)

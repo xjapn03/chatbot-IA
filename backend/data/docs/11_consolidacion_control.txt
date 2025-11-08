@@ -1,0 +1,24 @@
+# CONSOLIDACIÓN Y CONTROL EN NICSP
+
+CONCEPTO DE CONTROL EN NICSP:
+El control es la capacidad de dirigir las políticas financieras y operativas de otra entidad para obtener beneficios de sus actividades.
+
+CRITERIOS PARA DETERMINAR CONTROL:
+- Poder sobre la entidad para dirigir sus actividades
+- Exposición o derechos a rendimientos variables
+- Capacidad para usar el poder y afectar los rendimientos
+
+DIFERENCIA ENTRE CONTROL Y PROPIEDAD:
+- CONTROL: Capacidad de dirigir políticas (criterio para consolidar)
+- PROPIEDAD: Tenencia de participación accionaria (no determina consolidación)
+
+CONSOLIDACIÓN DE ESTADOS FINANCIEROS:
+- Se consolidan todas las entidades controladas
+- Se eliminan transacciones y saldos intragrupo
+- Se incluyen participaciones no controladoras (NCI)
+- La consolidación es obligatoria cuando existe control
+
+NICSP 35 - ESTADOS FINANCIeros CONSOLIDADOS:
+- Establece requisitos para consolidación en sector público
+- Define procedimientos para combinaciones de entidades
+- Incluye revelaciones sobre relaciones de control

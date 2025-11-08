@@ -1,0 +1,32 @@
+# PRINCIPIO DE DEVENGADO - PRINCIPIO FUNDAMENTAL NICSP
+
+El principio de devengo es el ÚNICO principio de reconocimiento en las NICSP y aplica para todos los elementos de los estados financieros.
+
+DEFINICIÓN CLARA: Los hechos económicos se reconocen cuando ocurren, independientemente de cuándo se recibe o paga efectivo.
+
+RECONOCIMIENTO ESPECÍFICO POR ELEMENTO:
+
+ACTIVOS: Se reconocen cuando se cumplen TRES condiciones:
+1. La entidad obtiene control del recurso
+2. Existen beneficios económicos futuros probables
+3. El valor puede medirse de forma confiable
+
+PASIVOS: Se reconocen cuando se cumplen TRES condiciones:
+1. Existe una obligación presente como resultado de eventos pasados
+2. Es probable que se produzca una salida de recursos
+3. El valor puede medirse de forma confiable
+
+INGRESOS: Se reconocen en el período en que:
+- Se gana el derecho a recibirlos
+- Se devengan, no cuando se cobran
+
+GASTOS: Se reconocen en el período en que:
+- Se consumen los beneficios económicos
+- Se incurren, no cuando se pagan
+
+EJEMPLOS PRÁCTICOS:
+- Un servicio recibido en diciembre se registra en diciembre, aunque se pague en enero
+- Un impuesto devengado se registra cuando se genera la obligación, no cuando se cobra
+- La depreciación de un activo se registra mensualmente por el uso, no cuando se compró
+
+IMPORTANTE: No existen otros principios de reconocimiento en NICSP. El principio de devengo es el fundamento de toda la normativa.

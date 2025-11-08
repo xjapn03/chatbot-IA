@@ -1,0 +1,23 @@
+# QUÉ SON LAS NICSP - NORMA INTERNACIONAL CONTABLE SECTOR PÚBLICO
+
+DEFINICIÓN: Las Normas Internacionales de Contabilidad del Sector Público (NICSP) son estándares contables específicos para entidades del sector público.
+
+ORGANISMO EMISOR: IPSASB (International Public Sector Accounting Standards Board)
+ENTIDAD SUPERVISORA: IFAC (Federación Internacional de Contadores)
+
+PROPÓSITO PRINCIPAL: Armonizar la contabilidad pública a nivel mundial para mejorar:
+- Transparencia en la gestión de recursos públicos
+- Comparabilidad entre gobiernos y entidades públicas
+- Rendición de cuentas ante ciudadanos y organismos de control
+
+CARACTERÍSTICAS CLAVE:
+- Específicamente diseñadas para el sector público
+- Basadas en el principio de devengo como fundamento
+- Enfocadas en rendición de cuentas, no en rentabilidad
+- Incluyen activos públicos como infraestructura y bienes patrimoniales
+
+ÁMBITO DE APLICACIÓN:
+- Gobiernos nacionales, regionales y locales
+- Organismos públicos y entidades estatales
+- Empresas públicas y entidades parapúblicas
+- Fondos de seguridad social y organismos autónomos
