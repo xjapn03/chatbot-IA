@@ -1,0 +1,253 @@
+GLOSARIO TÉCNICO NICSP - TÉRMINOS CLAVE
+
+===== A =====
+
+ACTIVO:
+Definición: Recurso controlado por la entidad como resultado de sucesos pasados, del que la entidad espera obtener, en el futuro, beneficios económicos o un potencial de servicio.
+
+Características clave:
+- Control por parte de la entidad
+- Resultado de eventos pasados
+- Beneficios económicos futuros o potencial de servicio
+
+ACTIVOS NETOS/PATRIMONIO NETO:
+Definición: Valor residual de los activos de la entidad, una vez deducidos todos sus pasivos. En el sector público, también llamado "activos netos".
+
+ACUMULACIÓN (DEVENGO):
+Ver "Principio de Devengo"
+
+===== B =====
+
+BASE DE CAJA:
+Definición: Base contable que reconoce transacciones y otros hechos económicos solo cuando se recibe o paga efectivo.
+
+Diferencia con devengo: Solo registra flujos de efectivo, no obligaciones ni derechos pendientes.
+
+BASE DE DEVENGO:
+Ver "Principio de Devengo"
+
+BENEFICIOS ECONÓMICOS FUTUROS:
+Definición: Potencial de un activo para contribuir, directa o indirectamente, a flujos de efectivo y equivalentes de efectivo de la entidad.
+
+===== C =====
+
+COMPARABILIDAD:
+Definición: Característica cualitativa que permite a los usuarios identificar y comprender similitudes y diferencias entre partidas. Requiere consistencia en la aplicación de políticas contables.
+
+CONTROL:
+Definición: Poder para dirigir las políticas financieras y operativas de otra entidad con el fin de obtener beneficios o estar expuesto a riesgos de sus actividades.
+
+Elementos del control:
+- Poder sobre la entidad
+- Exposición a rendimientos variables
+- Capacidad de usar el poder para afectar rendimientos
+
+CONSOLIDACIÓN:
+Definición: Proceso de combinar los estados financieros de una entidad controladora y sus entidades controladas, presentándolos como si fueran una sola entidad económica.
+
+COSTO AMORTIZADO:
+Definición: Importe al que se mide un activo o pasivo financiero en su reconocimiento inicial, menos reembolsos del principal, más o menos la amortización acumulada usando el método del interés efectivo, y menos cualquier reducción por deterioro.
+
+COSTO DE REPOSICIÓN:
+Definición: Costo más bajo que la entidad incurriría para reponer el potencial de servicio de un activo en la fecha de presentación.
+
+COSTO DE CUMPLIMIENTO:
+Definición: Para pasivos que no resultan en salidas de recursos con beneficios económicos, es el costo de cumplir con la obligación de rendimiento o transferencia.
+
+COSTO HISTÓRICO:
+Definición: Base de medición por la cual los activos se registran por el importe de efectivo pagado o el valor razonable de la contraprestación entregada al momento de su adquisición.
+
+===== D =====
+
+DEPRECIACIÓN:
+Definición: Distribución sistemática del importe depreciable de un activo a lo largo de su vida útil.
+
+Factores a considerar:
+- Costo del activo
+- Valor residual estimado
+- Vida útil
+- Método de depreciación
+
+DETERIORO DE VALOR:
+Definición: Pérdida en los beneficios económicos futuros o en el potencial de servicio de un activo, por encima de la depreciación sistemática.
+
+Indicadores de deterioro:
+- Daño físico significativo
+- Cambios en uso o capacidad
+- Obsolescencia tecnológica
+- Cambios legales o de políticas públicas
+
+DEVENGADO (ACCRUAL BASIS):
+Ver "Principio de Devengo"
+
+===== E =====
+
+ENTIDAD CONTROLADA:
+Definición: Entidad que está bajo el control de otra entidad (conocida como entidad controladora).
+
+ENTIDAD CONTROLADORA:
+Definición: Entidad que controla una o más entidades controladas.
+
+ENTIDAD ECONÓMICA:
+Definición: Grupo de entidades que comprende una entidad controladora y una o más entidades controladas.
+
+ESTADO DE FLUJOS DE EFECTIVO:
+Definición: Estado financiero que muestra las entradas y salidas de efectivo y equivalentes de efectivo durante un periodo, clasificadas por actividades de operación, inversión y financiación.
+
+ESTADO DE RENDIMIENTO FINANCIERO:
+Definición: Estado financiero que presenta los ingresos, gastos y superávit o déficit del periodo. Equivalente al "Estado de Resultados" en el sector privado.
+
+ESTADO DE SITUACIÓN FINANCIERA:
+Definición: Estado financiero que presenta los activos, pasivos y activos netos/patrimonio de una entidad en una fecha específica. También conocido como "Balance General".
+
+===== F =====
+
+FIABILIDAD:
+Definición: Característica cualitativa que hace que la información esté libre de error material y sesgo, representando fielmente lo que pretende representar.
+
+===== G =====
+
+GANANCIA:
+Ver "Superávit"
+
+===== H =====
+
+HECHOS POSTERIORES A LA FECHA DE PRESENTACIÓN:
+Definición: Eventos favorables o desfavorables que ocurren entre la fecha de presentación y la fecha de autorización de los estados financieros.
+
+===== I =====
+
+IMPORTE EN LIBROS:
+Definición: Importe por el que se reconoce un activo o pasivo en el estado de situación financiera.
+
+IMPORTE RECUPERABLE:
+Definición: El mayor entre el valor razonable menos costos de venta y el valor en uso de un activo.
+
+INFLUENCIA SIGNIFICATIVA:
+Definición: Poder de participar en las decisiones de política financiera y operativa de una entidad, sin llegar a tener control o control conjunto sobre dichas políticas.
+
+INGRESOS CON CONTRAPRESTACIÓN:
+Definición: Ingresos que una entidad recibe por la venta de bienes o prestación de servicios, a cambio de un valor aproximadamente igual.
+
+Ejemplos: tarifas por servicios, ventas de publicaciones, alquileres.
+
+INGRESOS SIN CONTRAPRESTACIÓN:
+Definición: Ingresos que una entidad recibe sin dar a cambio un valor aproximadamente igual directamente a la otra parte.
+
+Ejemplos: impuestos, transferencias, donaciones, multas, legados.
+
+INSTRUMENTO FINANCIERO:
+Definición: Contrato que da lugar a un activo financiero de una entidad y a un pasivo financiero o instrumento de patrimonio de otra.
+
+===== M =====
+
+MATERIALIDAD (IMPORTANCIA RELATIVA):
+Definición: Información es material si su omisión o expresión inadecuada puede influir en las decisiones de los usuarios basadas en la información financiera de la entidad.
+
+MEDICIÓN:
+Definición: Proceso de determinación de los importes monetarios por los que se reconocen y registran los elementos de los estados financieros.
+
+MÉTODO DE PARTICIPACIÓN PATRIMONIAL:
+Definición: Método contable por el cual una inversión se registra inicialmente al costo y posteriormente se ajusta por los cambios en la participación del inversor en los activos netos de la entidad participada.
+
+===== N =====
+
+NEGOCIO CONJUNTO:
+Definición: Acuerdo mediante el cual dos o más partes mantienen control conjunto sobre una actividad económica.
+
+===== O =====
+
+OBLIGACIÓN PRESENTE:
+Definición: Deber o responsabilidad actual de actuar o de ejecutar algo de una forma determinada, que surge de eventos pasados.
+
+===== P =====
+
+PASIVO:
+Definición: Obligación presente de la entidad, surgida de sucesos pasados, al vencimiento de la cual, y para cancelarla, la entidad espera desprenderse de recursos que incorporan beneficios económicos o potencial de servicio.
+
+PARTICIPACIÓN NO CONTROLADORA:
+Definición: Patrimonio de una entidad controlada no atribuible, directa o indirectamente, a la entidad controladora.
+
+POLÍTICAS CONTABLES:
+Definición: Principios, bases, convenciones, reglas y procedimientos específicos adoptados por una entidad al preparar y presentar estados financieros.
+
+POTENCIAL DE SERVICIO:
+Definición: Capacidad de un activo para prestar servicios que contribuyen al logro de los objetivos de la entidad. Concepto clave en el sector público para activos que no generan flujos de efectivo directamente.
+
+Ejemplos: carreteras, escuelas, hospitales públicos.
+
+PRINCIPIO DE DEVENGO (ACCRUAL BASIS):
+Definición: Base contable según la cual los hechos económicos se reconocen cuando ocurren (y no cuando se cobra o paga efectivo).
+
+Características principales:
+- Transacciones se registran cuando ocurren
+- Independiente del momento del cobro o pago
+- Activos se reconocen cuando se obtiene control
+- Pasivos se reconocen cuando surge la obligación
+- Ingresos se reconocen cuando se ganan
+- Gastos se reconocen cuando se incurren
+
+PROVISIÓN:
+Definición: Pasivo sobre el que existe incertidumbre acerca de su cuantía o vencimiento.
+
+===== R =====
+
+RECONOCIMIENTO:
+Definición: Proceso de incorporación en los estados financieros de una partida que cumple la definición de elemento (activo, pasivo, ingreso o gasto) y satisface los criterios de reconocimiento.
+
+RELEVANCIA:
+Definición: Característica cualitativa de la información financiera que hace que sea capaz de influir en las decisiones de los usuarios.
+
+RENDICIÓN DE CUENTAS:
+Definición: Obligación de responder por la gestión, el desempeño y los resultados obtenidos con recursos públicos.
+
+===== S =====
+
+SUPERÁVIT O DÉFICIT:
+Definición: Diferencia entre ingresos y gastos durante un periodo. En el sector público, equivalente a "utilidad o pérdida" del sector privado.
+
+- Superávit: cuando los ingresos exceden los gastos
+- Déficit: cuando los gastos exceden los ingresos
+
+===== T =====
+
+TRANSACCIÓN CON CONTRAPRESTACIÓN:
+Definición: Transacción en la que una entidad recibe activos o servicios, o cancela pasivos, y entrega a cambio un valor aproximadamente igual a la otra parte.
+
+TRANSACCIÓN SIN CONTRAPRESTACIÓN:
+Definición: Transacción en la que una entidad recibe valor de otra sin dar directamente a cambio un valor aproximadamente igual, o entrega valor a otra entidad sin recibir directamente a cambio un valor aproximadamente igual.
+
+===== U =====
+
+UNIDAD GENERADORA DE EFECTIVO:
+Definición: Grupo identificable más pequeño de activos que genera entradas de efectivo que son en gran medida independientes de las entradas de efectivo derivadas de otros activos o grupos de activos.
+
+===== V =====
+
+VALOR DE SERVICIO:
+Ver "Potencial de Servicio"
+
+VALOR EN USO:
+Definición: Valor presente de los flujos de efectivo futuros, o potencial de servicio, que se espera obtener de un activo o unidad generadora de efectivo.
+
+Para activos generadores de efectivo: basado en flujos de efectivo futuros estimados.
+Para activos no generadores de efectivo: basado en costo de reposición del potencial de servicio.
+
+VALOR NETO REALIZABLE:
+Definición: Importe que la entidad puede obtener por la venta de un activo en una transacción entre partes interesadas y debidamente informadas, menos los costos de terminación y los costos necesarios para realizar la venta.
+
+VALOR RAZONABLE:
+Definición: Precio que se recibiría por vender un activo o que se pagaría por transferir un pasivo en una transacción ordenada entre participantes del mercado en la fecha de medición.
+
+Características:
+- Basado en condiciones de mercado
+- Transacción ordenada (no forzada)
+- Entre partes conocedoras y dispuestas
+- En la fecha de medición
+
+VIDA ÚTIL:
+Definición: Periodo durante el cual se espera que un activo esté disponible para su uso por una entidad, o el número de unidades de producción o similares que se espera obtener del activo.
+
+===== PREGUNTA FRECUENTE: ¿Cuál es la diferencia entre "potencial de servicio" y "beneficios económicos"? =====
+
+Respuesta: Los beneficios económicos se refieren a la capacidad de generar flujos de efectivo (típico del sector privado), mientras que el potencial de servicio se refiere a la capacidad de prestar servicios públicos que contribuyen a los objetivos de la entidad, aunque no generen efectivo directamente. Por ejemplo, una carretera pública tiene potencial de servicio pero no genera flujos de efectivo comerciales directos.

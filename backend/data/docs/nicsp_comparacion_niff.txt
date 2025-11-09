@@ -1,0 +1,172 @@
+DIFERENCIAS NICSP vs NIIF - ANÁLISIS COMPARATIVO
+
+===== INTRODUCCIÓN =====
+
+Las NICSP (Normas Internacionales de Contabilidad del Sector Público) y las NIIF (Normas Internacionales de Información Financiera) son dos marcos normativos distintos desarrollados para diferentes propósitos y usuarios.
+
+===== ENFOQUE FUNDAMENTAL =====
+
+NICSP (Sector Público):
+- Enfoque en rendición de cuentas y transparencia pública
+- Prioriza la información para ciudadanos y autoridades fiscales
+- Énfasis en el uso de recursos públicos y cumplimiento de presupuestos
+- Considera el potencial de servicio de los activos, no solo su capacidad de generar flujos de efectivo
+
+NIIF (Sector Privado):
+- Enfoque en rentabilidad y creación de valor para accionistas
+- Prioriza información para inversionistas y acreedores
+- Énfasis en la capacidad de generar flujos de efectivo futuros
+- Considera principalmente activos generadores de ingresos
+
+===== USUARIOS PRINCIPALES =====
+
+NICSP:
+- Ciudadanos y contribuyentes
+- Órganos de control y fiscalización
+- Parlamentos y asambleas legislativas
+- Organismos internacionales (FMI, Banco Mundial)
+- Agencias de calificación de riesgo soberano
+
+NIIF:
+- Inversionistas actuales y potenciales
+- Accionistas y propietarios
+- Acreedores financieros
+- Analistas de mercado
+- Bolsas de valores
+
+===== TRATAMIENTO DE ACTIVOS =====
+
+NICSP - Activos Específicos del Sector Público:
+- Infraestructura (carreteras, puentes, redes de agua)
+- Bienes del patrimonio cultural e histórico (museos, monumentos)
+- Recursos naturales (parques nacionales, reservas)
+- Activos militares especializados
+- Activos que generan potencial de servicio más que flujos de efectivo
+
+NIIF - Activos Empresariales:
+- Principalmente activos generadores de ingresos
+- Inventarios para venta
+- Propiedades de inversión
+- Activos financieros negociables
+- Menor énfasis en activos de servicio público
+
+===== RECONOCIMIENTO DE INGRESOS =====
+
+NICSP:
+- Distingue entre ingresos CON contraprestación (NICSP 9) y SIN contraprestación (NICSP 23)
+- Ingresos sin contraprestación: impuestos, transferencias, donaciones, multas
+- Considera restricciones sobre uso de recursos recibidos
+- Reconocimiento cuando hay control sobre el recurso
+
+NIIF:
+- Enfoque principalmente en ingresos con contraprestación (NIIF 15)
+- Ingresos por venta de bienes y prestación de servicios
+- Modelo de cinco pasos para reconocimiento
+- Basado en transferencia de control de bienes o servicios
+
+===== PRESENTACIÓN DE ESTADOS FINANCIEROS =====
+
+NICSP 1:
+- Estado de Situación Financiera
+- Estado de Rendimiento Financiero (puede ser superávit o déficit)
+- Estado de Cambios en Activos Netos/Patrimonio
+- Estado de Flujos de Efectivo
+- Comparación presupuestaria (NICSP 24) cuando el presupuesto es público
+
+NIIF (NIC 1):
+- Estado de Situación Financiera
+- Estado de Resultados (utilidad o pérdida)
+- Estado de Cambios en el Patrimonio
+- Estado de Flujos de Efectivo
+- No requiere comparación presupuestaria
+
+===== MEDICIÓN DE ACTIVOS =====
+
+NICSP:
+- Costo histórico
+- Valor razonable
+- Costo de reposición
+- Valor neto realizable
+- Valor en uso o valor de servicio (específico para sector público)
+- Costo de cumplimiento (para pasivos sin flujos de salida comercial)
+
+NIIF:
+- Costo histórico
+- Valor razonable
+- Valor neto realizable
+- Valor en uso (basado en flujos de efectivo)
+- Costo amortizado
+
+===== INFORMACIÓN PRESUPUESTARIA =====
+
+NICSP:
+- NICSP 24 requiere comparación de presupuesto vs ejecución real cuando el presupuesto es público
+- Reconciliación entre base presupuestaria y base contable
+- Explicación de diferencias materiales
+- Información clave para rendición de cuentas
+
+NIIF:
+- No requiere información presupuestaria
+- Enfoque en información financiera histórica y proyecciones de flujos futuros
+
+===== CONSOLIDACIÓN =====
+
+NICSP 35-38:
+- Control definido de manera amplia (puede ser por estatuto o ley)
+- Considera control sin participación accionaria
+- Aplicable a entidades controladas, asociadas y negocios conjuntos del sector público
+- Puede consolidar entidades sin ánimo de lucro
+
+NIIF 10-11:
+- Control basado en poder sobre políticas financieras y operativas
+- Generalmente requiere participación accionaria o derechos de voto
+- Enfocado en entidades con fines de lucro
+- Considera participaciones no controladoras
+
+===== DIFERENCIAS EN TERMINOLOGÍA =====
+
+NICSP:
+- Superávit o déficit (en lugar de utilidad o pérdida)
+- Activos netos o patrimonio neto
+- Potencial de servicio
+- Ingresos sin contraprestación
+- Entidad económica del sector público
+
+NIIF:
+- Utilidad o pérdida (ganancia)
+- Patrimonio
+- Capacidad de generar flujos de efectivo
+- Ingresos ordinarios
+- Grupo económico
+
+===== CONVERGENCIA ENTRE NICSP Y NIIF =====
+
+Similitudes:
+- Ambas basadas en el principio de devengo
+- Conceptos fundamentales similares (activos, pasivos, ingresos, gastos)
+- Estructuras de estados financieros comparables
+- Muchas NICSP están basadas o convergidas con NIIF/NIC correspondientes
+
+Divergencias necesarias:
+- Reflejan diferencias fundamentales entre sector público y privado
+- Consideran diferentes objetivos de información financiera
+- Atienden necesidades de distintos usuarios
+- Reconocen contextos operacionales diferentes
+
+===== ADOPCIÓN Y APLICACIÓN =====
+
+NICSP:
+- Aplicación voluntaria a nivel internacional
+- Algunos países las adoptan total o parcialmente
+- Organismos internacionales las recomiendan
+- Proceso de adaptación al contexto local
+
+NIIF:
+- Requeridas en más de 140 jurisdicciones para empresas que cotizan
+- Obligatorias en muchos países
+- Aplicación generalizada en sector privado
+- Mayor armonización global
+
+===== PREGUNTA FRECUENTE: ¿Puede una entidad aplicar ambas? =====
+
+Respuesta: Una entidad del sector público generalmente NO debe aplicar NIIF completas, sino NICSP. Sin embargo, algunas empresas públicas con actividades comerciales significativas pueden usar NIIF si generan principalmente flujos de efectivo comerciales. La decisión depende de la naturaleza de la entidad y las regulaciones locales.

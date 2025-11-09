@@ -18,7 +18,6 @@ INDEX_PATH = "data/nicsp_index"
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 
-# --- Funciones de lectura (sin cambios) ---
 def read_pdf(path):
     try:
         import fitz
@@ -92,8 +91,8 @@ if not os.path.exists(INDEX_PATH):
             continue
         
         splitter = RecursiveCharacterTextSplitter(
-            chunk_size=600,
-            chunk_overlap=100,
+            chunk_size=750,             # Tamaño óptimo para listas largas
+            chunk_overlap=120,          # Mantener overlap proporcional
             separators=["\n\n", "\n", ". ", ".", " "]
         )
         chunks = splitter.split_text(text)
@@ -120,17 +119,17 @@ def call_ollama_api(prompt: str) -> str:
                 "prompt": prompt,
                 "stream": False,
                 "options": {
-                    "num_ctx": 1536,        # ✅ Reducir más (antes 2048)
+                    "num_ctx": 1280,        # Aumentar ligeramente para contextos más largos
                     "num_thread": 2,
-                    "num_batch": 128,       # ✅ Reducir (antes 256)
+                    "num_batch": 64,
                     "temperature": 0.3,
                     "top_p": 0.85,
                     "top_k": 30,
                     "repeat_penalty": 1.15,
-                    "num_predict": 256      # ✅ Limitar tokens de respuesta
+                    "num_predict": 220      # Aumentar un poco para respuestas más completas
                 }
             },
-            timeout=90                      # ✅ Aumentar timeout (antes 60)
+            timeout=120                     # 2 minutos para evitar timeouts
         )
         
         if response.status_code == 200:
@@ -157,12 +156,12 @@ def clean_and_validate_response(response: str, context: str) -> str:
     
     response = response.strip()
     
-    # ✅ Permitir respuestas de "no sé" ANTES de validar longitud
+    #  Permitir respuestas de "no sé" ANTES de validar longitud
     no_info_phrases = ["no encuentro", "no tengo", "no está", "no se encuentra", "no hay información"]
     if any(phrase in response_lower for phrase in no_info_phrases):
         return response
     
-    # ✅ Reducir umbral mínimo a 20 caracteres
+    #  Reducir umbral mínimo a 20 caracteres
     if len(response) < 20:
         return "No encuentro información específica sobre eso en los documentos."
     
@@ -176,7 +175,7 @@ def chat():
         return jsonify({"error": "No message provided"}), 400
     
     try:
-        docs = db.similarity_search(message, k=4)
+        docs = db.similarity_search(message, k=8)  # Recuperar más documentos iniciales
         
         if docs:
             query_embedding = embeddings.embed_query(message)
@@ -184,8 +183,8 @@ def chat():
             scores = cosine_similarity([query_embedding], doc_embeddings)[0]
             ranked = sorted(zip(scores, docs), reverse=True, key=lambda x: x[0])
             
-            # ✅ Tomar los TOP 3 documentos más relevantes (no solo 1)
-            top_docs = [doc for _, doc in ranked[:3]]
+            # Tomar TOP 4 mejores después de re-ranking
+            top_docs = [doc for _, doc in ranked[:4]]
             
             context_parts = []
             for doc in top_docs:
@@ -195,9 +194,9 @@ def chat():
             
             context = "\n\n".join(context_parts)
             
-            # ✅ Reducir contexto para evitar timeouts
-            if len(context) > 1500:
-                context = context[:1500] + "\n[...]"
+            # Límite de contexto aumentado para permitir respuestas más completas
+            if len(context) > 1600:
+                context = context[:1600] + "\n[...]"
         else:
             context = ""
         
@@ -207,14 +206,12 @@ def chat():
         print(f"CONTEXTO ({len(context)} chars):\n{context}")
         print(f"{'='*60}\n")
         
-        # ✅ PROMPT OPTIMIZADO Y CORTO
-        prompt = f"""Información relevante de NICSP:
-
+        prompt = f"""Contexto de NICSP:
 {context}
 
 Pregunta: {message}
 
-Responde en máximo 3 oraciones usando solo la información anterior. Si no está, di "No encuentro esa información".
+Instrucciones: Responde usando SOLO el contexto anterior. Si no hay información suficiente, di "No encuentro esa información específica". Máximo 4 oraciones claras.
 
 Respuesta:"""
         

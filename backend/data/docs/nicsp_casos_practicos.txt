@@ -1,0 +1,363 @@
+CASOS PRÁCTICOS NICSP - EJEMPLOS REALES DE APLICACIÓN
+
+===== INTRODUCCIÓN =====
+
+Estos casos prácticos ilustran la aplicación de las NICSP en situaciones reales del sector público, mostrando la diferencia entre la contabilidad en base de efectivo y base de devengo.
+
+===== CASO 1: RECONOCIMIENTO DE INFRAESTRUCTURA - CONSTRUCCIÓN DE CARRETERA =====
+
+SITUACIÓN:
+El gobierno inicia la construcción de una carretera con un costo total de $500 millones. La construcción dura 3 años.
+- Año 1: Se pagan $150 millones
+- Año 2: Se pagan $200 millones
+- Año 3: Se pagan $150 millones y se completa la obra
+
+TRATAMIENTO EN BASE DE EFECTIVO:
+- Año 1: Gasto de $150 millones
+- Año 2: Gasto de $200 millones
+- Año 3: Gasto de $150 millones
+- Total gastos: $500 millones
+- NO se reconoce ningún activo
+
+TRATAMIENTO EN BASE DE DEVENGO (NICSP 17):
+- Años 1-3: Se capitaliza la construcción en curso
+- Año 3: Al completarse, se reconoce:
+  * Activo (Carretera): $500 millones
+  * Se inicia depreciación según vida útil (ejemplo: 40 años)
+  * Depreciación anual: $12.5 millones
+- El gasto se distribuye a lo largo de la vida útil del activo
+
+IMPACTO EN ESTADOS FINANCIEROS:
+- Estado de Situación Financiera: Muestra el activo de $500M
+- Estado de Rendimiento: Muestra depreciación anual en lugar de gasto total
+- Mejor reflejo del patrimonio público y del costo del servicio
+
+===== CASO 2: INSTRUMENTO FINANCIERO - PRÉSTAMO GUBERNAMENTAL =====
+
+SITUACIÓN:
+El gobierno otorga un préstamo de $100 millones a una empresa pública a 5 años, con tasa de interés del 5% anual.
+
+RECONOCIMIENTO INICIAL (NICSP 41):
+- Se reconoce activo financiero por $100 millones
+- Valor razonable en el momento de desembolso
+- Clasificación: Costo amortizado (préstamo para cobrar)
+
+MEDICIÓN POSTERIOR:
+- Año 1: 
+  * Saldo inicial: $100M
+  * Interés devengado: $5M (5% de $100M)
+  * Si se cobra el interés: reduce cuenta por cobrar
+  * Nuevo saldo: $100M (si solo se cobraron intereses)
+
+- Al vencimiento (Año 5):
+  * Se cobra el principal de $100M
+  * Se da de baja el activo financiero
+
+EVALUACIÓN DE DETERIORO:
+- Si hay indicios de incumplimiento, se debe evaluar pérdidas crediticias esperadas
+- Ejemplo: Si se estima recuperar solo $80M, se reconoce pérdida por deterioro de $20M
+
+REVELACIÓN (NICSP 30):
+- Categoría del instrumento
+- Valor en libros
+- Condiciones del préstamo
+- Riesgo de crédito
+- Tasa de interés efectiva
+
+===== CASO 2B: PRÉSTAMO CONCESIONAL (CASO ESPECIAL) =====
+
+SITUACIÓN:
+Un gobierno otorga un préstamo concesional de $100 millones a otro gobierno o entidad pública a 10 años, con tasa de interés del 2% anual, cuando la tasa de mercado para préstamos similares es del 8% anual. Este es un préstamo "concesional" porque la tasa es inferior a la de mercado.
+
+CARACTERÍSTICA CLAVE:
+- Préstamo concesional = Préstamo con condiciones más favorables que las de mercado
+- Contiene un elemento de donación o subsidio implícito
+
+RECONOCIMIENTO INICIAL (NICSP 41):
+1. Calcular valor razonable al momento de otorgamiento:
+   - Descontar flujos futuros a tasa de mercado (8%)
+   - Flujos: Intereses al 2% + Principal al final
+   - Valor razonable = Aproximadamente $70M (inferior a $100M desembolsados)
+
+2. Reconocer en la contabilidad:
+   - Activo financiero (Préstamo por cobrar): $70M al valor razonable
+   - Gasto de transferencia o subsidio: $30M (diferencia entre efectivo entregado y valor razonable)
+   - Efectivo: -$100M (salida de efectivo)
+
+ASIENTO CONTABLE INICIAL:
+   Débito: Préstamo por cobrar $70M
+   Débito: Gasto de transferencia/subsidio $30M
+   Crédito: Efectivo $100M
+
+MEDICIÓN POSTERIOR:
+- El préstamo se mide a costo amortizado usando el método de interés efectivo
+- Se aplica la tasa de mercado original (8%) para devengar interés
+- Año 1: 
+  * Interés devengado = $70M × 8% = $5.6M
+  * Se cobra interés al 2% = $100M × 2% = $2M en efectivo
+  * Diferencia ($3.6M) aumenta el valor en libros del préstamo
+  * Nuevo saldo: $70M + $3.6M = $73.6M
+
+- Al vencimiento (Año 10):
+  * El valor en libros habrá aumentado hasta aproximarse a $100M
+  * Se cobra el principal de $100M
+  * Se da de baja el activo financiero
+
+REVELACIONES REQUERIDAS (NICSP 30):
+- Naturaleza concesional del préstamo
+- Tasa de interés nominal vs tasa de mercado
+- Monto del subsidio implícito reconocido
+- Términos y condiciones especiales
+- Valor razonable vs valor en libros
+- Análisis de vencimientos
+- Riesgo de crédito y deterioro
+
+NOTA IMPORTANTE:
+El elemento de subsidio ($30M) se reconoce INMEDIATAMENTE como gasto, NO se distribuye en el tiempo. Esto refleja que el gobierno está otorgando un beneficio económico en el momento inicial.
+
+===== CASO 3: DONACIÓN SIN CONTRAPRESTACIÓN - EQUIPOS MÉDICOS =====
+
+SITUACIÓN:
+Una organización internacional dona equipos médicos a un hospital público. El valor razonable de los equipos es $50 millones. No hay condiciones de devolución, solo una restricción de uso: deben usarse en el hospital.
+
+TRATAMIENTO SEGÚN NICSP 23:
+RECONOCIMIENTO:
+- Activo (Equipos médicos): $50 millones (al valor razonable)
+- Ingreso sin contraprestación: $50 millones
+- Se reconoce cuando hay control sobre los activos
+
+MOMENTO DE RECONOCIMIENTO:
+- Cuando se reciben físicamente los equipos
+- Cuando se transfiere el control legal
+- Cuando pueden usarse para los fines previstos
+
+RESTRICCIONES:
+- Uso en el hospital: No impide reconocimiento porque no hay obligación de devolución
+- Se revela la restricción en notas
+
+DEPRECIACIÓN POSTERIOR:
+- Vida útil estimada: 10 años
+- Depreciación anual: $5 millones
+- Reduce el valor del activo gradualmente
+
+DIFERENCIA CON BASE DE EFECTIVO:
+- Base de efectivo: No se registra nada (no hay movimiento de efectivo)
+- Base de devengo: Se reconoce activo e ingreso por $50M
+
+===== CASO 4: RECONOCIMIENTO DE IMPUESTOS =====
+
+SITUACIÓN:
+El gobierno recauda impuestos sobre la renta del año fiscal 2024, pero parte se cobra en 2025.
+- Impuesto devengado en 2024: $1,000 millones
+- Cobrado en 2024: $850 millones
+- Cobrado en 2025: $120 millones
+- Incobrable estimado: $30 millones
+
+TRATAMIENTO SEGÚN NICSP 23:
+EN 2024:
+- Ingreso tributario reconocido: $970 millones ($1,000M - $30M incobrable)
+- Efectivo recibido: $850 millones
+- Cuenta por cobrar: $120 millones
+- Deterioro (incobrable): $30 millones
+
+EN 2025:
+- Efectivo recibido: $120 millones
+- Reducción de cuenta por cobrar: $120 millones
+
+REVELACIÓN:
+- Políticas de reconocimiento de ingresos tributarios
+- Estimaciones de incobrables
+- Antigüedad de cuentas por cobrar
+
+===== CASO 5: PROVISIÓN POR DEMANDA JUDICIAL =====
+
+SITUACIÓN:
+El gobierno enfrenta una demanda judicial por expropiación. Los abogados estiman:
+- Probabilidad de perder: 70%
+- Monto estimado de compensación: $80-$120 millones
+- Mejor estimación: $100 millones
+- Sentencia esperada: En 2 años
+
+TRATAMIENTO SEGÚN NICSP 19:
+RECONOCIMIENTO DE PROVISIÓN:
+- Existe obligación presente (demanda en proceso)
+- Es probable salida de recursos (70% > 50%)
+- Se puede estimar fiablemente ($100M estimado)
+- Se reconoce provisión: $100 millones
+
+REGISTRO CONTABLE:
+- Gasto (pérdida por litigio): $100 millones
+- Provisión (pasivo): $100 millones
+
+ACTUALIZACIÓN ANUAL:
+- Si cambian las estimaciones, se ajusta la provisión
+- Al pagar la sentencia, se cancela la provisión contra el pasivo real
+
+REVELACIÓN:
+- Naturaleza de la contingencia
+- Mejor estimación del desembolso
+- Incertidumbres sobre importe o calendario
+- Posibilidad de reembolso
+
+===== CASO 6: ARRENDAMIENTO OPERATIVO VS FINANCIERO =====
+
+SITUACIÓN:
+El gobierno arrienda edificios de oficinas:
+- Valor razonable del edificio: $200 millones
+- Plazo del arrendamiento: 20 años
+- Vida útil del edificio: 25 años
+- Pagos anuales: $18 millones
+
+EVALUACIÓN (NICSP 13):
+Indicadores de arrendamiento financiero:
+- Plazo cubre 80% de vida útil (20/25 = 80%)
+- Valor presente de pagos ≈ valor razonable
+- CONCLUSIÓN: Arrendamiento financiero
+
+TRATAMIENTO CONTABLE:
+AL INICIO:
+- Activo por derecho de uso: $200 millones
+- Pasivo por arrendamiento: $200 millones
+
+DURANTE EL PLAZO:
+- Depreciación anual: $10 millones ($200M / 20 años)
+- Interés sobre el pasivo: Según tasa implícita
+- Pago anual de $18M reduce el pasivo
+
+DIFERENCIA CON ARRENDAMIENTO OPERATIVO:
+- Operativo: Solo gasto anual de $18M, sin activo ni pasivo
+- Financiero: Reconoce activo y pasivo, mejor reflejo de compromisos
+
+===== CASO 7: CONSOLIDACIÓN DE ENTIDAD CONTROLADA =====
+
+SITUACIÓN:
+El Ministerio de Salud controla un hospital público:
+- El gobierno nombra todos los directores
+- Aprueba presupuesto y políticas clave
+- No tiene participación accionaria (control por estatuto)
+
+Estados financieros individuales:
+MINISTERIO:
+- Activos: $500M
+- Pasivos: $200M
+- Patrimonio: $300M
+
+HOSPITAL:
+- Activos: $150M
+- Pasivos: $80M
+- Patrimonio: $70M
+
+PROCESO DE CONSOLIDACIÓN (NICSP 35):
+1. Combinar activos y pasivos:
+   - Activos consolidados: $650M
+   - Pasivos consolidados: $280M
+   
+2. Eliminar transacciones intragrupo:
+   - Si el Ministerio transfirió $50M al hospital, eliminar transferencia
+   
+3. Estado consolidado:
+   - Activos: $650M (menos eliminaciones)
+   - Pasivos: $280M (menos eliminaciones)
+   - Patrimonio: $370M
+
+REVELACIÓN:
+- Lista de entidades consolidadas
+- Base de control
+- Naturaleza de las restricciones
+
+===== CASO 8: CAMBIO DE POLÍTICA CONTABLE =====
+
+SITUACIÓN:
+Una entidad pública decide cambiar del modelo de costo al modelo de revaluación para sus edificios administrativos (NICSP 17).
+
+DATOS:
+- Costo original de edificios: $400 millones
+- Depreciación acumulada: $100 millones
+- Valor en libros: $300 millones
+- Valor razonable actual: $500 millones
+
+TRATAMIENTO SEGÚN NICSP 3:
+APLICACIÓN RETROACTIVA:
+- Se ajusta el valor de los activos a $500M
+- Aumento del patrimonio (superávit de revaluación): $200M
+- Se reexpresa información comparativa si es práctico
+
+DEPRECIACIÓN FUTURA:
+- Nueva base de depreciación: $500M
+- Vida útil restante: 30 años
+- Depreciación anual: $16.7M (antes era $10M)
+
+REVELACIÓN:
+- Naturaleza del cambio
+- Razones del cambio
+- Impacto en cada partida afectada
+- Efecto en información comparativa
+
+===== CASO 9: CORRECCIÓN DE ERROR MATERIAL =====
+
+SITUACIÓN:
+En 2024, se descubre que en 2022 no se registró depreciación de equipos por $25 millones.
+
+TRATAMIENTO SEGÚN NICSP 3:
+CORRECCIÓN RETROACTIVA:
+- Se ajustan estados financieros de 2022 y 2023
+- Reducción de activos (depreciación acumulada): $50M total
+- Reducción de patrimonio inicial: $25M (error de 2022)
+- Gasto de depreciación 2023: $25M (ajuste año anterior)
+
+REVELACIÓN EN 2024:
+- Naturaleza del error
+- Importe de corrección para cada periodo afectado
+- Efecto en cada partida de estados financieros
+- Si es impracticable determinar efectos específicos por periodo
+
+===== CASO 10: ACTIVO DEL PATRIMONIO CULTURAL =====
+
+SITUACIÓN:
+El gobierno posee un museo con colecciones históricas de valor incalculable. Adquiere una nueva pieza arqueológica por $5 millones.
+
+TRATAMIENTO SEGÚN NICSP 17:
+OPCIÓN 1 - RECONOCIMIENTO:
+- Si tiene costo o valor medible: Reconocer activo por $5M
+- No depreciar si vida útil indefinida
+- Evaluar deterioro anualmente
+
+OPCIÓN 2 - NO RECONOCIMIENTO:
+- Si el valor cultural trasciende el financiero
+- Si costo o valor no pueden medirse fiablemente
+- Revelar en notas sin reconocer en balance
+
+REVELACIÓN REQUERIDA:
+- Descripción de activos del patrimonio
+- Políticas de reconocimiento y medición
+- Valor en libros (si se reconocen)
+- Restricciones sobre enajenación
+- Gastos de conservación
+
+===== LECCIONES CLAVE DE LOS CASOS PRÁCTICOS =====
+
+1. BASE DE DEVENGO VS EFECTIVO:
+   - Devengo proporciona mejor información sobre activos y obligaciones
+   - Efectivo solo muestra flujos, no situación patrimonial
+
+2. RECONOCIMIENTO DE ACTIVOS:
+   - Infraestructura y equipos se capitalizan y deprecian
+   - Donaciones se reconocen al valor razonable cuando hay control
+
+3. INGRESOS SIN CONTRAPRESTACIÓN:
+   - Impuestos se reconocen cuando son exigibles (menos incobrables)
+   - Donaciones cuando hay control sobre los recursos
+
+4. INSTRUMENTOS FINANCIEROS:
+   - Préstamos se miden a costo amortizado
+   - Requieren evaluación de deterioro
+
+5. PROVISIONES:
+   - Reconocer cuando hay obligación presente, probable salida y estimación fiable
+   - Actualizar regularmente las estimaciones
+
+6. CONSOLIDACIÓN:
+   - Control es clave, no propiedad
+   - Eliminar transacciones intragrupo
+
+Estos casos demuestran cómo las NICSP mejoran la transparencia y rendición de cuentas del sector público.

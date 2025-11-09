@@ -96,18 +96,21 @@ EXIGE REVELAR:
 
 ===== NICSP 33: ADOPCIÓN POR PRIMERA VEZ =====
 
-OBJETIVO: Guiar transición a NICSP
+RESPUESTA DIRECTA: ¿Qué es la NICSP 33?
+La NICSP 33 es la norma que guía la transición desde normas locales hacia las NICSP.
 
-REQUISITOS PRINCIPALES:
-- Estados financieros de apertura bajo NICSP
-- Aplicación retroactiva de NICSP vigentes
-- Exenciones temporales disponibles
-- Revelación de conciliaciones con normativa anterior
+OBJETIVO PRINCIPAL: Preparar estados financieros de apertura bajo NICSP
 
 EXENCIONES PERMITIDAS:
-- Combinaciones de negocios (retrospectiva limitada)
-- Valor razonable como costo atribuido
-- Activos infraestructura a costo depreciado
+- Combinaciones de negocios (aplicación retrospectiva limitada)
+- Valor razonable como costo atribuido para activos antiguos
+- Activos de infraestructura a costo depreciado
+
+REQUISITOS CLAVE:
+- Estados financieros de apertura al inicio del período de adopción
+- Aplicación retroactiva de todas las NICSP vigentes
+- Revelación de conciliaciones entre normativa anterior y NICSP
+- Información sobre transiciones significativas
 
 ===== NICSP 41: INSTRUMENTOS FINANCIEROS (CONSOLIDADA) =====
 

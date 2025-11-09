@@ -2,52 +2,353 @@ NICSP - INSTRUMENTOS FINANCIEROS
 
 ===== RESPUESTA DIRECTA =====
 
-¿Qué características diferencian a los instrumentos financieros en las NICSP?
+¿Qué características diferencian a los instrumentos financieros en las NICSP respecto al reconocimiento inicial y medición posterior?
 
-CARACTERÍSTICAS PRINCIPALES:
+Respuesta: En el reconocimiento inicial, los instrumentos financieros se registran al valor razonable (generalmente el precio de transacción) cuando la entidad se convierte en parte del contrato, incluyendo costos de transacción según corresponda. En la medición posterior, se clasifican en tres categorías: (1) Valor razonable con cambios en resultados para instrumentos de negociación, (2) Costo amortizado para préstamos y cuentas por cobrar/pagar mantenidos hasta el vencimiento, y (3) Valor razonable con cambios en patrimonio para instrumentos de capital disponibles para la venta.
 
-1. RECONOCIMIENTO INICIAL: Al valor razonable (precio transacción) + costos transacción
+===== DEFINICIÓN DE INSTRUMENTO FINANCIERO =====
 
-2. MEDICIÓN POSTERIOR - TRES CATEGORÍAS:
-   - CATEGORÍA 1: Valor razonable con cambios en resultados (instrumentos para negociación)
-   - CATEGORÍA 2: Costo amortizado (préstamos, cuentas por cobrar/pagar)
-   - CATEGORÍA 3: Valor razonable con cambios en patrimonio (disponibles para venta)
+Un instrumento financiero es cualquier contrato que da lugar simultáneamente a:
+- Un activo financiero de una entidad, Y
+- Un pasivo financiero o instrumento de patrimonio de otra entidad
 
-3. CARACTERÍSTICAS DIFERENCIADORAS:
-   - Posibilidad de reclasificación entre categorías
-   - Reconocimiento de deterioro por pérdidas crediticias esperadas
-   - NICSP 30 exige revelación de riesgos financieros
+ACTIVOS FINANCIEROS incluyen:
+- Efectivo y equivalentes de efectivo
+- Derechos contractuales a recibir efectivo u otro activo financiero
+- Derechos contractuales a intercambiar instrumentos financieros en condiciones potencialmente favorables
+- Instrumentos de patrimonio de otra entidad (acciones, participaciones)
+- Cuentas por cobrar, préstamos otorgados, inversiones en bonos
+
+PASIVOS FINANCIEROS incluyen:
+- Obligaciones contractuales de entregar efectivo u otro activo financiero
+- Obligaciones de intercambiar instrumentos financieros en condiciones potencialmente desfavorables
+- Cuentas por pagar, préstamos recibidos, bonos emitidos
 
 ===== RECONOCIMIENTO INICIAL =====
 
-- Cuando: La entidad se convierte en parte del contrato
-- Valor: Valor razonable (generalmente precio de transacción)
-- Incluye: Costos de transacción directamente atribuibles
-- Clasificación: Como activos financieros o pasivos financieros
+MOMENTO DE RECONOCIMIENTO:
+Una entidad reconoce un activo o pasivo financiero cuando:
+- Se convierte en parte de las disposiciones contractuales del instrumento
+- El contrato da lugar a derechos u obligaciones financieras
+- Hay compromiso en firme de comprar o vender
 
-===== MEDICIÓN POSTERIOR - TRES CATEGORÍAS =====
+MEDICIÓN INICIAL:
+- Valor razonable del instrumento
+- Generalmente: precio de transacción (contraprestación pagada o recibida)
+- MÁS: Costos de transacción directamente atribuibles (excepto instrumentos a valor razonable con cambios en resultados)
+
+COSTOS DE TRANSACCIÓN incluyen:
+- Honorarios y comisiones pagados a agentes, asesores, corredores
+- Cargos de organismos reguladores y bolsas de valores
+- Impuestos y derechos de transferencia
+NO INCLUYEN:
+- Primas o descuentos de deuda
+- Costos financieros
+- Costos administrativos internos
+
+EJEMPLO RECONOCIMIENTO INICIAL:
+El gobierno compra bonos por $100M más comisión de $2M:
+- Reconocimiento: Activo financiero $102M (incluye costos)
+- Si fueran para negociación: Activo $100M + Gasto $2M (costos a resultados)
+
+===== CLASIFICACIÓN Y MEDICIÓN POSTERIOR =====
 
 CATEGORÍA 1: VALOR RAZONABLE CON CAMBIOS EN RESULTADOS
-- Instrumentos mantenidos para negociación
-- Cambios en valor razonable van al estado de rendimiento financiero
-- Ejemplo: Instrumentos de trading
+
+Características:
+- Instrumentos mantenidos para negociación o trading
+- Instrumentos derivados (futuros, opciones, swaps)
+- Instrumentos designados por la entidad en esta categoría
+
+Medición posterior:
+- Se miden a valor razonable en cada fecha de presentación
+- Los cambios en valor razonable se reconocen en el estado de rendimiento financiero (superávit/déficit)
+- Los costos de transacción se llevan a gastos inmediatamente
+
+Aplicación en sector público:
+- Inversiones de corto plazo en mercados activos
+- Gestión activa de tesorería
+- Instrumentos derivados de cobertura
+
+Ejemplo:
+- Año 0: Compra bonos por $100M para negociación
+- Año 1: Valor razonable sube a $105M → Reconoce ganancia de $5M
+- Año 2: Valor razonable baja a $102M → Reconoce pérdida de $3M
 
 CATEGORÍA 2: COSTO AMORTIZADO
+
+Características:
 - Préstamos y cuentas por cobrar originados por la entidad
 - Préstamos y cuentas por pagar
-- Método del interés efectivo
-- Ejemplo: Préstamos a empleados, cuentas por cobrar comerciales
+- Instrumentos mantenidos hasta el vencimiento
+- Se espera cobrar flujos contractuales de capital e intereses
+
+Medición posterior:
+- Costo amortizado usando el método del interés efectivo
+- Considera el valor inicial, menos pagos de capital, más/menos amortización acumulada de descuentos/primas, menos deterioro
+
+MÉTODO DEL INTERÉS EFECTIVO:
+- Tasa que descuenta exactamente los flujos de efectivo futuros estimados durante la vida esperada del instrumento
+- Distribuye ingresos/gastos por intereses de forma constante sobre la vida del instrumento
+
+Aplicación en sector público:
+- Préstamos a empleados
+- Financiamiento de proyectos de inversión
+- Cuentas por cobrar de impuestos
+- Deuda pública emitida
+
+Ejemplo de costo amortizado:
+Préstamo de $100M a 5 años, tasa nominal 4%, tasa efectiva 5%:
+- Año 1: Interés devengado = $100M × 5% = $5M
+- Pago de interés nominal = $100M × 4% = $4M
+- Incremento del principal = $1M
+- Nuevo saldo: $101M
 
 CATEGORÍA 3: VALOR RAZONABLE CON CAMBIOS EN PATRIMONIO
-- Instrumentos de capital disponibles para la venta.
-- Se miden a valor razonable.
-- Las variaciones en valor razonable se reconocen directamente en el patrimonio neto
 
-===== DIFERENCIAS CLAVE =====
+Características:
+- Instrumentos de capital (acciones) disponibles para la venta
+- No mantenidos para negociación
+- No se espera vender a corto plazo
+- Opción irrevocable de la entidad al reconocimiento inicial
 
-RECONOCIMIENTO INICIAL:
-- Momento: Cuando se firma el contrato
-- Valor: Precio de transacción
+Medición posterior:
+- Se miden a valor razonable en cada fecha de presentación
+- Los cambios en valor razonable se reconocen en el patrimonio neto (no en resultados)
+- Al vender, la ganancia/pérdida acumulada se transfiere a resultados
+
+Aplicación en sector público:
+- Participaciones en empresas públicas
+- Inversiones estratégicas de largo plazo
+- Instrumentos de patrimonio sin mercado activo
+
+Ejemplo:
+- Año 0: Compra acciones empresa pública por $50M
+- Año 1: Valor razonable $55M → Incremento patrimonio $5M
+- Año 2: Valor razonable $52M → Reducción patrimonio $3M
+- Año 3: Vende en $54M → Reconoce ganancia total $4M en resultados
+
+===== RECLASIFICACIÓN ENTRE CATEGORÍAS =====
+
+CRITERIOS DE RECLASIFICACIÓN:
+- Solo cuando cambia el modelo de negocio para gestionar los activos financieros
+- Reclasificación prospectiva desde la fecha de reclasificación
+- NO se permite reclasificación frecuente ni arbitraria
+
+RECLASIFICACIONES PERMITIDAS:
+- De costo amortizado a valor razonable: Si cambia intención de mantener hasta vencimiento
+- De valor razonable a costo amortizado: Si cambia a modelo de mantener para cobrar flujos
+
+RECLASIFICACIONES NO PERMITIDAS:
+- Instrumentos de patrimonio con opción de valor razonable con cambios en patrimonio (irrevocable)
+- Instrumentos derivados
+
+===== DETERIORO DE ACTIVOS FINANCIEROS =====
+
+MODELO DE PÉRDIDAS CREDITICIAS ESPERADAS:
+
+Enfoque prospectivo:
+- Reconoce pérdidas esperadas, no solo incurridas
+- Considera información razonable y sustentable disponible
+- Incluye eventos futuros que afecten la recuperabilidad
+
+TRES ETAPAS DE DETERIORO:
+
+ETAPA 1 - RIESGO NORMAL:
+- Instrumentos sin incremento significativo en riesgo crediticio desde reconocimiento inicial
+- Pérdida crediticia esperada a 12 meses
+- Se reconoce provisión menor
+
+ETAPA 2 - INCREMENTO SIGNIFICATIVO EN RIESGO:
+- Riesgo crediticio ha aumentado significativamente
+- Pérdida crediticia esperada durante toda la vida del instrumento
+- Se reconoce provisión mayor
+
+ETAPA 3 - DETERIORO CREDITICIO:
+- Evidencia objetiva de deterioro (incumplimiento, quiebra, reestructuración)
+- Pérdida crediticia esperada durante toda la vida
+- Cálculo de intereses sobre valor neto (después de deterioro)
+
+INDICADORES DE DETERIORO:
+- Dificultades financieras significativas del deudor
+- Incumplimiento de contrato (mora de pagos)
+- Reestructuración de deuda con condiciones favorables por dificultades
+- Probabilidad de quiebra o reorganización
+- Desaparición de mercado activo para el activo
+- Rebajas de calificación crediticia
+
+MEDICIÓN DEL DETERIORO:
+Pérdida por deterioro = Valor en libros - Valor presente de flujos de efectivo futuros estimados
+
+EJEMPLO DE DETERIORO:
+Préstamo de $100M a empresa pública:
+- Empresa enfrenta dificultades financieras
+- Se estima recuperar solo $70M en valor presente
+- Pérdida por deterioro: $30M
+- Registro: Gasto por deterioro $30M / Provisión por deterioro $30M
+- Valor neto en libros: $70M
+
+REVERSIÓN DE DETERIORO:
+- Si mejoran condiciones, se puede revertir el deterioro
+- Límite: No exceder el costo amortizado original
+- Se reconoce en resultados como ingreso
+
+===== BAJA DE INSTRUMENTOS FINANCIEROS =====
+
+BAJA DE ACTIVOS FINANCIEROS:
+
+Se da de baja cuando:
+- Expiran los derechos contractuales sobre los flujos de efectivo
+- Se transfiere el activo y sustancialmente todos los riesgos y beneficios
+- Se pierde el control sobre el activo
+
+EVALUACIÓN DE TRANSFERENCIA:
+¿Se transfirieron riesgos y beneficios?
+- SÍ → Dar de baja el activo
+- NO → Continuar reconociendo el activo
+- ALGUNOS → Evaluar si se retuvo control
+
+EJEMPLO DE BAJA:
+Venta de cartera de préstamos por $50M (valor en libros):
+- Precio de venta: $48M
+- Pérdida en venta: $2M
+- Registro: Efectivo $48M + Pérdida $2M / Préstamos $50M
+
+BAJA DE PASIVOS FINANCIEROS:
+
+Se da de baja cuando:
+- Se liquida la obligación (se paga, cancela o expira)
+- Se extingue legal o sustancialmente
+
+MODIFICACIÓN SUSTANCIAL:
+- Si términos se modifican sustancialmente, se da de baja el pasivo original
+- Se reconoce nuevo pasivo a valor razonable
+- Diferencia se reconoce en resultados
+
+===== INSTRUMENTOS FINANCIEROS DERIVADOS =====
+
+DEFINICIÓN:
+Instrumento financiero cuyo valor depende del valor de un activo subyacente y:
+- Requiere poca o ninguna inversión inicial
+- Se liquida en fecha futura
+
+TIPOS COMUNES:
+- Contratos de futuros
+- Opciones (call/put)
+- Swaps (tasa de interés, moneda)
+- Contratos forward
+
+MEDICIÓN:
+- Siempre a valor razonable con cambios en resultados
+- Excepto: Derivados designados como instrumentos de cobertura efectivos
+
+CONTABILIDAD DE COBERTURAS:
+
+Permite coincidir timing de ganancias/pérdidas del derivado con la partida cubierta.
+
+TIPOS DE COBERTURA:
+1. Cobertura de valor razonable (activos/pasivos existentes)
+2. Cobertura de flujos de efectivo (transacciones futuras)
+3. Cobertura de inversión neta en operación extranjera
+
+REQUISITOS PARA CONTABILIDAD DE COBERTURAS:
+- Designación formal y documentación
+- Efectividad de la cobertura (80-125%)
+- Evaluación continua de efectividad
+
+===== REVELACIONES (NICSP 30) =====
+
+INFORMACIÓN OBLIGATORIA A REVELAR:
+
+1. ESTADO DE SITUACIÓN FINANCIERA:
+- Valor en libros de cada categoría de activos/pasivos financieros
+- Activos pignorados como garantía
+- Provisiones por deterioro
+
+2. ESTADO DE RENDIMIENTO FINANCIERO:
+- Ingresos, gastos, ganancias y pérdidas por categoría
+- Ingresos y gastos por intereses
+- Cargos por deterioro
+
+3. RIESGO DE CRÉDITO:
+- Exposición máxima al riesgo crediticio
+- Calidad crediticia de activos financieros
+- Garantías y otros mecanismos de mejora crediticia
+- Información sobre activos vencidos o deteriorados
+
+4. RIESGO DE LIQUIDEZ:
+- Análisis de vencimientos de pasivos financieros
+- Descripción de gestión del riesgo de liquidez
+
+5. RIESGO DE MERCADO:
+- Análisis de sensibilidad (cómo cambios en variables afectan resultados/patrimonio)
+- Riesgo de tasa de interés
+- Riesgo de tipo de cambio
+- Otros riesgos de precio
+
+6. POLÍTICAS DE GESTIÓN DE RIESGOS:
+- Objetivos, políticas y procesos
+- Métodos de medición de riesgos
+
+===== NORMAS APLICABLES =====
+
+NICSP 28: Instrumentos Financieros - Presentación
+- Define activos, pasivos e instrumentos de patrimonio financieros
+- Criterios de presentación y clasificación
+- Compensación de activos y pasivos
+
+NICSP 29: Instrumentos Financieros - Reconocimiento y Medición
+- Reconocimiento inicial y baja
+- Clasificación y medición
+- Deterioro
+- Contabilidad de coberturas
+
+NICSP 30: Instrumentos Financieros - Información a Revelar
+- Exige revelar importancia en situación financiera
+- Divulga riesgos de crédito, liquidez y mercado
+- Análisis de sensibilidad y políticas de gestión
+- Complementa NICSP 29 para transparencia
+
+NICSP 41: Instrumentos Financieros (Consolidada y Actualizada)
+- Combina y actualiza NICSP 28, 29 y 30
+- Versión más reciente y completa
+- Alineada con NIIF 9
+
+===== DIFERENCIAS CON NIIF 9 =====
+
+Las NICSP sobre instrumentos financieros están ampliamente convergidas con NIIF 9, pero con adaptaciones para el sector público:
+
+ADAPTACIONES ESPECÍFICAS:
+- Mayor énfasis en préstamos y cuentas por cobrar de impuestos
+- Consideración de instrumentos financieros con objetivos de política pública
+- Instrumentos financieros a tasas subsidiadas o concesionales
+- Garantías financieras gubernamentales
+
+===== CASOS PRÁCTICOS ESPECÍFICOS =====
+
+CASO 1: PRÉSTAMO CONCESIONAL
+El gobierno otorga préstamo a tasa subsidiada:
+- Reconocimiento inicial al valor razonable (menor que efectivo entregado)
+- Diferencia = Gasto de transferencia o subsidio
+- Medición posterior a costo amortizado con tasa de mercado
+
+CASO 2: CUENTAS POR COBRAR DE IMPUESTOS
+- Reconocimiento cuando son exigibles
+- Medición inicial al valor razonable
+- Provisión inmediata por incobrabilidad histórica
+- Evaluación continua de deterioro
+
+CASO 3: DEUDA PÚBLICA (BONOS)
+- Reconocimiento al recibir efectivo
+- Medición a costo amortizado
+- Amortización de prima/descuento con método de interés efectivo
+- Valuación de riesgo de mercado en notas
+
+===== PREGUNTA FRECUENTE =====
+
+¿Cuándo debe una entidad del sector público medir un instrumento financiero a costo amortizado vs valor razonable?
+
+Respuesta: La decisión depende del modelo de negocio y las características de flujos contractuales. Use costo amortizado si: (1) el objetivo es mantener el instrumento para cobrar flujos contractuales, y (2) los términos contractuales dan lugar a flujos que son únicamente pagos de principal e intereses. Use valor razonable si el instrumento se mantiene para negociación, gestión activa o tiene flujos contractuales complejos. La clasificación afecta significativamente los resultados reportados.
 - Objetivo: Capturar valor inicial
 
 MEDICIÓN POSTERIOR:

@@ -83,3 +83,310 @@ Deben aplicar el marco normativo basado en NICSP:
 - Órganos autónomos e independientes
 - Empresas públicas no financieras
 - Otras entidades del sector público según clasificación de la CGN
+
+===== CRONOLOGÍA DE ADOPCIÓN EN COLOMBIA =====
+
+ETAPA 1 - PREPARACIÓN (2013-2014):
+- Resolución 743 de 2013: Inicio del proceso de convergencia
+- Definición de marcos normativos para diferentes tipos de entidades
+- Análisis de impacto y capacitación inicial
+
+ETAPA 2 - PERIODO DE TRANSICIÓN (2015-2017):
+- Preparación de estados financieros de apertura
+- Ajustes por primera vez
+- Pruebas y depuración de sistemas
+- Capacitación masiva de funcionarios
+
+ETAPA 3 - APLICACIÓN PLENA (2018 en adelante):
+- Aplicación obligatoria del nuevo marco normativo
+- Estados financieros bajo NICSP
+- Consolidación de información del sector público
+- Mejora continua y actualizaciones
+
+RESOLUCIONES CLAVE DE LA CGN:
+- Resolución 533 de 2015: Marco Conceptual del Plan General de Contabilidad Pública
+- Resolución 620 de 2015: Normas para el Reconocimiento, Medición, Revelación y Presentación
+- Resoluciones de actualización periódicas
+
+===== MARCO NORMATIVO PARA ENTIDADES DE GOBIERNO =====
+
+ESTRUCTURA DEL MARCO:
+1. Marco Conceptual (basado en NICSP)
+2. Normas de reconocimiento y medición
+3. Normas de revelación
+4. Normas de presentación
+5. Procedimientos contables
+6. Guías de aplicación
+
+PRINCIPALES ADAPTACIONES PARA COLOMBIA:
+- Reconocimiento de bienes de uso público
+- Tratamiento de concesiones e infraestructura
+- Recursos naturales no renovables
+- Bienes históricos y culturales
+- Ajuste por inflación (cuando aplique)
+
+===== RÉGIMEN DE CONTABILIDAD PÚBLICA (RCP) =====
+
+COMPONENTES DEL RCP:
+
+1. MARCO NORMATIVO:
+   - Principios y postulados contables
+   - Normas técnicas específicas
+   - Procedimientos de registro
+   - Modelos de revelación
+
+2. PLAN GENERAL DE CONTABILIDAD PÚBLICA (PGCP):
+   - Catálogo General de Cuentas
+   - Descripciones y dinámicas contables
+   - Clasificación presupuestal
+   - Estructura de códigos
+
+3. PROCEDIMIENTOS CONTABLES:
+   - Instructivos de operación
+   - Procedimientos de cierre
+   - Consolidación de información
+   - Reportes obligatorios
+
+4. DOCTRINA CONTABLE PÚBLICA:
+   - Conceptos e interpretaciones
+   - Respuesta a consultas
+   - Orientaciones técnicas
+   - Precedentes contables
+
+===== CONSOLIDACIÓN DE ESTADOS FINANCIEROS =====
+
+PROCESO DE CONSOLIDACIÓN:
+
+NIVELES DE CONSOLIDACIÓN:
+1. Entidad contable pública individual
+2. Consolidado por sector
+3. Consolidado territorial (departamentos, municipios)
+4. Consolidado de la Nación
+
+CHIP - SISTEMA DE CONSOLIDACIÓN:
+- Plataforma tecnológica de la CGN
+- Reporte obligatorio de información
+- Periodicidad: mensual, trimestral, anual
+- Información tanto presupuestal como contable
+
+PLAZOS DE REPORTE:
+- Estados financieros individuales: Según cronograma CGN
+- Notas a los estados financieros
+- Información complementaria
+- Sanciones por incumplimiento o retraso
+
+===== PRINCIPALES RESOLUCIONES Y NORMATIVAS =====
+
+RESOLUCIÓN 533 DE 2015:
+- Marco Conceptual para entidades de gobierno
+- Definiciones fundamentales
+- Características cualitativas
+- Elementos de los estados financieros
+
+RESOLUCIÓN 620 DE 2015:
+- Normas de reconocimiento y medición
+- Normas de revelación
+- Normas de presentación de estados financieros
+- Adoptadas de NICSP con adaptaciones
+
+RESOLUCIÓN 484 DE 2017:
+- Actualización del catálogo de cuentas
+- Nuevas dinámicas contables
+- Ajustes por cambios normativos
+
+RESOLUCIÓN 167 DE 2020:
+- Marco Normativo para empresas que no cotizan en mercado de valores
+- Aplicable a empresas públicas con actividades comerciales
+
+DOCTRINA CONTABLE:
+- Conceptos publicados periódicamente
+- Respuestas a consultas de entidades
+- Interpretaciones vinculantes
+- Disponibles en página web de CGN
+
+===== CAPACITACIÓN Y ASISTENCIA TÉCNICA =====
+
+LA CGN OFRECE:
+- Programas de capacitación presencial y virtual
+- Webinars y conferencias sobre temas específicos
+- Material pedagógico y guías prácticas
+- Acompañamiento a entidades
+- Mesa de ayuda técnica
+
+TEMAS DE CAPACITACIÓN COMUNES:
+- Reconocimiento inicial de activos
+- Depreciación y vida útil
+- Deterioro de activos
+- Instrumentos financieros
+- Provisiones y pasivos contingentes
+- Preparación de estados financieros
+- Consolidación
+
+===== CONTROL Y FISCALIZACIÓN =====
+
+ENTIDADES DE CONTROL:
+
+CONTRALORÍA GENERAL DE LA REPÚBLICA:
+- Vigila gestión fiscal
+- Audita estados financieros
+- Verifica aplicación de normas contables
+- Puede imponer sanciones
+
+CONTRALORÍAS TERRITORIALES:
+- Ejercen control fiscal en su jurisdicción
+- Auditan entidades territoriales
+- Verifican consolidación territorial
+
+AUDITORÍA INTERNA:
+- Cada entidad debe tener control interno
+- Verifica aplicación correcta de normas
+- Reporta hallazgos a la dirección
+
+SANCIONES POR INCUMPLIMIENTO:
+- Requerimientos de la CGN
+- Sanciones administrativas
+- Responsabilidad del Contador Público certificante
+- Responsabilidad fiscal en casos graves
+
+===== DIFERENCIAS ENTRE NICSP INTERNACIONALES Y MARCO COLOMBIANO =====
+
+SIMILITUDES:
+- Principio de devengo como base fundamental
+- Estructura de estados financieros similar
+- Reconocimiento y medición basados en NICSP
+- Revelaciones extensas requeridas
+
+DIFERENCIAS Y ADAPTACIONES:
+
+1. BIENES DE USO PÚBLICO:
+   - Colombia reconoce en el balance (NICSP permite no reconocer)
+   - Ejemplo: Parques, plazas, carreteras no concesionadas
+
+2. RECURSOS NATURALES NO RENOVABLES:
+   - Marco colombiano tiene norma específica
+   - Reconocimiento y agotamiento regulado
+
+3. CONCESIONES:
+   - Tratamiento específico para APP (Asociaciones Público-Privadas)
+   - Basado en NICSP 32 pero con adaptaciones
+
+4. BIENES HISTÓRICOS Y CULTURALES:
+   - Reconocimiento obligatorio si son medibles
+   - Políticas específicas de valoración
+
+5. CATÁLOGO DE CUENTAS:
+   - Estructura específica colombiana
+   - Integración con presupuesto
+   - Códigos estandarizados
+
+===== BENEFICIOS DE ADOPCIÓN DE NICSP EN COLOMBIA =====
+
+PARA EL GOBIERNO:
+- Mejor información sobre situación patrimonial
+- Identificación de pasivos contingentes
+- Gestión más eficiente de activos
+- Información para planificación fiscal de largo plazo
+- Mayor credibilidad ante organismos internacionales
+
+PARA LA TRANSPARENCIA:
+- Información más completa disponible
+- Comparabilidad entre entidades
+- Rendición de cuentas más efectiva
+- Mayor confianza ciudadana
+
+PARA LA GESTIÓN PÚBLICA:
+- Costo real de servicios públicos
+- Información para toma de decisiones
+- Control patrimonial mejorado
+- Base para presupuestación por resultados
+
+===== DESAFÍOS DE IMPLEMENTACIÓN =====
+
+DESAFÍOS TÉCNICOS:
+- Valoración de activos históricos
+- Estimación de vidas útiles
+- Identificación de todos los activos y pasivos
+- Sistemas de información adecuados
+- Conciliación presupuesto-contabilidad
+
+DESAFÍOS ORGANIZACIONALES:
+- Capacitación masiva de funcionarios
+- Cambio cultural en entidades
+- Coordinación entre áreas (contabilidad, presupuesto, tesorería)
+- Recursos para implementación
+
+DESAFÍOS NORMATIVOS:
+- Actualización continua por cambios en NICSP
+- Interpretación de normas complejas
+- Aplicación consistente entre entidades
+- Resolución de casos no contemplados
+
+===== HERRAMIENTAS Y RECURSOS DISPONIBLES =====
+
+PÁGINA WEB DE LA CGN (www.contaduria.gov.co):
+- Normatividad completa descargable
+- Doctrina contable pública
+- Material de capacitación
+- Cronogramas de reporte
+- Preguntas frecuentes
+
+CHIP - CONSOLIDADOR DE HACIENDA E INFORMACIÓN PÚBLICA:
+- Plataforma de reporte obligatorio
+- Validaciones automáticas
+- Generación de reportes
+- Consulta de información histórica
+
+CATÁLOGO GENERAL DE CUENTAS:
+- Disponible en formato digital
+- Descripciones y dinámicas
+- Actualizaciones periódicas
+- Herramientas de consulta
+
+MESA DE AYUDA:
+- Consultas técnicas específicas
+- Soporte en procesos de reporte
+- Resolución de dudas normativas
+
+===== PREGUNTAS FRECUENTES =====
+
+¿Las entidades territoriales deben aplicar las mismas normas que la Nación?
+Respuesta: Sí, el Marco Normativo para Entidades de Gobierno aplica tanto para entidades del nivel nacional como territorial. Sin embargo, hay algunas revelaciones específicas según el nivel de gobierno.
+
+¿Qué pasa si una entidad no reporta a tiempo al CHIP?
+Respuesta: La CGN puede requerir la información y, en caso de persistir el incumplimiento, puede informar a los órganos de control. Además, puede afectar transferencias y otras relaciones con el gobierno central.
+
+¿Cómo se tratan las concesiones viales?
+Respuesta: Depende del tipo de concesión. Si el gobierno retiene control sobre la infraestructura, puede reconocerla como activo. Se aplican principios similares a NICSP 32 (Acuerdos de Concesión de Servicios).
+
+¿Se puede usar base de caja para el presupuesto y devengo para la contabilidad?
+Respuesta: Sí, de hecho es lo común. El presupuesto puede ejecutarse en base de caja mientras la contabilidad usa base de devengo. Se requiere conciliación entre ambas bases.
+
+===== CONTACTO Y RECURSOS ADICIONALES =====
+
+CONTADURÍA GENERAL DE LA NACIÓN
+Dirección: Bogotá, Colombia
+Página web: www.contaduria.gov.co
+Línea de atención: [información disponible en sitio web]
+Correo: [contacto@contaduria.gov.co]
+
+RECURSOS RECOMENDADOS:
+- Manual de Políticas Contables
+- Guía de Transición a NICSP
+- Casos prácticos de aplicación
+- Videos tutoriales
+- Foros de discusión técnica
+
+===== PERSPECTIVAS FUTURAS =====
+
+TENDENCIAS:
+- Mayor automatización de reportes
+- Integración de sistemas gubernamentales
+- Adopción de nuevas NICSP emitidas
+- Mejora en calidad de información
+- Uso de tecnologías emergentes (blockchain, IA)
+
+PRÓXIMOS PASOS:
+- Actualización continua por cambios en NICSP internacionales
+- Mejora en procesos de consolidación
+- Mayor énfasis en análisis y uso de información contable
+- Fortalecimiento de auditoría y control

@@ -8,46 +8,394 @@ Las Normas Internacionales de Contabilidad del Sector Público (NICSP) tienen co
 - Aumentar la comparabilidad entre entidades públicas de diferentes países
 - Fortalecer la rendición de cuentas ante ciudadanos y partes interesadas
 - Adoptar normas contables de alta calidad basadas en principios profesionales
+- Facilitar mejor toma de decisiones por parte de usuarios de información financiera
+- Promover la gestión eficiente de recursos públicos
 
-Estos objetivos buscan que los gobiernos y entidades públicas presenten información financiera confiable, relevante y comprensible para la toma de decisiones.
+Estos objetivos buscan que los gobiernos y entidades públicas presenten información financiera confiable, relevante y comprensible para la toma de decisiones, mejorando la confianza pública y la gestión fiscal.
+
+===== IMPORTANCIA DE LAS NICSP =====
+
+PARA GOBIERNOS:
+- Mejor información para gestión de activos y pasivos
+- Identificación temprana de problemas fiscales
+- Mejor planificación de largo plazo
+- Rendición de cuentas más efectiva
+
+PARA CIUDADANOS:
+- Mayor transparencia en uso de recursos públicos
+- Información comparable entre jurisdicciones
+- Base para evaluación de desempeño gubernamental
+
+PARA ORGANISMOS INTERNACIONALES:
+- Evaluación consistente de sostenibilidad fiscal
+- Comparaciones internacionales confiables
+- Mejor análisis de riesgo soberano
 
 ===== PRINCIPIO DE DEVENGO =====
 
 El principio fundamental que rige el reconocimiento en las NICSP es el principio de devengo (accrual basis).
 
-Características del principio de devengo:
-- Los hechos económicos se reconocen cuando ocurren
-- NO depende de cuándo se recibe o paga el efectivo
-- Los ingresos se reconocen cuando se ganan, no cuando se cobran
-- Los gastos se reconocen cuando se incurren, no cuando se pagan
-- Los activos se registran cuando la entidad obtiene control sobre ellos
-- Los pasivos se registran cuando surge la obligación presente
+DEFINICIÓN CLARA Y PRECISA:
+Base contable según la cual los hechos económicos se reconocen cuando ocurren, independientemente de cuándo se recibe o paga el efectivo.
 
-Diferencia con base de caja:
-- Base de caja: registra solo cuando hay movimiento de efectivo
-- Base de devengo: registra cuando ocurre el hecho económico
+DIFERENCIA CLAVE CON BASE DE CAJA:
+- DEVENGO: Reconoce cuando ocurre el hecho económico (independiente del efectivo)
+- CAJA: Reconoce solo cuando hay movimiento de efectivo (pago o cobro)
 
-El principio de devengo proporciona una imagen más completa y precisa de la situación financiera y el rendimiento de la entidad.
+CARACTERÍSTICAS DEL PRINCIPIO DE DEVENGO:
+
+1. RECONOCIMIENTO CUANDO OCURREN:
+   - Los hechos económicos se registran en el periodo en que suceden
+   - NO depende del momento del cobro o pago de efectivo
+   - Refleja obligaciones y derechos cuando surgen
+   - El timing del efectivo es IRRELEVANTE para el reconocimiento
+
+2. INGRESOS BAJO DEVENGO:
+   - Se reconocen cuando se ganan o devengan (momento del hecho económico)
+   - NO cuando se recibe el efectivo
+   - Ejemplo: Impuestos se reconocen cuando son exigibles, no cuando se cobran
+   - Ejemplo 2: Venta de servicio se reconoce cuando se presta, no cuando se cobra
+
+3. GASTOS BAJO DEVENGO:
+   - Se reconocen cuando se incurren (momento del hecho económico)
+   - NO cuando se paga el efectivo
+   - Ejemplo: Salarios se reconocen cuando se trabaja, no cuando se pagan
+   - Ejemplo 2: Consumo de electricidad se reconoce cuando se usa, no cuando se paga la factura
+
+4. ACTIVOS BAJO DEVENGO:
+   - Se registran cuando la entidad obtiene control sobre ellos
+   - No necesariamente cuando se pagan
+   - Ejemplo: Equipos se reconocen al recibirlos, aunque se paguen después
+
+5. PASIVOS BAJO DEVENGO:
+   - Se registran cuando surge la obligación presente
+   - No cuando se paga la deuda
+   - Ejemplo: Provisión por demanda judicial cuando es probable, no cuando se paga
+
+===== COMPARACIÓN: BASE DE DEVENGO VS BASE DE CAJA =====
+
+BASE DE CAJA (Cash Basis):
+DEFINICIÓN: Registra transacciones SOLO cuando hay movimiento de efectivo
+- Ingresos: SE RECONOCEN cuando se recibe efectivo (cobro)
+- Gastos: SE RECONOCEN cuando se paga efectivo (pago)
+- Simple de implementar
+- No muestra activos ni pasivos completos
+- Ignora cuentas por cobrar y por pagar
+
+VENTAJAS DE BASE DE CAJA:
+- Simplicidad y facilidad de implementación
+- Refleja disponibilidad de efectivo
+- Menor costo administrativo
+- Útil para gestión de liquidez
+
+LIMITACIONES DE BASE DE CAJA:
+- No muestra obligaciones futuras (pasivos)
+- No refleja derechos por cobrar (activos)
+- No permite depreciación de activos de largo plazo
+- Información incompleta para toma de decisiones estratégicas
+- Puede manipularse retrasando/adelantando pagos
+
+BASE DE DEVENGO (Accrual Basis):
+DEFINICIÓN: Registra transacciones cuando ocurre el hecho económico (independiente del efectivo)
+- Ingresos: SE RECONOCEN cuando se ganan/devengan (ocurre el hecho)
+- Gastos: SE RECONOCEN cuando se incurren (ocurre el hecho)
+- Muestra situación patrimonial completa (activos y pasivos)
+- Más compleja de implementar
+- Incluye cuentas por cobrar, por pagar, depreciación, provisiones
+
+VENTAJAS DE BASE DE DEVENGO:
+- Información completa sobre activos y pasivos
+- Refleja el verdadero costo de servicios públicos
+- Permite medición de desempeño financiero real
+- Facilita planificación de largo plazo
+- Mejor base para sostenibilidad fiscal
+
+LIMITACIONES DE BASE DE DEVENGO:
+- Mayor complejidad técnica
+- Requiere estimaciones y juicios
+- Mayor costo de implementación
+- Requiere capacitación especializada
+
+EJEMPLO COMPARATIVO:
+
+SITUACIÓN:
+- Gobierno compra equipos por $100M en diciembre 2024
+- Paga en enero 2025
+- Vida útil: 10 años
+
+BASE DE CAJA:
+- 2024: Sin registro
+- 2025: Gasto de $100M cuando se paga
+
+BASE DE DEVENGO:
+- 2024: Activo $100M + Pasivo $100M (cuando se reciben equipos)
+- 2025: Pago reduce efectivo y pasivo
+- 2024-2034: Depreciación anual de $10M
+
+EJEMPLO 2 - IMPUESTOS:
+
+SITUACIÓN:
+- Gobierno tiene derecho a cobrar $50M en impuestos en marzo 2024
+- Efectivamente cobra $30M en marzo y $20M en mayo
+
+BASE DE CAJA:
+- Marzo 2024: Ingreso de $30M (cuando se cobra)
+- Mayo 2024: Ingreso de $20M (cuando se cobra)
+- Total reconocido en diferentes periodos
+
+BASE DE DEVENGO:
+- Marzo 2024: Ingreso de $50M (cuando es exigible)
+- También reconoce: Cuenta por cobrar $20M
+- Mayo 2024: Solo reduce la cuenta por cobrar (no nuevo ingreso)
+
+NOTA IMPORTANTE: 
+DEVENGO ≠ MEDICIÓN
+- Devengo = CUÁNDO reconocer (timing)
+- Medición = CUÁNTO reconocer (valor razonable, costo histórico, etc.)
+- NO confundir estos dos conceptos separados
 
 ===== RECONOCIMIENTO DE ACTIVOS =====
 
-Un activo se reconoce cuando:
-- Es probable que fluyan beneficios económicos futuros o potencial de servicio a la entidad
-- El activo tiene un costo o valor que puede medirse con fiabilidad
-- La entidad ha obtenido control sobre el recurso
+Un activo se reconoce cuando cumple TODAS estas condiciones:
+
+1. DEFINICIÓN:
+   - Recurso controlado por la entidad
+   - Resultado de sucesos pasados
+   - Expectativa de beneficios económicos futuros o potencial de servicio
+
+2. CRITERIOS DE RECONOCIMIENTO:
+   - Es PROBABLE que fluyan beneficios económicos futuros o potencial de servicio
+   - El costo o valor puede MEDIRSE CON FIABILIDAD
+
+TIPOS DE BENEFICIOS:
+
+BENEFICIOS ECONÓMICOS:
+- Capacidad de generar flujos de efectivo
+- Ejemplo: Inversiones financieras, propiedades arrendadas
+
+POTENCIAL DE SERVICIO:
+- Capacidad de prestar servicios públicos
+- Ejemplo: Escuelas, hospitales, carreteras
+- Específico del sector público
+
+MOMENTO DE RECONOCIMIENTO:
+- Cuando se obtiene control sobre el recurso
+- No necesariamente cuando se obtiene propiedad legal
+- Control = capacidad de usar y obtener beneficios
+
+EJEMPLOS:
+
+Construcción de carretera:
+- Se reconoce como activo cuando está lista para uso
+- Aunque no genere flujos de efectivo directos
+- Tiene potencial de servicio para la sociedad
+
+Compra de edificio:
+- Se reconoce cuando se obtiene control
+- Generalmente en fecha de transferencia legal
+- Incluso si no se ha pagado completamente
 
 ===== RECONOCIMIENTO DE PASIVOS =====
 
-Un pasivo se reconoce cuando:
-- Existe una obligación presente como resultado de eventos pasados
-- Es probable que se requiera una salida de recursos para liquidar la obligación
-- El importe puede estimarse de forma fiable
+Un pasivo se reconoce cuando cumple TODAS estas condiciones:
+
+1. DEFINICIÓN:
+   - Obligación presente de la entidad
+   - Surge de sucesos pasados
+   - Liquidación mediante salida de recursos con beneficios económicos
+
+2. CRITERIOS DE RECONOCIMIENTO:
+   - Es PROBABLE que se requiera una salida de recursos
+   - El importe puede ESTIMARSE DE FORMA FIABLE
+
+TIPOS DE OBLIGACIONES:
+
+OBLIGACIÓN LEGAL:
+- Exigible legalmente por contrato o legislación
+- Ejemplo: Préstamos, bonos emitidos
+
+OBLIGACIÓN IMPLÍCITA:
+- Surge de prácticas pasadas o declaraciones públicas
+- Crea expectativa válida en terceros
+- Ejemplo: Política de pensiones no legalmente obligatoria pero practicada
+
+MOMENTO DE RECONOCIMIENTO:
+- Cuando surge la obligación presente
+- No cuando se paga la deuda
+- Obligación debe ser de eventos pasados, no futuros
+
+EJEMPLOS:
+
+Demanda judicial probable:
+- Se reconoce provisión si es probable perder
+- Aunque no se haya emitido sentencia
+- Obligación existe por evento pasado (acción que causó demanda)
+
+Préstamo recibido:
+- Se reconoce al recibir fondos
+- Obligación de devolver surge en ese momento
+- Aunque pago sea en varios años
 
 ===== RECONOCIMIENTO DE INGRESOS =====
 
 Los ingresos se reconocen cuando:
-- Es probable que fluyan beneficios económicos a la entidad
-- Pueden medirse con fiabilidad
+
+1. INGRESOS CON CONTRAPRESTACIÓN (NICSP 9):
+   - Es probable que fluyan beneficios económicos
+   - Pueden medirse con fiabilidad
+   - Se ha transferido control de bienes o completado el servicio
+   - Ejemplo: Venta de publicaciones, tarifas por servicios
+
+2. INGRESOS SIN CONTRAPRESTACIÓN (NICSP 23):
+   - La entidad obtiene control sobre activos/servicios
+   - Es probable flujo de beneficios
+   - Valor razonable medible con fiabilidad
+   - Ejemplo: Impuestos, donaciones, transferencias
+
+DIFERENCIA CLAVE:
+- Con contraprestación: se da valor aproximadamente igual a cambio
+- Sin contraprestación: no se da valor similar a cambio
+
+===== RECONOCIMIENTO DE GASTOS =====
+
+Los gastos se reconocen cuando:
+- Se produce una disminución en beneficios económicos futuros
+- Relacionada con reducción de activos o incremento de pasivos
+- Puede medirse con fiabilidad
+
+PRINCIPIO DE CORRELACIÓN:
+- Gastos se reconocen en mismo periodo que ingresos relacionados
+- Ejemplo: Costo de bienes vendidos cuando se reconoce venta
+
+RECONOCIMIENTO INMEDIATO:
+- Cuando no producen beneficios económicos futuros
+- O beneficios no cumplen criterios de activo
+- Ejemplo: Gastos administrativos corrientes
+
+===== BASES DE MEDICIÓN EN NICSP =====
+
+Las NICSP reconocen 6 BASES DE MEDICIÓN principales según el Marco Conceptual:
+1. Costo Histórico
+2. Valor Razonable
+3. Valor Presente
+4. Costo de Reposición
+5. Valor Neto Realizable
+6. Valor en Uso/Servicio
+
+NOTA IMPORTANTE: 
+- Las bases de medición determinan CUÁNTO reconocer (el valor monetario)
+- Son INDEPENDIENTES del principio de devengo
+- El devengo determina CUÁNDO reconocer
+- La base de medición determina CUÁNTO reconocer
+
+Para información detallada sobre cada base, ver archivo dedicado: nicsp_bases_medicion.txt
+
+===== CARACTERÍSTICAS CUALITATIVAS DE LA INFORMACIÓN =====
+
+CARACTERÍSTICAS FUNDAMENTALES:
+
+1. RELEVANCIA:
+   - Información capaz de influir en decisiones de usuarios
+   - Tiene valor predictivo o confirmatorio
+   - Materialidad: información es material si su omisión afecta decisiones
+
+2. REPRESENTACIÓN FIEL:
+   - Completa: incluye toda la información necesaria
+   - Neutral: sin sesgo
+   - Libre de error: no significa exactitud perfecta, sino mejor estimación posible
+
+CARACTERÍSTICAS DE MEJORA:
+
+3. COMPARABILIDAD:
+   - Permite identificar similitudes y diferencias entre entidades
+   - Requiere consistencia en políticas contables
+   - Fundamental para usuarios del sector público
+
+4. VERIFICABILIDAD:
+   - Observadores independientes podrían llegar a consenso
+   - Información respaldada por evidencia
+   - Importante para auditoría
+
+5. OPORTUNIDAD:
+   - Información disponible cuando es útil para decisiones
+   - Balance entre rapidez y confiabilidad
+
+6. COMPRENSIBILIDAD:
+   - Información clara y concisa
+   - Clasificada, caracterizada y presentada claramente
+   - Asume conocimiento razonable de usuarios
+
+===== RESTRICCIONES A LA INFORMACIÓN =====
+
+COSTO vs BENEFICIO:
+- Beneficios de información deben justificar costos de producirla
+- Consideración importante para implementación de NICSP
+- Balance especialmente relevante en sector público con recursos limitados
+
+BALANCE ENTRE CARACTERÍSTICAS:
+- Puede requerirse compromiso entre características
+- Ejemplo: Oportunidad vs Verificabilidad
+- Juicio profesional necesario
+
+===== ELEMENTOS DE LOS ESTADOS FINANCIEROS =====
+
+ELEMENTOS RELACIONADOS CON SITUACIÓN FINANCIERA:
+1. ACTIVO: Recurso controlado, resultado de eventos pasados, beneficios futuros esperados
+2. PASIVO: Obligación presente, resultado de eventos pasados, salida futura de recursos esperada
+3. ACTIVOS NETOS/PATRIMONIO: Valor residual (Activos - Pasivos)
+
+ELEMENTOS RELACIONADOS CON RENDIMIENTO:
+4. INGRESOS: Incrementos en beneficios económicos durante el periodo
+5. GASTOS: Disminuciones en beneficios económicos durante el periodo
+
+SUPERÁVIT O DÉFICIT = INGRESOS - GASTOS
+
+===== TRANSICIÓN DE BASE DE CAJA A BASE DE DEVENGO =====
+
+DESAFÍOS COMUNES:
+- Identificación y valoración de todos los activos
+- Registro de pasivos no reconocidos previamente
+- Implementación de sistemas contables complejos
+- Capacitación de personal
+- Cambio cultural en la organización
+
+ENFOQUE RECOMENDADO:
+- Adopción gradual por etapas
+- Uso de NICSP 33 (Adopción por Primera Vez)
+- Exenciones temporales permitidas
+- Priorización de partidas materiales
+- Apoyo de consultores especializados
+
+NICSP 33 PERMITE:
+- No reexpresar períodos comparativos en algunos casos
+- Usar valor razonable como costo atribuido para activos antiguos
+- Exenciones específicas para infraestructura
+
+===== RESUMEN EJECUTIVO =====
+
+OBJETIVO PRINCIPAL: Transparencia, Comparabilidad, Rendición de Cuentas en sector público
+
+PRINCIPIO FUNDAMENTAL: Devengo (accrual basis) - reconoce cuando ocurren hechos económicos, no cuando hay efectivo
+
+CRITERIOS DE RECONOCIMIENTO:
+- Activos: Control + beneficios futuros probables + medición fiable
+- Pasivos: Obligación presente + salida probable de recursos + estimación fiable
+- Ingresos: Flujo probable de beneficios + medición fiable
+- Gastos: Disminución de beneficios + medición fiable
+
+BASES DE MEDICIÓN: Múltiples opciones según naturaleza de partida
+- Costo histórico (transacción real)
+- Valor razonable (valor de mercado)
+- Valor presente (flujos descontados)
+- Costo de reposición (potencial de servicio)
+- Valor neto realizable (venta estimada)
+- Valor en uso/servicio (beneficios futuros)
+
+CARACTERÍSTICAS CUALITATIVAS:
+- Fundamentales: Relevancia y Representación Fiel
+- De mejora: Comparabilidad, Verificabilidad, Oportunidad, Comprensibilidad
+
+APLICACIÓN PRÁCTICA: Requiere juicio profesional, capacitación y compromiso institucional para implementación exitosa de NICSP.
 - Se han cumplido los criterios específicos según el tipo de ingreso (con o sin contraprestación)
 
 ===== RECONOCIMIENTO DE GASTOS =====
@@ -65,26 +413,7 @@ Los gastos se reconocen cuando:
 - Mejora la gestión de activos y pasivos
 - Proporciona información más útil para la toma de decisiones
 
-===== BASES DE MEDICIÓN EN NICSP =====
-
-Las NICSP reconocen MÚLTIPLES bases de medición para diferentes elementos:
-
-BASES PRINCIPALES DE MEDICIÓN:
-
-1. COSTO HISTÓRICO:
-   - Valor original de adquisición o construcción
-   - Aplica a: Propiedades, planta y equipo; Activos intangibles; Inventarios
-
-2. VALOR RAZONABLE:
-   - Precio en transacción ordenada entre partes
-   - Aplica a: Instrumentos financieros; Activos biológicos; Inversiones
-
-3. VALOR PRESENTE:
-   - Valor descontado de flujos de efectivo futuros
-   - Aplica a: Pasivos de largo plazo; Provisiones
-
-4. COSTO CORRIENTE:
-   - Valor necesario para reponer el activo actualmente
+===== TRANSICIÓN A BASE DE DEVENGO =====
    - Aplica a: Algunos tipos de inventarios
 
 5. VALOR NETO REALIZABLE:

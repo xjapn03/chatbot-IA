@@ -30,15 +30,33 @@ Respuesta: El control implica la capacidad de dirigir las políticas financieras
 
 Respuesta: La Contaduría General de la Nación (CGN) tiene la competencia constitucional (Artículo 354 de la Constitución) y legal (Ley 298 de 1996) para uniformar, centralizar y consolidar la contabilidad pública, y determinar las normas contables que deben regir para todo el sector público colombiano.
 
+===== PREGUNTA: ¿Cuáles son las 6 bases de medición en NICSP? =====
+
+Respuesta: El Marco Conceptual de las NICSP reconoce 6 BASES DE MEDICIÓN principales para determinar el valor monetario de activos y pasivos:
+
+1. COSTO HISTÓRICO (Historical Cost): Precio pagado originalmente o valor razonable de la contraprestación al momento de adquisición.
+
+2. VALOR RAZONABLE (Fair Value): Precio que se recibiría por vender un activo o pagaría por transferir un pasivo en transacción ordenada entre participantes del mercado.
+
+3. VALOR PRESENTE (Present Value): Valor actual descontado de flujos de efectivo futuros que se espera genere un activo o requiera liquidar un pasivo.
+
+4. COSTO DE REPOSICIÓN (Replacement Cost / Current Cost): Costo que la entidad incurriría para adquirir o reponer el potencial de servicio de un activo en la fecha de medición.
+
+5. VALOR NETO REALIZABLE (Net Realizable Value): Precio de venta estimado en operación normal menos costos estimados de terminación y venta.
+
+6. VALOR EN USO / VALOR DE SERVICIO (Value in Use / Service Value): Valor presente de flujos futuros o potencial de servicio del uso continuo y disposición final del activo.
+
+Nota importante: Estas bases determinan CUÁNTO reconocer (el monto), mientras que el principio de devengo determina CUÁNDO reconocerlo.
+
 ===== PREGUNTA: ¿Qué bases de medición se usan en las NICSP aplicadas en Colombia? =====
 
-Respuesta: En línea con los estándares internacionales, se consideran diversas bases de medición adaptadas al contexto público colombiano:
+Respuesta: En Colombia, la Contaduría General de la Nación adoptó las mismas 6 bases de medición del Marco Conceptual de NICSP:
 - Costo histórico
 - Valor razonable
-- Valor operacional actual
-- Costo de reposición
+- Valor presente
+- Costo de reposición (para activos especializados del sector público)
 - Valor neto realizable
-- Valor en uso o valor de servicio
+- Valor en uso o valor de servicio (especialmente para infraestructura pública)
 
 Estas bases se seleccionan según la naturaleza de los activos y pasivos, considerando que muchos activos públicos generan potencial de servicio más que flujos de efectivo.
 

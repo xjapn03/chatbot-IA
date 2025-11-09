@@ -1,0 +1,247 @@
+NICSP - LAS 6 BASES DE MEDICIÓN
+
+===== RESUMEN EJECUTIVO: LAS 6 BASES DE MEDICIÓN =====
+
+PREGUNTA: ¿Cuáles son las 6 bases de medición en NICSP?
+
+RESPUESTA: Las NICSP reconocen 6 bases de medición principales para determinar el valor monetario de activos y pasivos:
+
+1. COSTO HISTÓRICO (Historical Cost) - Precio pagado originalmente por el activo
+2. VALOR RAZONABLE (Fair Value) - Precio de mercado actual entre participantes
+3. VALOR PRESENTE (Present Value) - Flujos de efectivo futuros descontados
+4. COSTO DE REPOSICIÓN (Replacement Cost) - Costo de reponer el potencial de servicio actual
+5. VALOR NETO REALIZABLE (Net Realizable Value) - Precio de venta estimado menos costos
+6. VALOR EN USO/SERVICIO (Value in Use / Service Value) - Valor del uso continuo para la entidad
+
+NOTA CLAVE: Estas 6 bases determinan CUÁNTO reconocer (el monto o valor monetario), NO CUÁNDO reconocerlo. El "cuándo" lo determina el principio de devengo, que es independiente de las bases de medición.
+
+===== LAS 6 BASES DE MEDICIÓN EN LAS NICSP =====
+
+Las Normas Internacionales de Contabilidad del Sector Público (NICSP) reconocen 6 BASES DE MEDICIÓN principales según el Marco Conceptual.
+
+IMPORTANTE: Las bases de medición determinan CUÁNTO reconocer (el valor monetario), NO CUÁNDO reconocerlo. El "cuándo" lo determina el principio de devengo.
+
+===== LISTA COMPLETA DE LAS 6 BASES =====
+
+1. COSTO HISTÓRICO (Historical Cost)
+2. VALOR RAZONABLE (Fair Value)
+3. VALOR PRESENTE (Present Value)
+4. COSTO DE REPOSICIÓN o COSTO CORRIENTE (Replacement Cost / Current Cost)
+5. VALOR NETO REALIZABLE (Net Realizable Value)
+6. VALOR EN USO / VALOR DE SERVICIO (Value in Use / Service Value)
+
+===== DETALLE DE CADA BASE DE MEDICIÓN =====
+
+1. COSTO HISTÓRICO (Historical Cost):
+   
+   Definición: Importe de efectivo o equivalentes pagado, o valor razonable de la contraprestación entregada para adquirir el activo en el momento de su adquisición o construcción.
+   
+   Aplicable a:
+   - Propiedades, planta y equipo bajo modelo del costo (NICSP 17)
+   - Activos intangibles (NICSP 31)
+   - Inventarios en medición inicial (NICSP 12)
+   
+   Ventajas:
+   - Verificable objetivamente con documentación de transacción
+   - Fácil y económico de determinar
+   - Basado en transacción real realizada
+   - No requiere estimaciones complejas
+   
+   Limitaciones:
+   - No refleja el valor actual de mercado
+   - Pierde relevancia con el paso del tiempo
+   - No considera efectos de inflación
+   - Puede subestimar valor real de activos antiguos
+
+---
+
+2. VALOR RAZONABLE (Fair Value):
+   
+   Definición: Precio que se recibiría por vender un activo o se pagaría por transferir un pasivo en una transacción ordenada entre participantes del mercado en la fecha de medición.
+   
+   Aplicable a:
+   - Instrumentos financieros (NICSP 29, 30, 41)
+   - Propiedades de inversión (NICSP 16)
+   - Activos biológicos
+   - Propiedades, planta y equipo bajo modelo de revaluación (NICSP 17)
+   
+   Jerarquía de valor razonable (3 niveles):
+   - Nivel 1: Precios cotizados en mercados activos para activos o pasivos idénticos
+   - Nivel 2: Datos de mercado observables distintos de precios cotizados (precios similares)
+   - Nivel 3: Datos no observables que requieren técnicas de valoración internas
+   
+   Ventajas:
+   - Refleja el valor actual de mercado
+   - Información más relevante y oportuna para decisiones
+   - Facilita comparabilidad entre entidades
+   - Útil para activos de inversión
+   
+   Limitaciones:
+   - Puede ser subjetivo (especialmente Nivel 3)
+   - Requiere experiencia técnica especializada
+   - Puede ser costoso determinar
+   - Puede generar volatilidad en los resultados
+
+---
+
+3. VALOR PRESENTE o VALOR DESCONTADO (Present Value):
+   
+   Definición: Valor actual descontado de los flujos de efectivo futuros que se espera genere un activo o requiera liquidar un pasivo, utilizando una tasa de descuento apropiada.
+   
+   Aplicable a:
+   - Pasivos de largo plazo (NICSP 19)
+   - Provisiones y pasivos contingentes
+   - Arrendamientos financieros (NICSP 13)
+   - Préstamos concesionales
+   - Beneficios a empleados de largo plazo (NICSP 39)
+   
+   Fórmula básica: VP = Σ [Flujo futuro período n / (1 + tasa de descuento)^n]
+   
+   Ventajas:
+   - Refleja el valor temporal del dinero
+   - Útil para obligaciones de largo plazo
+   - Más preciso para flujos diferidos en el tiempo
+   - Permite comparar valores en diferentes momentos
+   
+   Limitaciones:
+   - Requiere estimaciones de flujos futuros
+   - Sensible a cambios en la tasa de descuento
+   - Puede ser complejo calcular
+   - Requiere juicio profesional sobre tasas apropiadas
+
+---
+
+4. COSTO DE REPOSICIÓN o COSTO CORRIENTE (Replacement Cost / Current Cost):
+   
+   Definición: Costo que la entidad incurriría en la fecha de medición para adquirir o construir un activo de reposición con capacidad de servicio equivalente al activo existente.
+   
+   Aplicable a:
+   - Activos especializados del sector público sin mercado activo
+   - Infraestructura pública (carreteras, puentes, represas)
+   - Activos con potencial de servicio específico
+   - Activos que no generan flujos de efectivo directos
+   - Activos patrimoniales o de herencia
+   
+   Ventajas:
+   - Específico y útil para el sector público
+   - Refleja el costo actual de proveer servicios públicos
+   - Apropiado cuando no existe valor razonable observable
+   - Útil para activos especializados únicos
+   
+   Limitaciones:
+   - Puede ser difícil estimar para activos muy especializados
+   - Requiere ajustes por cambios tecnológicos
+   - Puede no existir activo de reposición equivalente
+   - Requiere pericia técnica especializada
+
+---
+
+5. VALOR NETO REALIZABLE (Net Realizable Value):
+   
+   Definición: Precio de venta estimado en el curso normal de la operación, menos los costos estimados de terminación y los costos necesarios para efectuar la venta.
+   
+   Aplicable a:
+   - Inventarios (NICSP 12) - límite inferior de medición
+   - Activos mantenidos para venta o disposición
+   - Activos dañados, obsoletos o de lento movimiento
+   
+   Cálculo: VNR = Precio de venta estimado - Costos de completar - Costos de venta
+   
+   Ventajas:
+   - Evita sobrevalorar activos
+   - Conservador y prudente
+   - Refleja valor recuperable real
+   - Protege contra pérdidas no reconocidas
+   
+   Limitaciones:
+   - Requiere estimaciones de precios futuros
+   - Puede variar con condiciones de mercado
+   - Subjetivo en algunos casos
+   - Puede ser difícil estimar costos de terminación
+
+---
+
+6. VALOR EN USO / VALOR DE SERVICIO (Value in Use / Service Value):
+   
+   Definición: Valor presente de los flujos de efectivo futuros (o del potencial de servicio) que se espera obtener del uso continuo de un activo y de su disposición final.
+   
+   DOS VARIANTES según tipo de activo:
+   
+   A) VALOR EN USO (para activos generadores de efectivo):
+      - Basado en flujos de efectivo proyectados descontados
+      - Usado para pruebas de deterioro (NICSP 21, 26)
+      - Ejemplo: Empresa pública comercial, puerto, aeropuerto
+   
+   B) VALOR DE SERVICIO (para activos NO generadores de efectivo):
+      - Basado en costo de reposición del potencial de servicio
+      - Específico y único del sector público
+      - Se usa cuando el activo no genera flujos de efectivo directos
+      - Ejemplo: Hospital público, escuela, biblioteca, museo, parque
+   
+   Aplicable a:
+   - Pruebas de deterioro de activos
+   - Evaluación de recuperabilidad de inversiones
+   - Decisiones sobre mantener vs reemplazar activos
+   - Revisión de vida útil de activos
+   
+   Ventajas:
+   - Refleja el valor específico para la entidad particular
+   - Considera el uso planificado del activo
+   - Apropiado para activos especializados del sector público
+   
+   Limitaciones:
+   - Altamente subjetivo
+   - Requiere proyecciones complejas
+   - Difícil de verificar objetivamente
+   - Susceptible a sesgos gerenciales
+
+===== CUÁNDO USAR CADA BASE =====
+
+ACTIVOS FINANCIEROS:
+- Generalmente: Valor razonable o Costo amortizado (valor presente)
+
+PROPIEDADES, PLANTA Y EQUIPO:
+- Modelo del costo: Costo histórico menos depreciación
+- Modelo de revaluación: Valor razonable en fecha de revaluación
+
+INVENTARIOS:
+- Inicial: Costo histórico
+- Cierre: Menor entre costo y valor neto realizable
+
+INFRAESTRUCTURA PÚBLICA:
+- Costo de reposición cuando no hay mercado activo
+
+PROVISIONES Y PASIVOS DE LARGO PLAZO:
+- Valor presente de flujos futuros
+
+ACTIVOS PARA VENTA:
+- Valor neto realizable
+
+PRUEBAS DE DETERIORO:
+- Valor en uso (si genera efectivo) o Valor de servicio (si no genera efectivo)
+
+===== NOTA CRÍTICA =====
+
+BASES DE MEDICIÓN ≠ PRINCIPIO DE DEVENGO
+
+- BASES DE MEDICIÓN = Determinan CUÁNTO reconocer (el monto o valor)
+- PRINCIPIO DE DEVENGO = Determina CUÁNDO reconocer (el timing o momento)
+
+Son conceptos INDEPENDIENTES y complementarios:
+- Primero se determina CUÁNDO reconocer (principio de devengo)
+- Luego se determina CUÁNTO reconocer (base de medición aplicable)
+
+Ejemplo:
+- Un edificio se RECONOCE cuando se obtiene control (devengo)
+- Se MIDE a costo histórico o valor razonable (base de medición)
+
+===== REFERENCIAS A NICSP ESPECÍFICAS =====
+
+- Marco Conceptual: Define las 6 bases de medición
+- NICSP 12: Inventarios - costo histórico y valor neto realizable
+- NICSP 16: Propiedades de inversión - valor razonable
+- NICSP 17: Propiedades, planta y equipo - costo o revaluación
+- NICSP 21, 26: Deterioro - valor en uso/servicio
+- NICSP 29, 30, 41: Instrumentos financieros - valor razonable
+- NICSP 31: Activos intangibles - costo histórico
+- NICSP 19: Provisiones - valor presente
