@@ -11,16 +11,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 app = Flask(__name__)
-CORS(app)  # Habilitar CORS para permitir peticiones del frontend
+CORS(app)
 
-# Ruta base de datos vectorial y documentos
 DATA_PATH = "data/docs"
 INDEX_PATH = "data/nicsp_index"
 
-# Embeddings gratuitos
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 
-# --- Funciones auxiliares para lectura de archivos ---
+# --- Funciones de lectura (sin cambios) ---
 def read_pdf(path):
     try:
         import fitz
@@ -36,7 +34,7 @@ def read_docx(path):
         d = docx.Document(path)
         return "\n".join(p.text for p in d.paragraphs)
     except Exception as e:
-        print(f"No se pudo leer DOCX {path} (instala python-docx para soporte): {e}")
+        print(f"No se pudo leer DOCX {path}: {e}")
         return ""
 
 def read_text_like(path):
@@ -46,7 +44,7 @@ def read_text_like(path):
                 return f.read()
         except Exception:
             continue
-    print(f"No se pudo decodificar {path} con utf-8/latin-1/cp1252; omitiendo.")
+    print(f"No se pudo decodificar {path}; omitiendo.")
     return ""
 
 def read_generic(path):
@@ -66,15 +64,13 @@ def read_generic(path):
 if not os.path.exists(INDEX_PATH):
     print("Generando base de conocimiento FAISS...")
     docs = []
-
+    
     import re
     def clean_text(text):
         text = re.sub(r'\s+', ' ', text)
-        text = text.strip()
-        return text
-
+        return text.strip()
+    
     def read_text_file(path):
-        """Lee un archivo y devuelve su texto según la extensión."""
         _, ext = os.path.splitext(path)
         ext = ext.lower()
         if ext == ".pdf":
@@ -84,42 +80,38 @@ if not os.path.exists(INDEX_PATH):
         if ext in (".txt", ".md", ".csv", ".json"):
             return read_text_like(path)
         return read_generic(path)
-
+    
     for file in os.listdir(DATA_PATH):
         file_path = os.path.join(DATA_PATH, file)
         if os.path.isdir(file_path):
             continue
-
+        
         text = clean_text(read_text_file(file_path))
-        if not text or not text.strip():
-            print(f"Omitiendo archivo vacío o no legible: {file}")
+        if not text:
+            print(f"Omitiendo archivo vacío: {file}")
             continue
-
+        
         splitter = RecursiveCharacterTextSplitter(
-            chunk_size=800,
+            chunk_size=600,
             chunk_overlap=100,
-            separators=["\n\n", "\n", ".", " ", ""]
+            separators=["\n\n", "\n", ". ", ".", " "]
         )
         chunks = splitter.split_text(text)
         for chunk in chunks:
             docs.append(Document(page_content=chunk, metadata={"source": file}))
-        # Fin del for: ahora creamos el índice FAISS
+    
+    print(f"✓ Total documentos cargados: {len(docs)}")
     db = FAISS.from_documents(docs, embeddings)
     db.save_local(INDEX_PATH)
 else:
     print("Cargando índice FAISS existente...")
     db = FAISS.load_local(INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
 
-MODEL_NAME = "gemma:2b"
-#instancia en AWS
+MODEL_NAME = "llama3.2:3b"
 OLLAMA_URL = "http://98.95.116.221:11434"
 
 
 def call_ollama_api(prompt: str) -> str:
-    """Llama a la API HTTP de Ollama para generar una respuesta.
-    
-    Retorna el texto de la respuesta.
-    """
     try:
         response = requests.post(
             f"{OLLAMA_URL}/api/generate",
@@ -128,36 +120,54 @@ def call_ollama_api(prompt: str) -> str:
                 "prompt": prompt,
                 "stream": False,
                 "options": {
-                    "num_ctx": 512,         # Contexto mínimo para pruebas
-                    "num_thread": 2,        # Igual al número de vCPU
-                    "num_batch": 32,        # Batch mínimo para pruebas
-                    "temperature": 0.7,     # Respuestas más coherentes
-                    "top_p": 0.9,
-                    "top_k": 40
+                    "num_ctx": 1536,        # ✅ Reducir más (antes 2048)
+                    "num_thread": 2,
+                    "num_batch": 128,       # ✅ Reducir (antes 256)
+                    "temperature": 0.3,
+                    "top_p": 0.85,
+                    "top_k": 30,
+                    "repeat_penalty": 1.15,
+                    "num_predict": 256      # ✅ Limitar tokens de respuesta
                 }
             },
-            timeout=60  # Reducir timeout - tu PC es rápido
+            timeout=90                      # ✅ Aumentar timeout (antes 60)
         )
         
         if response.status_code == 200:
             result = response.json()
             return result.get("response", "").strip()
-        elif response.status_code == 500 and "memory" in response.text.lower():
-            # Si falla por memoria, sugerir modelo más ligero
-            print("[ERROR] El modelo necesita más RAM. Considera usar tinyllama o gemma:2b")
-            return "⚠️ El modelo necesita más RAM. Por favor:\n1. Cierra otras aplicaciones\n2. O cambia a un modelo más ligero en backend/app.py:\n   MODEL_NAME = 'tinyllama' o 'gemma:2b'\nLuego reinicia el servidor backend."
         else:
-            error_msg = f"Error {response.status_code}: {response.text}"
-            print(f"[ERROR] Ollama API: {error_msg}")
-            return f"Error al llamar a Ollama API: {error_msg}"
-            
-    except requests.exceptions.ConnectionError:
-        return "No se pudo conectar a Ollama. Asegúrate de que Ollama esté corriendo."
-    except requests.exceptions.Timeout:
-        return "La consulta tardó demasiado tiempo. Intenta con una pregunta más corta."
+            error_msg = f"Error {response.status_code}"
+            print(f"[ERROR] Ollama: {error_msg}")
+            return f"Error al llamar a Ollama: {error_msg}"
+    
     except Exception as e:
-        print(f"[ERROR] Excepción al llamar a Ollama: {e}")
-        return f"Error al llamar al modelo: {str(e)}"
+        print(f"[ERROR] {e}")
+        return f"Error: {str(e)}"
+
+
+def clean_and_validate_response(response: str, context: str) -> str:
+    suspicious = ["remetente", "confirmante", "según mi conocimiento"]
+    response_lower = response.lower()
+    context_lower = context.lower()
+    
+    for term in suspicious:
+        if term in response_lower and term not in context_lower:
+            return "No tengo información suficiente en mis documentos NICSP."
+    
+    response = response.strip()
+    
+    # ✅ Permitir respuestas de "no sé" ANTES de validar longitud
+    no_info_phrases = ["no encuentro", "no tengo", "no está", "no se encuentra", "no hay información"]
+    if any(phrase in response_lower for phrase in no_info_phrases):
+        return response
+    
+    # ✅ Reducir umbral mínimo a 20 caracteres
+    if len(response) < 20:
+        return "No encuentro información específica sobre eso en los documentos."
+    
+    return response
+
 
 @app.post("/chat")
 def chat():
@@ -166,49 +176,59 @@ def chat():
         return jsonify({"error": "No message provided"}), 400
     
     try:
-        # Recuperar los documentos más relevantes
-        docs = []
-        try:
-            docs = db.similarity_search(message, k=6)
-        except Exception:
-            try:
-                docs_with_score = db.similarity_search_with_score(message, k=6)
-                docs = [d for d, s in docs_with_score]
-            except Exception:
-                docs = []
-
-        # Re-ranking local
+        docs = db.similarity_search(message, k=4)
+        
         if docs:
             query_embedding = embeddings.embed_query(message)
             doc_embeddings = embeddings.embed_documents([d.page_content for d in docs])
             scores = cosine_similarity([query_embedding], doc_embeddings)[0]
             ranked = sorted(zip(scores, docs), reverse=True, key=lambda x: x[0])
-            docs = [doc for _, doc in ranked[:3]]
-
-        # Construir contexto a partir de los documentos recuperados
-        if docs:
-            context = "\n\n".join([
-                f"Fuente: {getattr(d, 'metadata', {}).get('source', '')}\n{getattr(d, 'page_content', getattr(d, 'text', ''))}"
-                for d in docs
-            ])
+            
+            # ✅ Tomar los TOP 3 documentos más relevantes (no solo 1)
+            top_docs = [doc for _, doc in ranked[:3]]
+            
+            context_parts = []
+            for doc in top_docs:
+                source = doc.metadata.get('source', '')
+                content = doc.page_content.strip()
+                context_parts.append(f"[{source}]\n{content}")
+            
+            context = "\n\n".join(context_parts)
+            
+            # ✅ Reducir contexto para evitar timeouts
+            if len(context) > 1500:
+                context = context[:1500] + "\n[...]"
         else:
             context = ""
+        
+        print(f"\n{'='*60}")
+        print(f"PREGUNTA: {message}")
+        print(f"DOCS: {len(docs)}")
+        print(f"CONTEXTO ({len(context)} chars):\n{context}")
+        print(f"{'='*60}\n")
+        
+        # ✅ PROMPT OPTIMIZADO Y CORTO
+        prompt = f"""Información relevante de NICSP:
 
-        prompt = (
-            "Eres un experto en las Normas Internacionales de Contabilidad del Sector Público (NICSP).\n"
-            "Responde SOLO usando la información del contexto.\n"
-            "Si no hay información suficiente, responde: 'No tengo información sobre eso en mis documentos NICSP.'\n"
-            "Evita suposiciones o información inventada.\n\n"
-            f"Contexto relevante:\n{context}\n\n"
-            f"Pregunta del usuario: {message}\n\n"
-            "Respuesta (máximo 3 párrafos, clara y precisa):"
-        )
+{context}
 
+Pregunta: {message}
+
+Responde en máximo 3 oraciones usando solo la información anterior. Si no está, di "No encuentro esa información".
+
+Respuesta:"""
+        
         answer = call_ollama_api(prompt)
+        answer = clean_and_validate_response(answer, context)
+        
+        print(f"[RESPUESTA]: {answer}\n")
+        
         return jsonify({"response": answer})
+    
     except Exception as e:
-        print("[ERROR chat]:", traceback.format_exc())
+        print("[ERROR]:", traceback.format_exc())
         return jsonify({"error": f"Error interno: {e}"}), 500
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

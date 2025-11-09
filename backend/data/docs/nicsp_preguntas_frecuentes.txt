@@ -1,0 +1,121 @@
+NICSP - PREGUNTAS Y RESPUESTAS FRECUENTES
+
+===== PREGUNTA: ¿Qué son las NICSP? =====
+
+Respuesta: Las NICSP (Normas Internacionales de Contabilidad del Sector Público) son estándares contables emitidos por el IPSASB para gobiernos y entidades del sector público. Establecen principios para la preparación y presentación de estados financieros, promoviendo transparencia, comparabilidad y rendición de cuentas.
+
+===== PREGUNTA: ¿Cuál es el objetivo principal de las NICSP? =====
+
+Respuesta: Las NICSP buscan mejorar la transparencia, comparabilidad y rendición de cuentas de las entidades del sector público mediante la adopción de normas contables de alta calidad basadas en el principio de devengo. Permiten que gobiernos y entidades públicas presenten información financiera confiable y útil para la toma de decisiones.
+
+===== PREGUNTA: ¿Qué principio de reconocimiento rige en las NICSP? =====
+
+Respuesta: El principio fundamental es el principio de devengo (accrual basis). Bajo este principio, los hechos económicos se reconocen cuando ocurren, independientemente de cuándo se cobren o paguen. Los activos y pasivos se registran cuando la entidad obtiene control o asume obligaciones, no cuando hay movimiento de efectivo.
+
+===== PREGUNTA: ¿Cuáles son los elementos de los estados financieros según NICSP? =====
+
+Respuesta: Según la NICSP 1, los estados financieros completos incluyen:
+1. Estado de Situación Financiera
+2. Estado de Rendimiento Financiero
+3. Estado de Cambios en el Patrimonio Neto
+4. Estado de Flujos de Efectivo
+5. Notas explicativas (incluyendo políticas contables)
+6. Comparación presupuestaria cuando el presupuesto es público (NICSP 24)
+
+===== PREGUNTA: ¿Qué diferencia hay entre control y propiedad en la consolidación? =====
+
+Respuesta: El control implica la capacidad de dirigir las políticas financieras y operativas de otra entidad para obtener beneficios, mientras que la propiedad se refiere a la tenencia de participación accionaria. El control es el criterio clave para consolidar estados financieros. Una entidad puede tener control sin propiedad mayoritaria (por ejemplo, control por ley o estatuto) y viceversa.
+
+===== PREGUNTA: ¿Qué entidad en Colombia regula la contabilidad pública? =====
+
+Respuesta: La Contaduría General de la Nación (CGN) tiene la competencia constitucional (Artículo 354 de la Constitución) y legal (Ley 298 de 1996) para uniformar, centralizar y consolidar la contabilidad pública, y determinar las normas contables que deben regir para todo el sector público colombiano.
+
+===== PREGUNTA: ¿Qué bases de medición se usan en las NICSP aplicadas en Colombia? =====
+
+Respuesta: En línea con los estándares internacionales, se consideran diversas bases de medición adaptadas al contexto público colombiano:
+- Costo histórico
+- Valor razonable
+- Valor operacional actual
+- Costo de reposición
+- Valor neto realizable
+- Valor en uso o valor de servicio
+
+Estas bases se seleccionan según la naturaleza de los activos y pasivos, considerando que muchos activos públicos generan potencial de servicio más que flujos de efectivo.
+
+===== PREGUNTA: ¿Qué establece la NICSP 3? =====
+
+Respuesta: La NICSP 3 regula las políticas contables, cambios en estimaciones contables y corrección de errores. Establece criterios para seleccionar y aplicar políticas contables consistentemente, el tratamiento de cambios en políticas (aplicación retroactiva) y estimaciones (aplicación prospectiva), y la corrección retroactiva de errores materiales en estados financieros.
+
+===== PREGUNTA: ¿Qué norma trata sobre ingresos sin contraprestación? =====
+
+Respuesta: La NICSP 23 aborda el reconocimiento de ingresos de transacciones sin contraprestación, donde la entidad no da aproximadamente igual valor a cambio. Incluye impuestos, donaciones, transferencias, multas y legados. Establece que los ingresos se reconocen cuando la entidad obtiene control sobre el activo, es probable que fluyan beneficios económicos y el monto puede medirse con fiabilidad.
+
+===== PREGUNTA: ¿Qué papel cumple la IFAC en relación con las NICSP? =====
+
+Respuesta: La IFAC (Federación Internacional de Contadores) respalda al IPSASB (Consejo de Normas Internacionales de Contabilidad del Sector Público), el organismo independiente que emite las NICSP. La IFAC proporciona apoyo administrativo y recursos, y promueve la adopción de normas contables de alta calidad para el sector público a nivel global, pero no influye en las decisiones técnicas del IPSASB.
+
+===== PREGUNTA: ¿Qué son los instrumentos financieros en NICSP? =====
+
+Respuesta: Los instrumentos financieros son contratos que dan lugar a un activo financiero en una entidad y a un pasivo financiero o instrumento de patrimonio en otra. Incluyen efectivo, cuentas por cobrar/pagar, inversiones, préstamos, bonos y derivados. Se regulan principalmente por las NICSP 28, 29, 30 y la consolidada NICSP 41.
+
+===== PREGUNTA: ¿Cómo se reconocen inicialmente los instrumentos financieros? =====
+
+Respuesta: Los instrumentos financieros se reconocen inicialmente cuando la entidad se convierte en parte de las disposiciones contractuales del instrumento. Se miden al valor razonable, que generalmente corresponde al precio de transacción (contraprestación entregada o recibida), incluyendo costos de transacción cuando sea aplicable según la categoría del instrumento.
+
+===== PREGUNTA: ¿Cómo se miden posteriormente los instrumentos financieros? =====
+
+Respuesta: Después del reconocimiento inicial, los instrumentos financieros se miden según su categoría:
+- Costo amortizado: usando el método del interés efectivo, para instrumentos mantenidos para cobrar flujos contractuales de principal e intereses
+- Valor razonable: con cambios reconocidos en superávit/déficit o en patrimonio neto, para instrumentos que no cumplen criterios de costo amortizado
+
+===== PREGUNTA: ¿Cuáles son las principales diferencias entre reconocimiento inicial y medición posterior? =====
+
+Respuesta: En el reconocimiento inicial se registra el instrumento al valor razonable (precio de transacción) cuando la entidad se convierte en parte del contrato. En la medición posterior, el instrumento se revalúa periódicamente al costo amortizado o valor razonable según su categoría, considerando flujos de efectivo contractuales restantes, condiciones de mercado, deterioro y posibles reclasificaciones.
+
+===== PREGUNTA: ¿Qué es el deterioro de activos financieros? =====
+
+Respuesta: El deterioro ocurre cuando existe evidencia objetiva de que un activo financiero o grupo de activos ha sufrido pérdida de valor. Se evalúa en cada fecha de presentación de estados financieros. Las pérdidas por deterioro se reconocen en el superávit o déficit del periodo, reduciendo el valor en libros del activo.
+
+===== PREGUNTA: ¿Cuándo se da de baja un instrumento financiero? =====
+
+Respuesta: Un activo financiero se da de baja cuando expiran los derechos contractuales sobre flujos de efectivo, se transfieren sustancialmente todos los riesgos y beneficios, o se transfiere el control del activo. Un pasivo financiero se da de baja cuando la obligación se extingue, cancela o expira.
+
+===== PREGUNTA: ¿Qué es una provisión según las NICSP? =====
+
+Respuesta: Según la NICSP 19, una provisión es un pasivo de cuantía o vencimiento incierto. Se reconoce cuando existe una obligación presente (legal o implícita) resultado de un evento pasado, es probable una salida de recursos para liquidarla, y puede estimarse con fiabilidad el monto. Ejemplos: provisiones para litigios, garantías, reestructuraciones.
+
+===== PREGUNTA: ¿Qué son activos generadores vs no generadores de efectivo? =====
+
+Respuesta: Activos generadores de efectivo son aquellos mantenidos con el propósito principal de generar rendimiento comercial (ejemplo: empresas públicas comerciales). Activos no generadores de efectivo son aquellos mantenidos principalmente para entregar bienes o servicios sin ánimo de lucro (ejemplo: escuelas, hospitales públicos, carreteras). El tratamiento de deterioro difiere según la categoría (NICSP 21 vs NICSP 26).
+
+===== PREGUNTA: ¿Qué es la base de devengo modificada? =====
+
+Respuesta: La base de devengo modificada no es un concepto de las NICSP puras. Las NICSP promueven la base de devengo completa. Algunos países en transición usan variantes "modificadas" donde combinan elementos de devengo con elementos de caja, pero esto no cumple completamente con NICSP. La meta es adoptar el devengo completo conforme a las normas.
+
+===== PREGUNTA: ¿Qué son las participaciones no controladoras? =====
+
+Respuesta: Las participaciones no controladoras (antes interés minoritario) representan la parte del patrimonio y resultados de una entidad controlada que no es atribuible directa o indirectamente a la entidad controladora. Se presentan por separado dentro del patrimonio en estados consolidados y su participación en resultados se muestra separadamente en el estado de rendimiento financiero.
+
+===== PREGUNTA: ¿Qué es el método de participación patrimonial? =====
+
+Respuesta: Es el método contable para inversiones en asociadas y negocios conjuntos. La inversión se registra inicialmente al costo y luego se ajusta por los cambios en la participación del inversor sobre el patrimonio de la asociada. El inversor reconoce su parte proporcional de los resultados de la asociada en su propio estado de rendimiento financiero.
+
+===== PREGUNTA: ¿Las NICSP son obligatorias? =====
+
+Respuesta: La obligatoriedad depende de cada jurisdicción. No existe una autoridad supranacional que obligue a todos los países a adoptar NICSP. Sin embargo, organizaciones internacionales (Banco Mundial, FMI) las promueven y algunos países las han adoptado obligatoriamente para su sector público. En Colombia, la CGN establece el marco normativo basado en NICSP como obligatorio para entidades del sector público.
+
+===== PREGUNTA: ¿Qué es un activo de patrimonio cultural o histórico? =====
+
+Respuesta: Son activos que tienen valor cultural, ambiental, educativo e histórico, como monumentos, edificios históricos, obras de arte y artefactos arqueológicos. Las NICSP (especialmente NICSP 17) permiten no reconocerlos en estados financieros si no pueden medirse con fiabilidad, pero requieren revelaciones sobre su naturaleza y políticas de preservación.
+
+===== PREGUNTA: ¿Cómo se tratan los activos de infraestructura en NICSP? =====
+
+Respuesta: Los activos de infraestructura (carreteras, puentes, redes de agua, etc.) se reconocen como propiedades, planta y equipo según NICSP 17. Se miden inicialmente al costo y posteriormente bajo modelo del costo o revaluación. Se deprecian sistemáticamente a lo largo de su vida útil, salvo que tengan vida útil indefinida. Requieren evaluaciones de deterioro conforme NICSP 21 o 26.
+
+===== PREGUNTA: ¿Qué es la presentación razonable en NICSP? =====
+
+Respuesta: La presentación razonable implica que los estados financieros reflejan fielmente la situación financiera, rendimiento financiero y flujos de efectivo de la entidad. Se logra aplicando las NICSP con revelaciones adicionales cuando sea necesario. En casos extremadamente raros, apartarse de una NICSP puede ser necesario para lograr presentación razonable, pero debe revelarse exhaustivamente.
+
+===== PREGUNTA: ¿Cada cuánto se actualizan las NICSP? =====
+
+Respuesta: El IPSASB trabaja continuamente en actualizar normas existentes y emitir nuevas. No hay un ciclo fijo de actualización. Las modificaciones se publican cuando el IPSASB identifica necesidades de mejora, nuevos desarrollos económicos o para mantener convergencia con NIIF cuando sea relevante. Las entidades deben monitorear el sitio web del IPSASB para estar al día con cambios.

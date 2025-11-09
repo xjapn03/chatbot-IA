@@ -1,0 +1,127 @@
+CONSOLIDACIÓN Y CONTROL EN LAS NICSP
+
+===== DEFINICIÓN DE CONTROL =====
+
+Según las NICSP, el control es el poder de dirigir las políticas financieras y operativas de otra entidad con el fin de obtener beneficios o estar expuesto a riesgos de sus actividades.
+
+El control existe cuando la entidad:
+- Tiene poder sobre la otra entidad (invertida o controlada)
+- Está expuesta o tiene derecho a rendimientos variables por su vinculación
+- Tiene la capacidad de usar su poder para influir en los rendimientos
+
+===== DIFERENCIA ENTRE CONTROL Y PROPIEDAD =====
+
+Control:
+- Se refiere a la capacidad de dirigir políticas y decisiones
+- Puede existir con o sin participación accionaria
+- Es el criterio clave para determinar si se debe consolidar
+- Se evalúa por poder real, no solo legal
+
+Propiedad:
+- Se refiere a la tenencia de participación o acciones
+- Es un indicador pero no es determinante único
+- Una entidad puede tener propiedad sin control
+- Una entidad puede tener control sin propiedad mayoritaria
+
+Ejemplo: Un gobierno puede controlar una entidad pública sin poseer acciones (control por estatuto o ley).
+
+===== NICSP 35: ESTADOS FINANCIEROS CONSOLIDADOS =====
+
+Requiere que una entidad controladora presente estados financieros consolidados.
+
+Procedimiento de consolidación:
+1. Combinar partidas similares de activos, pasivos, patrimonio, ingresos y gastos
+2. Eliminar el valor en libros de la inversión contra el patrimonio de la controlada
+3. Eliminar transacciones y saldos intragrupo (ventas, préstamos, dividendos)
+4. Ajustar participaciones no controladoras
+
+Excepciones a consolidar:
+- Cuando la controladora es a su vez controlada por otra entidad del sector público y sus propietarios no objetan
+- Cuando la controladora no cotiza en mercados públicos
+- Otros criterios específicos de las NICSP
+
+===== NICSP 36: INVERSIONES EN ASOCIADAS Y NEGOCIOS CONJUNTOS =====
+
+Asociada:
+- Entidad sobre la que el inversor tiene influencia significativa
+- Generalmente participación entre 20% y 50%
+- Se contabiliza por el método de participación patrimonial
+
+Método de participación patrimonial:
+- Inversión inicial al costo
+- Ajuste posterior por cambios en la participación del patrimonio de la asociada
+- Reconocimiento de la parte proporcional de resultados
+
+Negocio conjunto:
+- Acuerdo mediante el cual dos o más partes tienen control conjunto
+- Tipos: operaciones conjuntas y negocios conjuntos
+- Tratamiento contable según el tipo
+
+===== NICSP 37: ACUERDOS CONJUNTOS =====
+
+Operación conjunta:
+- Los partícipes tienen derechos sobre activos y obligaciones por pasivos
+- Cada partícipe reconoce sus activos, pasivos, ingresos y gastos
+
+Negocio conjunto:
+- Los partícipes tienen derechos sobre los activos netos
+- Se contabiliza por método de participación patrimonial
+
+===== NICSP 38: INFORMACIÓN A REVELAR SOBRE PARTICIPACIONES EN OTRAS ENTIDADES =====
+
+Requiere revelar información que permita evaluar:
+- La naturaleza y riesgos de las participaciones
+- Los efectos de esas participaciones en la situación financiera, rendimiento y flujos de efectivo
+
+Información sobre:
+- Controladas (incluyendo participaciones no controladoras)
+- Acuerdos conjuntos y asociadas
+- Entidades estructuradas no consolidadas
+
+===== ENTIDAD CONTROLADORA =====
+
+Una entidad controladora:
+- Controla una o más entidades controladas
+- Tiene el poder de dirigir actividades relevantes
+- Debe preparar estados financieros consolidados
+- Puede ser una entidad de gobierno (ministerio, departamento, municipio)
+
+===== ENTIDAD CONTROLADA =====
+
+Una entidad controlada (subsidiaria):
+- Está bajo el control de otra entidad
+- Puede ser una empresa pública, fondo, organismo descentralizado
+- Sus estados financieros se consolidan con los de la controladora
+- Se elimina en consolidación cualquier transacción intragrupo
+
+===== INDICADORES DE CONTROL EN EL SECTOR PÚBLICO =====
+
+Señales de control:
+- Poder de nombrar o remover mayoría de directores
+- Capacidad de aprobar presupuestos o políticas clave
+- Propiedad de la mayoría de derechos de voto (si existen)
+- Poder de disolver la entidad
+- Control establecido por ley o regulación
+
+===== EXCLUSIONES DE CONSOLIDACIÓN =====
+
+No se consolidan si:
+- Se mantiene para venta y cumple criterios de NICSP 29
+- Opera bajo restricciones severas de largo plazo que limitan transferir fondos
+
+===== PARTICIPACIONES NO CONTROLADORAS =====
+
+Representan:
+- La parte del patrimonio de una controlada no atribuible a la controladora
+- Se presentan por separado dentro del patrimonio en el estado consolidado
+- Su participación en resultados se presenta por separado en el estado de rendimiento
+
+===== FECHA DE CONSOLIDACIÓN =====
+
+Los estados financieros de controladora y controladas deben ser de la misma fecha. Si no es practicable, ajustar por transacciones o eventos significativos entre fechas diferentes.
+
+===== POLÍTICAS CONTABLES UNIFORMES =====
+
+Para consolidar se requieren:
+- Políticas contables uniformes para transacciones y eventos similares
+- Si una controlada usa políticas diferentes, se ajustan para consolidación

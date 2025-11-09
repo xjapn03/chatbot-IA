@@ -1,0 +1,122 @@
+NICSP - NORMAS ESPECÍFICAS PRINCIPALES
+
+===== RESPUESTAS DIRECTAS =====
+
+¿Qué es la NICSP 33?
+RESPUESTA: La NICSP 33 es la norma que guía la adopción por primera vez de las NICSP. Establece cómo preparar estados financieros de apertura bajo NICSP y permite exenciones temporales durante la transición.
+
+¿Qué establece la NICSP 3?
+RESPUESTA: La NICSP 3 regula políticas contables, cambios en estimaciones y corrección de errores. Permite cambios solo para cumplir NICSP o mejorar relevancia/fiabilidad.
+
+¿Qué trata la NICSP 23?
+RESPUESTA: La NICSP 23 aborda ingresos sin contraprestación como impuestos, transferencias y donaciones. Establece criterios de reconocimiento cuando hay control y beneficios probables.
+
+===== NICSP 1: PRESENTACIÓN ESTADOS FINANCIEROS =====
+
+ESTADOS FINANCIEROS OBLIGATORIOS:
+1. Estado de Situación Financiera
+2. Estado de Rendimiento Financiero  
+3. Estado de Cambios en el Patrimonio Neto
+4. Estado de Flujos de Efectivo
+5. Notas a los estados financieros
+
+===== NICSP 2: ESTADO DE FLUJOS DE EFECTIVO =====
+
+CLASIFICACIÓN FLUJOS:
+- Actividades de operación
+- Actividades de inversión  
+- Actividades de financiación
+
+MÉTODOS:
+- Método directo (recomendado)
+- Método indirecto
+
+===== NICSP 3: POLÍTICAS CONTABLES, CAMBIOS Y ERRORES =====
+
+TRES ÁREAS PRINCIPALES:
+1. POLÍTICAS CONTABLES: Selección y aplicación
+2. CAMBIOS EN ESTIMACIONES: Aplicación prospectiva
+3. CORRECCIÓN DE ERRORES: Aplicación retroactiva
+
+CAMBIOS EN POLÍTICAS:
+- Solo cuando exige NICSP o mejora relevancia/fiabilidad
+- Aplicación retroactiva cuando sea practicable
+
+===== NICSP 17: PROPIEDADES, PLANTA Y EQUIPO =====
+
+MODELOS DE MEDICIÓN:
+- Modelo del costo: costo menos depreciación y deterioro
+- Modelo de revaluación: valor razonable menos depreciación
+
+===== NICSP 23: INGRESOS SIN CONTRAPRESTACIÓN =====
+
+TIPOS DE INGRESOS:
+- Impuestos
+- Transferencias (donaciones, subvenciones)  
+- Multas
+- Legados y donaciones en especie
+
+CRITERIOS DE RECONOCIMIENTO:
+- Control sobre el activo
+- Beneficios económicos probables
+- Medición confiable
+
+===== NICSP 24: INFORMACIÓN PRESUPUESTARIA =====
+
+REQUIERE:
+- Comparación presupuesto vs ejecución real
+- Importes presupuestados originales y finales
+- Explicación de diferencias materiales
+
+===== NICSP 28: DETERIORO DE ACTIVOS =====
+
+APLICA A: Activos no generadores de efectivo del sector público
+
+INDICADORES DETERIORO:
+- Disminución valor de mercado
+- Cambios adversos en entorno
+- Daño físico del activo
+- Activo ocioso o en desuso
+
+===== NICSP 29: INSTRUMENTOS FINANCIEROS - RECONOCIMIENTO Y MEDICIÓN =====
+
+RECONOCIMIENTO INICIAL: Valor razonable
+
+MEDICIÓN POSTERIOR - TRES CATEGORÍAS:
+1. Valor razonable con cambios en resultados
+2. Costo amortizado  
+3. Valor razonable con cambios en patrimonio
+
+===== NICSP 30: INSTRUMENTOS FINANCIEROS - REVELACIONES =====
+
+EXIGE REVELAR:
+- Información sobre exposición a riesgos
+- Políticas de gestión de riesgo financiero
+- Sensibilidad a variables de mercado
+
+===== NICSP 33: ADOPCIÓN POR PRIMERA VEZ =====
+
+OBJETIVO: Guiar transición a NICSP
+
+REQUISITOS PRINCIPALES:
+- Estados financieros de apertura bajo NICSP
+- Aplicación retroactiva de NICSP vigentes
+- Exenciones temporales disponibles
+- Revelación de conciliaciones con normativa anterior
+
+EXENCIONES PERMITIDAS:
+- Combinaciones de negocios (retrospectiva limitada)
+- Valor razonable como costo atribuido
+- Activos infraestructura a costo depreciado
+
+===== NICSP 41: INSTRUMENTOS FINANCIEROS (CONSOLIDADA) =====
+
+COMBINA: NICSP 28, 29 y 30 en norma consolidada
+
+===== NICSP 42: COMBINACIONES SECTOR PÚBLICO =====
+
+TIPOS DE COMBINACIONES:
+- Amalgamaciones (fusiones)
+- Adquisiciones
+
+MÉTODO: Identificar adquirente y reconocer activos/pasivos

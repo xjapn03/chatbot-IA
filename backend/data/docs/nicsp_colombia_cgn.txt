@@ -1,0 +1,85 @@
+NICSP EN COLOMBIA - CONTADURÍA GENERAL DE LA NACIÓN
+
+===== RESPUESTA DIRECTA =====
+
+¿Qué entidad en Colombia tiene la competencia para uniformar, centralizar y consolidar la contabilidad pública?
+
+Respuesta: La Contaduría General de la Nación (CGN) es la entidad que tiene la competencia constitucional y legal (según el artículo 354 de la Constitución Política de Colombia y la Ley 298 de 1996) para uniformar, centralizar y consolidar la contabilidad pública, y determinar las normas contables que deben regir para todo el sector público colombiano.
+
+===== MARCO LEGAL EN COLOMBIA =====
+
+En Colombia, la regulación contable del sector público tiene fundamento constitucional y legal específico.
+
+Artículo 354 de la Constitución Política de Colombia:
+"Habrá un Contador General, funcionario de la rama ejecutiva, quien llevará la contabilidad general de la Nación y consolidará ésta con la de sus entidades descentralizadas territorialmente o por servicios, cualquiera que sea el orden al que pertenezcan, excepto la referente a la ejecución del Presupuesto, cuya competencia se atribuye a la Contraloría."
+
+===== CONTADURÍA GENERAL DE LA NACIÓN (CGN) =====
+
+La Contaduría General de la Nación (CGN) es la entidad que tiene la competencia constitucional y legal para:
+
+1. Uniformar, centralizar y consolidar la contabilidad pública
+2. Determinar las normas contables que deben regir en Colombia para todo el sector público
+3. Establecer los procedimientos para el registro contable
+4. Consolidar los estados financieros del sector público
+5. Llevar la contabilidad general de la Nación
+
+Fundamento legal:
+- Artículo 354 de la Constitución Política de Colombia
+- Ley 298 de 1996
+
+===== LEY 298 DE 1996 =====
+
+Esta ley desarrolla el artículo 354 constitucional y establece:
+
+- Las funciones específicas del Contador General de la Nación
+- Los principios que rigen la contabilidad pública
+- Las obligaciones de las entidades públicas en materia contable
+- Los procedimientos de consolidación de información financiera
+- Las sanciones por incumplimiento de normas contables
+
+===== IMPLEMENTACIÓN DE NICSP EN COLOMBIA =====
+
+Colombia ha adoptado las NICSP como marco de referencia para la contabilidad del sector público, adaptándolas al contexto nacional mediante:
+
+- El Marco Normativo para Entidades de Gobierno (basado en NICSP)
+- El Régimen de Contabilidad Pública
+- Resoluciones y doctrinas contables emitidas por la CGN
+
+===== BASES DE MEDICIÓN EN COLOMBIA =====
+
+Al aplicar las NICSP en el contexto colombiano, se consideran diversas bases de medición para reconocer activos y pasivos:
+
+1. Costo histórico:
+   - Importe de efectivo o medios líquidos pagados
+   - Valor razonable de la contraprestación entregada en el momento de adquisición
+
+2. Valor razonable:
+   - Precio que se recibiría por vender un activo o pagaría por transferir un pasivo
+   - En una transacción ordenada entre participantes del mercado
+
+3. Valor operacional actual:
+   - Costo en que incurriría la entidad si adquiriera el activo en la fecha de presentación
+   - Relevante para activos especializados del sector público
+
+4. Costo de reposición:
+   - Costo actual de reemplazar el potencial de servicio de un activo
+   - Útil para infraestructura y activos públicos
+
+5. Valor neto realizable:
+   - Importe que la entidad espera obtener de la venta de un activo
+   - Menos los costos estimados para terminar su producción o venta
+
+6. Valor en uso / Valor de servicio:
+   - Valor presente de los flujos de efectivo futuros o potencial de servicio
+   - Específico para la entidad según su uso del activo
+
+Estas bases se adaptan según la naturaleza de los activos y pasivos del sector público colombiano, considerando que muchos activos públicos no generan flujos de efectivo directos sino potencial de servicio a la comunidad.
+
+===== ENTIDADES OBLIGADAS EN COLOMBIA =====
+
+Deben aplicar el marco normativo basado en NICSP:
+- Entidades del orden nacional
+- Entidades territoriales (departamentos, municipios, distritos)
+- Órganos autónomos e independientes
+- Empresas públicas no financieras
+- Otras entidades del sector público según clasificación de la CGN

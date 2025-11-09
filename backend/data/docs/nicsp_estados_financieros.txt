@@ -1,0 +1,121 @@
+ESTADOS FINANCIEROS SEGÚN NICSP
+
+===== COMPONENTES DE LOS ESTADOS FINANCIEROS =====
+
+Según la NICSP 1, un conjunto completo de estados financieros incluye:
+
+1. Estado de Situación Financiera
+2. Estado de Rendimiento Financiero
+3. Estado de Cambios en el Patrimonio Neto (o Activos Netos)
+4. Estado de Flujos de Efectivo
+5. Comparación de importes presupuestados y reales (cuando el presupuesto es público - NICSP 24)
+6. Notas, que incluyen un resumen de políticas contables significativas y otra información explicativa
+
+Información comparativa del periodo anterior es obligatoria para todos los importes presentados.
+
+===== ESTADO DE SITUACIÓN FINANCIERA =====
+
+También conocido como Balance General, presenta:
+
+Activos (clasificados en):
+- Activos corrientes: efectivo, cuentas por cobrar a corto plazo, inventarios
+- Activos no corrientes: propiedades, planta y equipo, activos intangibles, inversiones a largo plazo
+
+Pasivos (clasificados en):
+- Pasivos corrientes: cuentas por pagar, provisiones a corto plazo
+- Pasivos no corrientes: deuda a largo plazo, provisiones a largo plazo
+
+Patrimonio Neto (Activos Netos):
+- Capital aportado
+- Reservas
+- Superávit o déficit acumulado
+
+Ecuación fundamental: Activos = Pasivos + Patrimonio Neto
+
+===== ESTADO DE RENDIMIENTO FINANCIERO =====
+
+Muestra los ingresos, gastos y el resultado (superávit o déficit) del periodo.
+
+Puede presentarse:
+- Por naturaleza de los gastos (sueldos, depreciación, suministros)
+- Por función de los gastos (educación, salud, seguridad)
+
+Incluye:
+- Ingresos de operación (con y sin contraprestación)
+- Gastos de operación
+- Ingresos y gastos financieros
+- Participación en resultados de asociadas (si aplica)
+- Superávit o déficit del periodo
+
+No se permite clasificar partidas como extraordinarias.
+
+===== ESTADO DE CAMBIOS EN EL PATRIMONIO NETO =====
+
+Presenta:
+- Superávit o déficit del periodo
+- Cada partida de ingreso y gasto reconocida directamente en patrimonio
+- Efecto de cambios en políticas contables y corrección de errores
+- Aportes y distribuciones a los propietarios (si existen)
+- Saldo inicial y final del patrimonio y sus componentes
+
+===== ESTADO DE FLUJOS DE EFECTIVO =====
+
+Clasifica los flujos de efectivo en:
+
+Actividades de operación:
+- Cobros por venta de bienes y prestación de servicios
+- Cobros de impuestos, tasas, multas
+- Pagos a proveedores y empleados
+- Pagos de intereses (puede clasificarse en financiación)
+
+Actividades de inversión:
+- Adquisición y venta de propiedades, planta y equipo
+- Adquisición y venta de activos intangibles
+- Compra y venta de inversiones financieras
+
+Actividades de financiación:
+- Obtención y reembolso de préstamos
+- Emisión y recompra de instrumentos de deuda
+- Aportes de capital (si aplica)
+
+===== NOTAS A LOS ESTADOS FINANCIEROS =====
+
+Las notas:
+- Presentan información sobre las bases de preparación
+- Describen las políticas contables específicas utilizadas
+- Revelan información requerida por NICSP no presentada en los estados
+- Proporcionan información adicional relevante para comprender los estados
+
+Estructura típica de las notas:
+1. Declaración de cumplimiento con NICSP
+2. Base de preparación y políticas contables significativas
+3. Información de apoyo para partidas de los estados financieros
+4. Otras revelaciones (pasivos contingentes, compromisos, eventos posteriores)
+
+===== CARACTERÍSTICAS CUALITATIVAS =====
+
+Los estados financieros deben cumplir:
+
+Características fundamentales:
+- Relevancia: información útil para toma de decisiones
+- Representación fiel: completa, neutral, libre de error
+
+Características de mejora:
+- Comparabilidad
+- Verificabilidad
+- Oportunidad
+- Comprensibilidad
+
+===== RESTRICCIONES Y LIMITACIONES =====
+
+Balance entre:
+- Beneficio vs costo de producir información
+- Oportunidad vs confiabilidad
+- Equilibrio entre características cualitativas
+
+===== PRESENTACIÓN RAZONABLE =====
+
+Los estados financieros deben:
+- Presentar razonablemente la situación financiera, rendimiento y flujos de efectivo
+- Aplicar NICSP con revelaciones adicionales cuando sea necesario
+- En casos extremadamente raros, apartarse de una NICSP si su aplicación sería engañosa (con revelación exhaustiva)

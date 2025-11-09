@@ -1,0 +1,160 @@
+ORGANISMOS INTERNACIONALES - NICSP
+
+===== IFAC: FEDERACIÓN INTERNACIONAL DE CONTADORES =====
+
+La IFAC (International Federation of Accountants) es la organización mundial de la profesión contable.
+
+Misión de IFAC:
+- Servir al interés público
+- Fortalecer la profesión contable en todo el mundo
+- Contribuir al desarrollo de economías internacionales fuertes
+
+Rol respecto a las NICSP:
+- Respalda al IPSASB (Consejo de Normas Internacionales de Contabilidad del Sector Público)
+- Proporciona apoyo administrativo y recursos al IPSASB
+- Promueve la adopción de las NICSP a nivel global
+- Facilita el desarrollo de normas contables de alta calidad para el sector público
+
+La IFAC fue fundada en 1977 y representa a más de 180 organizaciones miembro en más de 130 países, incluyendo millones de contadores profesionales.
+
+===== IPSASB: CONSEJO DE NORMAS INTERNACIONALES DE CONTABILIDAD DEL SECTOR PÚBLICO =====
+
+El IPSASB es un consejo independiente de elaboración de normas soportado por IFAC.
+
+Función principal:
+- Emitir las Normas Internacionales de Contabilidad del Sector Público (NICSP/IPSAS)
+- Desarrollar normas de alta calidad para gobiernos y entidades del sector público
+- Promover la aceptación y uso de las NICSP a nivel internacional
+
+Composición del IPSASB:
+- 18 miembros independientes de diversos países
+- Representan experiencia en contabilidad del sector público
+- Incluyen preparadores, auditores, usuarios y académicos
+
+Proceso de emisión de normas:
+1. Identificación de temas
+2. Investigación y consulta pública
+3. Desarrollo de borrador de exposición
+4. Período de comentarios públicos
+5. Análisis de comentarios y revisiones
+6. Emisión de norma definitiva
+
+===== INDEPENDENCIA DEL IPSASB =====
+
+El IPSASB opera con independencia de IFAC en cuanto a:
+- Establecimiento de agenda de trabajo
+- Desarrollo técnico de normas
+- Decisiones sobre contenido de normas
+- Emisión de pronunciamientos
+
+IFAC proporciona apoyo pero no influye en decisiones técnicas.
+
+===== NICSP BASADAS EN NIIF =====
+
+Muchas NICSP se basan en las Normas Internacionales de Información Financiera (NIIF/IFRS) emitidas por el IASB (International Accounting Standards Board).
+
+Proceso de adaptación:
+- El IPSASB parte de una NIIF como referencia
+- Adapta la norma al contexto del sector público
+- Considera la naturaleza de entidades públicas (no lucrativas, potencial de servicio)
+- Añade guías específicas para transacciones gubernamentales
+
+Ejemplos de adaptaciones:
+- Ingresos sin contraprestación (impuestos, donaciones) - no cubiertos en NIIF
+- Activos de patrimonio cultural - específicos del sector público
+- Información presupuestaria - relevante para gobiernos
+
+===== CONVERGENCIA INTERNACIONAL =====
+
+Objetivo de convergencia:
+- Armonizar prácticas contables del sector público globalmente
+- Facilitar comparabilidad entre países
+- Mejorar transparencia fiscal internacional
+- Apoyar gestión financiera pública moderna
+
+Organizaciones que promueven NICSP:
+- Banco Mundial
+- Fondo Monetario Internacional (FMI)
+- Organizaciones regionales de desarrollo
+- Unión Europea (para algunas directivas)
+- Organizaciones profesionales de contadores
+
+===== MARCOS CONTABLES ALTERNATIVOS =====
+
+Aunque NICSP son el estándar internacional principal, existen otros marcos:
+
+EPSAS (European Public Sector Accounting Standards):
+- Iniciativa de la Unión Europea
+- Basado en NICSP con adaptaciones europeas
+- En desarrollo para eventual aplicación en países de la UE
+
+Marcos nacionales basados en NICSP:
+- Muchos países adaptan NICSP a sus contextos
+- Mantienen convergencia con principios NICSP
+- Incluyen regulaciones locales específicas
+
+===== BENEFICIOS DE ADOPTAR NICSP =====
+
+Para gobiernos y entidades públicas:
+- Mayor transparencia y rendición de cuentas
+- Mejor información para toma de decisiones
+- Comparabilidad internacional
+- Fortalecimiento institucional
+- Acceso a financiamiento internacional
+- Confianza de ciudadanos e inversionistas
+
+Para la comunidad internacional:
+- Información financiera comparable entre países
+- Evaluación más precisa de riesgos fiscales
+- Facilita cooperación internacional
+- Mejora supervisión de ayuda y préstamos internacionales
+
+===== PROCESO DE ADOPCIÓN DE NICSP =====
+
+Pasos típicos para un país:
+1. Evaluación del marco contable actual
+2. Decisión política de adoptar NICSP
+3. Desarrollo de plan de implementación
+4. Capacitación de personal
+5. Adaptación de sistemas de información
+6. Implementación gradual o completa
+7. Monitoreo y mejora continua
+
+Desafíos comunes:
+- Resistencia al cambio
+- Costos de implementación
+- Necesidad de capacitación extensiva
+- Adaptación de sistemas tecnológicos
+- Complejidad técnica de algunas normas
+
+===== RECURSOS Y APOYO DEL IPSASB =====
+
+El IPSASB proporciona:
+- Textos completos de NICSP (acceso gratuito en su sitio web)
+- Guías de implementación
+- Casos prácticos y ejemplos
+- Estudios de investigación
+- Consultas técnicas
+- Material educativo
+
+===== PUBLICACIONES DEL IPSASB =====
+
+Tipos de pronunciamientos:
+- NICSP (IPSAS): normas obligatorias
+- Documentos de consulta: borradores para comentarios
+- Guías de práctica recomendada (RPG): orientación no obligatoria
+- Documentos ocasionales: investigaciones y estudios
+
+===== ACTUALIZACIÓN CONTINUA =====
+
+El IPSASB actualiza constantemente las NICSP para:
+- Responder a nuevos desarrollos económicos
+- Abordar vacíos identificados
+- Mantener convergencia con NIIF cuando sea relevante
+- Mejorar claridad y aplicabilidad
+
+Las entidades deben estar al tanto de:
+- Nuevas NICSP emitidas
+- Modificaciones a normas existentes
+- Fechas de vigencia
+- Períodos de transición

@@ -1,0 +1,89 @@
+NICSP - INSTRUMENTOS FINANCIEROS
+
+===== RESPUESTA DIRECTA =====
+
+¿Qué características diferencian a los instrumentos financieros en las NICSP?
+
+CARACTERÍSTICAS PRINCIPALES:
+
+1. RECONOCIMIENTO INICIAL: Al valor razonable (precio transacción) + costos transacción
+
+2. MEDICIÓN POSTERIOR - TRES CATEGORÍAS:
+   - CATEGORÍA 1: Valor razonable con cambios en resultados (instrumentos para negociación)
+   - CATEGORÍA 2: Costo amortizado (préstamos, cuentas por cobrar/pagar)
+   - CATEGORÍA 3: Valor razonable con cambios en patrimonio (disponibles para venta)
+
+3. CARACTERÍSTICAS DIFERENCIADORAS:
+   - Posibilidad de reclasificación entre categorías
+   - Reconocimiento de deterioro por pérdidas crediticias esperadas
+   - NICSP 30 exige revelación de riesgos financieros
+
+===== RECONOCIMIENTO INICIAL =====
+
+- Cuando: La entidad se convierte en parte del contrato
+- Valor: Valor razonable (generalmente precio de transacción)
+- Incluye: Costos de transacción directamente atribuibles
+- Clasificación: Como activos financieros o pasivos financieros
+
+===== MEDICIÓN POSTERIOR - TRES CATEGORÍAS =====
+
+CATEGORÍA 1: VALOR RAZONABLE CON CAMBIOS EN RESULTADOS
+- Instrumentos mantenidos para negociación
+- Cambios en valor razonable van al estado de rendimiento financiero
+- Ejemplo: Instrumentos de trading
+
+CATEGORÍA 2: COSTO AMORTIZADO
+- Préstamos y cuentas por cobrar originados por la entidad
+- Préstamos y cuentas por pagar
+- Método del interés efectivo
+- Ejemplo: Préstamos a empleados, cuentas por cobrar comerciales
+
+CATEGORÍA 3: VALOR RAZONABLE CON CAMBIOS EN PATRIMONIO
+- Instrumentos de capital disponibles para la venta.
+- Se miden a valor razonable.
+- Las variaciones en valor razonable se reconocen directamente en el patrimonio neto
+
+===== DIFERENCIAS CLAVE =====
+
+RECONOCIMIENTO INICIAL:
+- Momento: Cuando se firma el contrato
+- Valor: Precio de transacción
+- Objetivo: Capturar valor inicial
+
+MEDICIÓN POSTERIOR:
+- Momento: Periódicamente después del reconocimiento
+- Valor: Según categoría (valor razonable o costo amortizado)
+- Objetivo: Reflejar cambios en valor y condiciones
+
+===== RECLASIFICACIONES =====
+
+- Posibles cuando cambia el modelo de negocio para gestionar activos
+- No son frecuentes
+- Deben estar debidamente justificadas
+
+===== DETERIORO =====
+
+- Evaluación periódica en cada fecha de reporte
+- Reconocimiento de pérdidas por deterioro
+- Basado en pérdidas crediticias esperadas
+
+===== BAJA EN CUENTAS =====
+
+ACTIVOS FINANCIEROS se dan de baja cuando:
+- Expiran derechos contractuales sobre flujos de efectivo
+- Se transfieren riesgos y beneficios
+- Se pierde el control
+
+PASIVOS FINANCIEROS se dan de baja cuando:
+- La obligación se extingue, cancela o expira
+
+===== NORMAS APLICABLES =====
+
+- NICSP 29: Reconocimiento y Medición
+- NICSP 30: Información a Revelar (riesgos financieros)
+- NICSP 41: Versión consolidada reciente
+NICSP 30 – INFORMACIÓN A REVELAR:
+- Exige que las entidades revelen la importancia de los instrumentos financieros en su situación financiera.
+- Debe divulgar los riesgos de crédito, liquidez y mercado.
+- Incluye análisis de sensibilidad y políticas de gestión del riesgo financiero.
+- Complementa a la NICSP 29 para asegurar transparencia y evaluación de riesgos.

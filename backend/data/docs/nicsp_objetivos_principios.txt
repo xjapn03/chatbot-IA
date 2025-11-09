@@ -1,0 +1,113 @@
+NICSP - OBJETIVOS Y PRINCIPIOS FUNDAMENTALES
+
+===== OBJETIVO PRINCIPAL DE LAS NICSP =====
+
+Las Normas Internacionales de Contabilidad del Sector Público (NICSP) tienen como objetivo principal:
+
+- Mejorar la transparencia de la información financiera del sector público
+- Aumentar la comparabilidad entre entidades públicas de diferentes países
+- Fortalecer la rendición de cuentas ante ciudadanos y partes interesadas
+- Adoptar normas contables de alta calidad basadas en principios profesionales
+
+Estos objetivos buscan que los gobiernos y entidades públicas presenten información financiera confiable, relevante y comprensible para la toma de decisiones.
+
+===== PRINCIPIO DE DEVENGO =====
+
+El principio fundamental que rige el reconocimiento en las NICSP es el principio de devengo (accrual basis).
+
+Características del principio de devengo:
+- Los hechos económicos se reconocen cuando ocurren
+- NO depende de cuándo se recibe o paga el efectivo
+- Los ingresos se reconocen cuando se ganan, no cuando se cobran
+- Los gastos se reconocen cuando se incurren, no cuando se pagan
+- Los activos se registran cuando la entidad obtiene control sobre ellos
+- Los pasivos se registran cuando surge la obligación presente
+
+Diferencia con base de caja:
+- Base de caja: registra solo cuando hay movimiento de efectivo
+- Base de devengo: registra cuando ocurre el hecho económico
+
+El principio de devengo proporciona una imagen más completa y precisa de la situación financiera y el rendimiento de la entidad.
+
+===== RECONOCIMIENTO DE ACTIVOS =====
+
+Un activo se reconoce cuando:
+- Es probable que fluyan beneficios económicos futuros o potencial de servicio a la entidad
+- El activo tiene un costo o valor que puede medirse con fiabilidad
+- La entidad ha obtenido control sobre el recurso
+
+===== RECONOCIMIENTO DE PASIVOS =====
+
+Un pasivo se reconoce cuando:
+- Existe una obligación presente como resultado de eventos pasados
+- Es probable que se requiera una salida de recursos para liquidar la obligación
+- El importe puede estimarse de forma fiable
+
+===== RECONOCIMIENTO DE INGRESOS =====
+
+Los ingresos se reconocen cuando:
+- Es probable que fluyan beneficios económicos a la entidad
+- Pueden medirse con fiabilidad
+- Se han cumplido los criterios específicos según el tipo de ingreso (con o sin contraprestación)
+
+===== RECONOCIMIENTO DE GASTOS =====
+
+Los gastos se reconocen cuando:
+- Ha habido una disminución en los beneficios económicos o potencial de servicio
+- Se puede medir con fiabilidad
+- Surge de la salida o consumo de activos o del surgimiento de pasivos
+
+===== VENTAJAS DEL PRINCIPIO DE DEVENGO =====
+
+- Muestra la verdadera posición financiera de la entidad
+- Permite evaluar la sostenibilidad fiscal a largo plazo
+- Facilita la comparación entre periodos y entre entidades
+- Mejora la gestión de activos y pasivos
+- Proporciona información más útil para la toma de decisiones
+
+===== BASES DE MEDICIÓN EN NICSP =====
+
+Las NICSP reconocen MÚLTIPLES bases de medición para diferentes elementos:
+
+BASES PRINCIPALES DE MEDICIÓN:
+
+1. COSTO HISTÓRICO:
+   - Valor original de adquisición o construcción
+   - Aplica a: Propiedades, planta y equipo; Activos intangibles; Inventarios
+
+2. VALOR RAZONABLE:
+   - Precio en transacción ordenada entre partes
+   - Aplica a: Instrumentos financieros; Activos biológicos; Inversiones
+
+3. VALOR PRESENTE:
+   - Valor descontado de flujos de efectivo futuros
+   - Aplica a: Pasivos de largo plazo; Provisiones
+
+4. COSTO CORRIENTE:
+   - Valor necesario para reponer el activo actualmente
+   - Aplica a: Algunos tipos de inventarios
+
+5. VALOR NETO REALIZABLE:
+   - Precio de venta menos costos de terminación y venta
+   - Aplica a: Inventarios; Activos no corrientes para venta
+
+6. VALOR OPERATIVO ACTUAL (Contexto Colombia):
+   - Valor para activos de infraestructura pública
+   - Aplica a: Carreteras, puentes, sistemas de agua
+
+SELECCIÓN DE BASE DE MEDICIÓN:
+- Depende de la naturaleza del activo o pasivo
+- Considera si genera flujos de efectivo o potencial de servicio
+- Busca representación fiel y relevancia
+
+===== RESUMEN EJECUTIVO =====
+
+OBJETIVOS NICSP: Transparencia, Comparabilidad, Rendición de Cuentas
+
+PRINCIPIO FUNDAMENTAL: Devengo (reconoce cuando ocurren hechos económicos)
+
+BASES MEDICIÓN: Múltiples - costo histórico, valor razonable, valor presente, etc.
+
+RECONOCIMIENTO:
+- Activos: Control + beneficios futuros + medición confiable
+- Pasivos: Obligación presente + salida recursos + medición confiable
