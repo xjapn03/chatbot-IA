@@ -1,14 +1,27 @@
 # Chatbot NICSP - Asistente de Normas Internacionales
 
-Chatbot inteligente para consultas sobre **Normas Internacionales de Contabilidad del Sector Público (NICSP)** usando IA local con Ollama y RAG (Retrieval-Augmented Generation).
+Chatbot inteligente para consultas sobre **Normas Internacionales de Contabilidad del Sector Público (NICSP)** usando **OpenAI API** y RAG (Retrieval-Augmented Generation).
+
+## 🆕 Actualización: Migración a OpenAI API + Optimizaciones v2.0
+
+> **Última actualización (v2.0):** Optimizaciones implementadas - 34% menos costo, mejor calidad.  
+> 📖 Ver [OPTIMIZACIONES.md](OPTIMIZACIONES.md) | [ACTUALIZACION.md](ACTUALIZACION.md) | [CAMBIOS.md](CAMBIOS.md)
+
+**Cambios clave v2.0:**
+- ✅ OpenAI Embeddings (text-embedding-3-small)
+- ✅ MMR para selección de documentos
+- ✅ Contexto optimizado a 1000 chars
+- ✅ Parámetros ajustados (temp=0.0, top_p=0.2)
+- ✅ 34% ahorro en costos
 
 ## Descripción
 
 Este proyecto es un MVP de chatbot que combina:
-- **Backend**: Python con Flask, LangChain, FAISS y Ollama
+- **Backend**: Python con Flask, LangChain, FAISS y **OpenAI API**
 - **Frontend**: Next.js 16 con React y Tailwind CSS
-- **IA**: Modelos locales de Ollama (Llama3, Mistral, Phi3)
+- **IA**: OpenAI GPT-4o-mini (configurable)
 - **Base de conocimiento**: Documentos NICSP procesados con embeddings
+- **Nueva funcionalidad**: Análisis de archivos PDF con IA
 
 ## Arquitectura
 
@@ -31,32 +44,19 @@ chatbot-IA/
 
 ## Requisitos Previos
 
-### 1. Ollama
-Debes tener Ollama instalado y corriendo:
+### 1. API Key de OpenAI
+Necesitas una cuenta de OpenAI y una API key:
 
-**Instalación:**
-- Descarga desde: https://ollama.ai
-- Instala y verifica:
-```bash
-ollama --version
-```
+**Obtener API Key:**
+1. Crea cuenta en: https://platform.openai.com/signup
+2. Ve a: https://platform.openai.com/api-keys
+3. Crea una nueva API key
+4. Cópiala (solo se muestra una vez)
 
-**Descargar modelo (elige uno):**
-```bash
-# Opción 1: Llama3 (recomendado, ~4.7GB)
-ollama pull llama3
-
-# Opción 2: Mistral (~4.1GB)
-ollama pull mistral
-
-# Opción 3: Phi3 (más ligero, ~2.3GB)
-ollama pull phi3
-```
-
-**Verificar que el modelo está corriendo:**
-```bash
-ollama list
-```
+**Costos estimados:**
+- Modelo recomendado: `gpt-4o-mini`
+- ~$0.000132 USD por consulta
+- 1,000 consultas ≈ $0.13 USD
 
 ### 2. Python 3.8+
 ```bash
@@ -69,9 +69,24 @@ node --version
 npm --version
 ```
 
-## Instalación
+## 🚀 Instalación Rápida
 
-### Backend
+### Opción 1: Script Automático (Recomendado)
+
+**Windows:**
+```cmd
+install.bat
+```
+
+**Linux/Mac:**
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+### Opción 2: Manual
+
+#### Backend
 
 1. **Navega a la carpeta backend:**
 ```bash
@@ -100,11 +115,20 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-5. **Agrega documentos NICSP:**
+5. **Configura tu API key de OpenAI:**
+```bash
+# Copia el archivo de ejemplo
+cp .env.example .env
+
+# Edita .env y añade tu API key
+# OPENAI_API_KEY=sk-proj-tu-api-key-aqui
+```
+
+6. **Agrega documentos NICSP:**
    - Coloca archivos `.txt`, `.pdf` o `.docx` en `backend/data/docs/`
    - El sistema procesará automáticamente los documentos al iniciar
 
-### Frontend
+#### Frontend
 
 1. **Navega a la carpeta frontend:**
 ```bash
@@ -122,7 +146,7 @@ npm install
 
 ```bash
 cd backend
-# Asegúrate de que el entorno virtual esté activado
+# Asegúrate de que el entorno virtual esté activado y que .env tenga tu API key
 python app.py
 ```
 
@@ -155,43 +179,60 @@ Visita: **http://localhost:3000**
 
 ## Configuración
 
-### Cambiar modelo de Ollama
+### Cambiar modelo de OpenAI
 
-En `backend/app.py`, línea 34:
-```python
-llm = Ollama(model="phi3")  # Cambia a "llama3" o "mistral"
+En `backend/.env`:
+```env
+# Modelos disponibles:
+OPENAI_MODEL=gpt-4o-mini      # Recomendado (rápido y económico)
+# OPENAI_MODEL=gpt-4o          # Más potente
+# OPENAI_MODEL=gpt-4-turbo     # Balance
+# OPENAI_MODEL=gpt-3.5-turbo   # Más económico
+
+# Ajustar longitud de respuestas
+OPENAI_MAX_TOKENS=220
+
+# Creatividad (0.0-2.0)
+OPENAI_TEMPERATURE=0.3
 ```
-
-Modelos disponibles:
-- `llama3` - Más preciso, requiere más RAM (~8GB)
-- `mistral` - Buen balance calidad/rendimiento
-- `phi3` - Más rápido, menos recursos (~4GB RAM)
 
 ### Ajustar parámetros de chunking
 
-En `backend/app.py`, línea 24:
+En `backend/app.py`:
 ```python
-CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+RecursiveCharacterTextSplitter(
+    chunk_size=750,      # Tamaño de fragmentos
+    chunk_overlap=120    # Superposición entre fragmentos
+)
 ```
 
-- `chunk_size`: Tamaño de cada fragmento de texto (tokens)
-- `chunk_overlap`: Superposición entre fragmentos para contexto
+## 🆕 Nuevas Funcionalidades
+
+### 1. Chat Normal
+Pregunta sobre las NICSP y el sistema buscará en los documentos locales.
+
+### 2. Análisis de PDF (NUEVO)
+1. Haz clic en el botón **📎 PDF**
+2. Selecciona un archivo PDF
+3. Escribe tu pregunta sobre el PDF
+4. El sistema lo analizará con OpenAI
 
 ## Solución de Problemas
 
-### El backend no inicia
-
-**Error:** `ModuleNotFoundError: No module named 'flask_cors'`
+### Error: "Incorrect API key"
 ```bash
-pip install flask-cors
+# Verifica tu API key en backend/.env
+OPENAI_API_KEY=sk-proj-XXXXXXXXX
 ```
 
-**Error:** Ollama no responde
+### Error: "You exceeded your current quota"
+- Añade créditos en: https://platform.openai.com/account/billing
+- Verifica tu límite de uso
+
+### Error: `ModuleNotFoundError: No module named 'openai'`
 ```bash
-# Verifica que Ollama esté corriendo
-ollama list
-# Si no aparece, inicia el servicio
-ollama serve
+cd backend
+pip install -r requirements.txt
 ```
 
 ### El frontend no conecta
@@ -202,7 +243,7 @@ ollama serve
 
 **Error:** `fetch failed`
 - Confirma que el backend esté en `http://localhost:5000`
-- Verifica que Ollama esté corriendo con un modelo descargado
+- Verifica que tu API key de OpenAI esté configurada
 
 ### No hay documentos
 
@@ -216,7 +257,7 @@ Si `backend/data/docs/` está vacío:
 | Componente | Tecnología | Versión |
 |------------|-----------|---------|
 | Backend Framework | Flask | 3.1.2 |
-| IA/LLM | Ollama | Latest |
+| IA/LLM | **OpenAI API** | **gpt-4o-mini** |
 | Vector Store | FAISS | 1.12.0 |
 | Embeddings | Sentence Transformers | 5.1.2 |
 | LangChain | langchain | 1.0.3 |
@@ -224,6 +265,12 @@ Si `backend/data/docs/` está vacío:
 | UI Library | React | 19.2.0 |
 | Styling | Tailwind CSS | 4.x |
 | Language | Python + TypeScript | 3.x + 5.x |
+
+## 📚 Documentación Adicional
+
+- 📖 [Instrucciones detalladas de OpenAI](INSTRUCCIONES_OPENAI.md) - Guía completa de configuración
+- 📋 [Resumen de cambios](CAMBIOS.md) - Detalles de la migración desde Ollama
+- 📝 [Guía del Chatbot](Guia_Chatbot.md) - Documentación original
 
 ## Licencia
 

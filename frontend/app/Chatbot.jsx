@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 
+// URL del backend desde variable de entorno
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
 
 function Chatbot() {
   const [input, setInput] = useState("");
@@ -11,6 +13,7 @@ function Chatbot() {
   const [typingMessage, setTypingMessage] = useState(null); // Para animación de escritura
   const [connectionWarning, setConnectionWarning] = useState(false); // Banner de conexión lenta
   const [loadingStartTime, setLoadingStartTime] = useState(null); // Tiempo de inicio de carga
+  const [selectedFile, setSelectedFile] = useState(null); // Archivo PDF seleccionado
 
   useEffect(() => {
     let interval;
@@ -64,24 +67,60 @@ function Chatbot() {
     }
   }, [typingMessage]);
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file && file.type === "application/pdf") {
+      setSelectedFile(file);
+    } else if (file) {
+      alert("Por favor selecciona solo archivos PDF");
+      e.target.value = null;
+    }
+  };
+
   const sendMessage = async () => {
     if (!input.trim()) return;
-    const newMessage = { sender: "user", text: input, id: Date.now() };
+    
+    const newMessage = { 
+      sender: "user", 
+      text: selectedFile ? `📄 ${selectedFile.name}: ${input}` : input, 
+      id: Date.now() 
+    };
     setMessages([...messages, newMessage]);
+    
+    const currentInput = input;
+    const currentFile = selectedFile;
+    
     setInput("");
+    setSelectedFile(null);
     setLoading(true);
     setLoadingStartTime(Date.now());
     
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 120000); // Timeout de 120 segundos
+      const timeoutId = setTimeout(() => controller.abort(), 120000);
       
-      const res = await fetch("http://3.220.179.134:5000/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: input }),
-        signal: controller.signal,
-      });
+      let res;
+      
+      if (currentFile) {
+        // Enviar con archivo
+        const formData = new FormData();
+        formData.append('file', currentFile);
+        formData.append('question', currentInput);
+        
+        res = await fetch(`${API_URL}/upload`, {
+          method: "POST",
+          body: formData,
+          signal: controller.signal,
+        });
+      } else {
+        // Enviar solo texto
+        res = await fetch(`${API_URL}/chat`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: currentInput }),
+          signal: controller.signal,
+        });
+      }
       
       clearTimeout(timeoutId);
       
@@ -171,22 +210,50 @@ function Chatbot() {
           </div>
         )}
       </div>
-      <div className="flex gap-2 mt-4">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyPress={(e) => e.key === "Enter" && sendMessage()}
-          placeholder="Haz una pregunta sobre las NICSP..."
-          className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
-        />
-        <button 
-          onClick={sendMessage}
-          className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          disabled={!input.trim()}
-        >
-          Enviar
-        </button>
+      <div className="mt-4 space-y-3">
+        {/* Mostrar archivo seleccionado */}
+        {selectedFile && (
+          <div className="flex items-center gap-2 p-3 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 rounded-lg">
+            <span className="text-2xl">📄</span>
+            <span className="text-sm text-blue-800 dark:text-blue-200 flex-1">{selectedFile.name}</span>
+            <button
+              onClick={() => setSelectedFile(null)}
+              className="text-red-500 hover:text-red-700 font-bold"
+            >
+              ✕
+            </button>
+          </div>
+        )}
+        
+        <div className="flex gap-2">
+          {/* Botón para adjuntar PDF */}
+          <label className="px-4 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-semibold rounded-lg transition-colors cursor-pointer flex items-center gap-2">
+            <span>📎</span>
+            <span className="hidden sm:inline">PDF</span>
+            <input
+              type="file"
+              accept=".pdf"
+              onChange={handleFileChange}
+              className="hidden"
+            />
+          </label>
+          
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyPress={(e) => e.key === "Enter" && !e.shiftKey && sendMessage()}
+            placeholder={selectedFile ? "Pregunta sobre el PDF..." : "Haz una pregunta sobre las NICSP..."}
+            className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+          />
+          <button 
+            onClick={sendMessage}
+            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={!input.trim()}
+          >
+            Enviar
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -1,22 +1,32 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
-import requests
+from langchain_openai import OpenAIEmbeddings
+from openai import OpenAI
+from dotenv import load_dotenv
 import os
 import traceback
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
+import re
+
+# Cargar variables de entorno
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
 
+# Inicializar cliente de OpenAI
+openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 DATA_PATH = "data/docs"
 INDEX_PATH = "data/nicsp_index"
 
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+# Usar embeddings de OpenAI para mejor calidad
+embeddings = OpenAIEmbeddings(
+    model="text-embedding-3-small",
+    openai_api_key=os.getenv("OPENAI_API_KEY")
+)
 
 def read_pdf(path):
     try:
@@ -59,15 +69,15 @@ def read_generic(path):
         print(f"No se pudo leer {path}: {e}")
     return ""
 
+# Función auxiliar para limpiar texto
+def clean_text(text):
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
 # Construir o cargar índice
 if not os.path.exists(INDEX_PATH):
     print("Generando base de conocimiento FAISS...")
     docs = []
-    
-    import re
-    def clean_text(text):
-        text = re.sub(r'\s+', ' ', text)
-        return text.strip()
     
     def read_text_file(path):
         _, ext = os.path.splitext(path)
@@ -106,43 +116,42 @@ else:
     print("Cargando índice FAISS existente...")
     db = FAISS.load_local(INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
 
-MODEL_NAME = "llama3.2:3b"
-OLLAMA_URL = "http://98.95.116.221:11434"
+# Configuración de OpenAI optimizada
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+OPENAI_MAX_TOKENS = int(os.getenv("OPENAI_MAX_TOKENS", "150"))  # Reducido para respuestas más concisas
+OPENAI_TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", "0.0"))  # 0.0 para máxima determinismo
+OPENAI_TOP_P = float(os.getenv("OPENAI_TOP_P", "0.2"))  # Reducido para mayor enfoque
+MAX_CONTEXT_LENGTH = 1000  # Límite de contexto en caracteres
+
+# Almacenar archivos subidos temporalmente
+UPLOAD_FOLDER = "data/uploads"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 
-def call_ollama_api(prompt: str) -> str:
+def call_openai_api(prompt: str) -> str:
+    """
+    Llama a la API de OpenAI con parámetros optimizados.
+    """
     try:
-        response = requests.post(
-            f"{OLLAMA_URL}/api/generate",
-            json={
-                "model": MODEL_NAME,
-                "prompt": prompt,
-                "stream": False,
-                "options": {
-                    "num_ctx": 1280,        # Aumentar ligeramente para contextos más largos
-                    "num_thread": 2,
-                    "num_batch": 64,
-                    "temperature": 0.3,
-                    "top_p": 0.85,
-                    "top_k": 30,
-                    "repeat_penalty": 1.15,
-                    "num_predict": 220      # Aumentar un poco para respuestas más completas
-                }
-            },
-            timeout=120                     # 2 minutos para evitar timeouts
+        # Sistema simplificado
+        system_prompt = "Experto NICSP. Responde con información del contexto proporcionado."
+        
+        response = openai_client.chat.completions.create(
+            model=OPENAI_MODEL,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=OPENAI_MAX_TOKENS,
+            temperature=OPENAI_TEMPERATURE,
+            top_p=OPENAI_TOP_P
         )
         
-        if response.status_code == 200:
-            result = response.json()
-            return result.get("response", "").strip()
-        else:
-            error_msg = f"Error {response.status_code}"
-            print(f"[ERROR] Ollama: {error_msg}")
-            return f"Error al llamar a Ollama: {error_msg}"
+        return response.choices[0].message.content.strip()
     
     except Exception as e:
-        print(f"[ERROR] {e}")
-        return f"Error: {str(e)}"
+        print(f"[ERROR] OpenAI API: {e}")
+        return f"Error al llamar a OpenAI: {str(e)}"
 
 
 def clean_and_validate_response(response: str, context: str) -> str:
@@ -168,6 +177,36 @@ def clean_and_validate_response(response: str, context: str) -> str:
     return response
 
 
+def build_context_from_docs(docs):
+    """Construir contexto limitado desde documentos MMR."""
+    if not docs:
+        return "No hay información relevante."
+    
+    context_parts = []
+    total_chars = 0
+    
+    for doc in docs:
+        content = doc.page_content.strip()
+        
+        # Limitar cada chunk a ~300 chars
+        if len(content) > 300:
+            content = content[:300] + "..."
+        
+        if total_chars + len(content) > MAX_CONTEXT_LENGTH:
+            break
+            
+        context_parts.append(content)
+        total_chars += len(content)
+    
+    context = "\n\n".join(context_parts)
+    
+    # Garantizar que no exceda el límite
+    if len(context) > MAX_CONTEXT_LENGTH:
+        context = context[:MAX_CONTEXT_LENGTH] + "..."
+    
+    return context
+
+
 @app.post("/chat")
 def chat():
     message = request.json.get("message", "")
@@ -175,47 +214,30 @@ def chat():
         return jsonify({"error": "No message provided"}), 400
     
     try:
-        docs = db.similarity_search(message, k=8)  # Recuperar más documentos iniciales
+        # Usar MMR (Maximum Marginal Relevance) para mejor diversidad
+        docs = db.max_marginal_relevance_search(
+            message, 
+            k=3,  # Reducido a 3 documentos
+            fetch_k=10  # Buscar en 10, seleccionar 3 más diversos
+        )
         
-        if docs:
-            query_embedding = embeddings.embed_query(message)
-            doc_embeddings = embeddings.embed_documents([d.page_content for d in docs])
-            scores = cosine_similarity([query_embedding], doc_embeddings)[0]
-            ranked = sorted(zip(scores, docs), reverse=True, key=lambda x: x[0])
-            
-            # Tomar TOP 4 mejores después de re-ranking
-            top_docs = [doc for _, doc in ranked[:4]]
-            
-            context_parts = []
-            for doc in top_docs:
-                source = doc.metadata.get('source', '')
-                content = doc.page_content.strip()
-                context_parts.append(f"[{source}]\n{content}")
-            
-            context = "\n\n".join(context_parts)
-            
-            # Límite de contexto aumentado para permitir respuestas más completas
-            if len(context) > 1600:
-                context = context[:1600] + "\n[...]"
-        else:
-            context = ""
+        context = build_context_from_docs(docs)
         
         print(f"\n{'='*60}")
         print(f"PREGUNTA: {message}")
-        print(f"DOCS: {len(docs)}")
+        print(f"DOCS MMR: {len(docs)}")
         print(f"CONTEXTO ({len(context)} chars):\n{context}")
         print(f"{'='*60}\n")
         
-        prompt = f"""Contexto de NICSP:
+        # Prompt simplificado
+        prompt = f"""Contexto:
 {context}
 
 Pregunta: {message}
 
-Instrucciones: Responde usando SOLO el contexto anterior. Si no hay información suficiente, di "No encuentro esa información específica". Máximo 4 oraciones claras.
-
-Respuesta:"""
+Responde solo con el contexto. Máximo 3 oraciones."""
         
-        answer = call_ollama_api(prompt)
+        answer = call_openai_api(prompt)
         
         if not answer or answer.strip() == "":
             return jsonify({"error": "No se pudo generar respuesta"}), 500
@@ -226,17 +248,93 @@ Respuesta:"""
         
         return jsonify({"response": answer})
     
-    except requests.exceptions.Timeout:
-        print("[ERROR]: Timeout en llamada a Ollama")
-        return jsonify({"error": "El servidor de IA tardó demasiado en responder"}), 504
-    
-    except requests.exceptions.ConnectionError:
-        print("[ERROR]: Error de conexión a Ollama")
-        return jsonify({"error": "No se pudo conectar con el servidor de IA"}), 503
-    
     except Exception:
         print("[ERROR]:", traceback.format_exc())
         return jsonify({"error": "Error interno del servidor"}), 500
+
+
+@app.post("/upload")
+def upload_file():
+    """
+    Endpoint para subir archivos PDF y procesarlos con OpenAI.
+    """
+    if 'file' not in request.files:
+        return jsonify({"error": "No se proporcionó ningún archivo"}), 400
+    
+    file = request.files['file']
+    question = request.form.get('question', '')
+    
+    if file.filename == '':
+        return jsonify({"error": "Nombre de archivo vacío"}), 400
+    
+    if not file.filename.endswith('.pdf'):
+        return jsonify({"error": "Solo se permiten archivos PDF"}), 400
+    
+    try:
+        # Guardar archivo temporalmente
+        file_path = os.path.join(UPLOAD_FOLDER, file.filename)
+        file.save(file_path)
+        
+        # Subir archivo a OpenAI
+        with open(file_path, "rb") as f:
+            uploaded_file = openai_client.files.create(
+                file=f,
+                purpose="assistants"
+            )
+        
+        # Procesar pregunta con el archivo (simplificado)
+        prompt = f"""Documento adjunto sobre NICSP.
+
+Pregunta: {question}
+
+Responde solo con información del documento. Máximo 3 oraciones."""
+        
+        response = openai_client.chat.completions.create(
+            model=OPENAI_MODEL,
+            messages=[
+                {
+                    "role": "system",
+                    "content": "Experto NICSP. Responde solo con información del documento."
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            max_tokens=OPENAI_MAX_TOKENS,
+            temperature=OPENAI_TEMPERATURE,
+            top_p=OPENAI_TOP_P
+        )
+        
+        answer = response.choices[0].message.content.strip()
+        
+        # Limpiar archivo temporal
+        os.remove(file_path)
+        
+        # Eliminar archivo de OpenAI después de procesarlo
+        try:
+            openai_client.files.delete(uploaded_file.id)
+        except Exception as delete_error:
+            print(f"[WARNING] No se pudo eliminar archivo de OpenAI: {delete_error}")
+        
+        print(f"[UPLOAD] Archivo: {file.filename}, Pregunta: {question}")
+        print(f"[RESPUESTA]: {answer}\n")
+        
+        return jsonify({
+            "response": answer,
+            "filename": file.filename
+        })
+    
+    except Exception as e:
+        print(f"[ERROR] Upload: {traceback.format_exc()}")
+        # Limpiar archivo si existe
+        try:
+            file_path = os.path.join(UPLOAD_FOLDER, file.filename)
+            if os.path.exists(file_path):
+                os.remove(file_path)
+        except Exception as cleanup_error:
+            print(f"[WARNING] No se pudo limpiar archivo: {cleanup_error}")
+        return jsonify({"error": f"Error al procesar el archivo: {str(e)}"}), 500
 
 
 if __name__ == "__main__":

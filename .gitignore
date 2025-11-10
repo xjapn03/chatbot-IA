@@ -15,8 +15,10 @@ build/
 
 # Backend específico
 backend/data/nicsp_index/
+backend/data/uploads/
 backend/venv/
 backend/*.db
+backend/.env
 
 # Node
 node_modules/
