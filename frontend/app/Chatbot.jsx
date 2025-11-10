@@ -125,7 +125,13 @@ function Chatbot() {
       clearTimeout(timeoutId);
       
       if (!res.ok) {
-        throw new Error(`Error del servidor: ${res.status}`);
+        const errorData = await res.json().catch(() => ({}));
+        if (res.status === 429) {
+          throw new Error(errorData.error || "Cuota de API excedida");
+        } else if (res.status === 401) {
+          throw new Error(errorData.error || "API key inválida");
+        }
+        throw new Error(errorData.error || `Error del servidor: ${res.status}`);
       }
       
       const data = await res.json();
@@ -145,6 +151,10 @@ function Chatbot() {
       
       if (error.name === 'AbortError') {
         errorMessage = "❌ Tiempo de espera agotado. La conexión al servidor tardó demasiado. Por favor, verifica tu conexión a internet e intenta nuevamente.";
+      } else if (error.message.includes("Cuota de API excedida") || error.message.includes("insufficient_quota")) {
+        errorMessage = "⚠️ Cuota de OpenAI excedida. El administrador debe agregar créditos en platform.openai.com/account/billing";
+      } else if (error.message.includes("API key inválida") || error.message.includes("invalid_api_key")) {
+        errorMessage = "❌ API key de OpenAI inválida. Contacta al administrador del sistema.";
       } else if (error.message.includes("Failed to fetch")) {
         errorMessage = "❌ No se pudo establecer conexión con el servidor. Verifica que el backend esté ejecutándose y tu conexión a internet esté activa.";
       } else if (error.message.includes("Error del servidor: 500")) {

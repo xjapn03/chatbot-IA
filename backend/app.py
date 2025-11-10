@@ -150,8 +150,16 @@ def call_openai_api(prompt: str) -> str:
         return response.choices[0].message.content.strip()
     
     except Exception as e:
+        error_str = str(e)
         print(f"[ERROR] OpenAI API: {e}")
-        return f"Error al llamar a OpenAI: {str(e)}"
+        
+        # Manejo específico de errores comunes
+        if "insufficient_quota" in error_str or "429" in error_str:
+            return "❌ Cuota de API de OpenAI excedida. Por favor, verifica tu plan de facturación en platform.openai.com/account/billing"
+        elif "invalid_api_key" in error_str or "401" in error_str:
+            return "❌ API key de OpenAI inválida. Verifica tu configuración."
+        
+        return f"Error al llamar a OpenAI: {error_str}"
 
 
 def clean_and_validate_response(response: str, context: str) -> str:
@@ -248,8 +256,20 @@ Responde solo con el contexto. Máximo 3 oraciones."""
         
         return jsonify({"response": answer})
     
-    except Exception:
+    except Exception as e:
+        error_msg = str(e)
         print("[ERROR]:", traceback.format_exc())
+        
+        # Mensajes de error más específicos
+        if "insufficient_quota" in error_msg or "429" in error_msg:
+            return jsonify({
+                "error": "⚠️ Cuota de OpenAI excedida. Agrega créditos en platform.openai.com/account/billing"
+            }), 429
+        elif "invalid_api_key" in error_msg or "401" in error_msg:
+            return jsonify({
+                "error": "❌ API key de OpenAI inválida. Verifica la configuración del servidor."
+            }), 401
+        
         return jsonify({"error": "Error interno del servidor"}), 500
 
 
@@ -327,7 +347,6 @@ Responde solo con información del documento. Máximo 3 oraciones."""
     
     except Exception as e:
         print(f"[ERROR] Upload: {traceback.format_exc()}")
-        # Limpiar archivo si existe
         try:
             file_path = os.path.join(UPLOAD_FOLDER, file.filename)
             if os.path.exists(file_path):
