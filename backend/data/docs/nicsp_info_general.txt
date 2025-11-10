@@ -1,0 +1,27 @@
+NICSP - INFORMACIÓN GENERAL (resumen para todo público)
+
+¿Qué significan las siglas NICSP?
+- NICSP son las "Normas Internacionales de Contabilidad del Sector Público". Son reglas y recomendaciones pensadas para que gobiernos y entidades públicas lleven cuentas y preparen estados financieros de manera clara, comparable y responsable.
+
+¿Para qué sirven las NICSP? (Objetivos principales)
+- Mejorar la transparencia: ayudan a que la ciudadanía y los órganos de control entiendan cómo se usan los recursos públicos.
+- Permitir comparaciones: facilitan comparar información financiera entre entidades y países.
+- Apoyar la toma de decisiones: proporcionan información útil para planificar y supervisar la gestión pública.
+
+¿A quién van dirigidas?
+- A gobiernos nacionales, entidades locales, organismos estatales y cualquier entidad del sector público que prepare estados financieros.
+
+¿Cómo se relacionan con otras normas (ej. NIIF)?
+- Las NICSP están pensadas para el sector público; las NIIF (Normas Internacionales de Información Financiera) están enfocadas en entidades privadas. Algunas ideas son similares, pero las NICSP consideran aspectos propios del sector público (como el potencial de servicio de activos).
+
+¿Cómo usar este documento / este chatbot?
+- Este archivo ofrece definiciones cortas y sencillas. Para explicaciones técnicas o ejemplos concretos, usa las preguntas frecuentes (`nicsp_preguntas_frecuentes.txt`) o los documentos específicos en la carpeta `data/docs`.
+- Si el chatbot no encuentra una respuesta precisa en los documentos, te dirá que no hay información suficiente: eso es intencional para evitar inventar datos.
+
+Sugerencia práctica para usuarios no técnicos
+- Formula preguntas concretas: por ejemplo, "¿Qué es la NICSP 33?" o "¿Cuáles son las bases de medición?" en lugar de preguntas muy generales.
+- Si necesitas un ejemplo o caso práctico, pide "un ejemplo" junto a la pregunta (por ejemplo: "Dame un ejemplo de ingreso sin contraprestación").
+
+---
+
+Archivo creado como resumen de consulta rápida y guía de uso. No reemplaza la lectura de las normas ni de los documentos técnicos.
