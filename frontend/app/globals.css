@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Helper class to hide native scrollbars while preserving scroll behavior */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}

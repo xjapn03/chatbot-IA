@@ -74,7 +74,7 @@ function Chatbot() {
     
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 40000); // Timeout de 40 segundos
+      const timeoutId = setTimeout(() => controller.abort(), 120000); // Timeout de 120 segundos
       
       const res = await fetch("http://3.220.179.134:5000/chat", {
         method: "POST",
@@ -137,7 +137,7 @@ function Chatbot() {
         </div>
       )}
       
-      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
+  <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 dark:bg-gray-900 rounded-lg no-scrollbar">
         {messages.length === 0 && (
           <div className="text-center text-gray-500 dark:text-gray-400 mt-8">
             <p>¡Hola! Pregúntame sobre las NICSP</p>
