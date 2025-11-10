@@ -216,15 +216,27 @@ Instrucciones: Responde usando SOLO el contexto anterior. Si no hay información
 Respuesta:"""
         
         answer = call_ollama_api(prompt)
+        
+        if not answer or answer.strip() == "":
+            return jsonify({"error": "No se pudo generar respuesta"}), 500
+        
         answer = clean_and_validate_response(answer, context)
         
         print(f"[RESPUESTA]: {answer}\n")
         
         return jsonify({"response": answer})
     
-    except Exception as e:
+    except requests.exceptions.Timeout:
+        print("[ERROR]: Timeout en llamada a Ollama")
+        return jsonify({"error": "El servidor de IA tardó demasiado en responder"}), 504
+    
+    except requests.exceptions.ConnectionError:
+        print("[ERROR]: Error de conexión a Ollama")
+        return jsonify({"error": "No se pudo conectar con el servidor de IA"}), 503
+    
+    except Exception:
         print("[ERROR]:", traceback.format_exc())
-        return jsonify({"error": f"Error interno: {e}"}), 500
+        return jsonify({"error": "Error interno del servidor"}), 500
 
 
 if __name__ == "__main__":

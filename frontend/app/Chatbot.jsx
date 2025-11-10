@@ -9,6 +9,8 @@ function Chatbot() {
   const [loading, setLoading] = useState(false);
   const [dots, setDots] = useState(0);
   const [typingMessage, setTypingMessage] = useState(null); // Para animación de escritura
+  const [connectionWarning, setConnectionWarning] = useState(false); // Banner de conexión lenta
+  const [loadingStartTime, setLoadingStartTime] = useState(null); // Tiempo de inicio de carga
 
   useEffect(() => {
     let interval;
@@ -21,6 +23,19 @@ function Chatbot() {
     }
     return () => clearInterval(interval);
   }, [loading]);
+
+  // Detectar conexión lenta (después de 10 segundos)
+  useEffect(() => {
+    let timer;
+    if (loading && loadingStartTime) {
+      timer = setTimeout(() => {
+        setConnectionWarning(true);
+      }, 10000); // 10 segundos
+    } else {
+      setConnectionWarning(false);
+    }
+    return () => clearTimeout(timer);
+  }, [loading, loadingStartTime]);
 
   // Función auxiliar para actualizar el texto del mensaje animado
   function updateTypingMessage(id, fullText, i) {
@@ -55,30 +70,73 @@ function Chatbot() {
     setMessages([...messages, newMessage]);
     setInput("");
     setLoading(true);
+    setLoadingStartTime(Date.now());
+    
     try {
-      const res = await fetch("http://localhost:5000/chat", {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 40000); // Timeout de 40 segundos
+      
+      const res = await fetch("http://3.220.179.134:5000/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
+        signal: controller.signal,
       });
+      
+      clearTimeout(timeoutId);
+      
+      if (!res.ok) {
+        throw new Error(`Error del servidor: ${res.status}`);
+      }
+      
       const data = await res.json();
+      
+      if (!data.response || data.response.trim() === "") {
+        throw new Error("Sin respuesta del servidor");
+      }
+      
       // Animación de escritura para el bot
       setTypingMessage({
         id: Date.now() + 1,
-        fullText: data.response || "Sin respuesta",
+        fullText: data.response,
       });
+      
     } catch (error) {
+      let errorMessage = "Error al conectar con el servidor";
+      
+      if (error.name === 'AbortError') {
+        errorMessage = "❌ Tiempo de espera agotado. La conexión al servidor tardó demasiado. Por favor, verifica tu conexión a internet e intenta nuevamente.";
+      } else if (error.message.includes("Failed to fetch")) {
+        errorMessage = "❌ No se pudo establecer conexión con el servidor. Verifica que el backend esté ejecutándose y tu conexión a internet esté activa.";
+      } else if (error.message.includes("Error del servidor: 500")) {
+        errorMessage = "⚠️ El servidor está experimentando problemas técnicos. Por favor, intenta nuevamente en unos momentos.";
+      } else if (error.message.includes("Sin respuesta del servidor")) {
+        errorMessage = "Lo siento, no pude generar una respuesta. Por favor, reformula tu pregunta.";
+      }
+      
       setMessages((prev) => [
         ...prev,
-        { sender: "bot", text: "Error al conectar con el servidor", id: Date.now() },
+        { sender: "bot", text: errorMessage, id: Date.now() },
       ]);
       console.error("Error:", error);
     }
+    
     setLoading(false);
+    setLoadingStartTime(null);
   };
 
   return (
     <div className="flex flex-col h-[600px] max-h-[70vh]">
+      {/* Banner de advertencia de conexión lenta */}
+      {connectionWarning && (
+        <div className="mb-3 px-4 py-3 bg-yellow-100 dark:bg-yellow-900/30 border border-yellow-400 dark:border-yellow-600 rounded-lg">
+          <p className="text-sm text-yellow-800 dark:text-yellow-200 flex items-center gap-2">
+            <span className="text-lg">⚠️</span>
+            <span>La conexión está tardando más de lo normal. Por favor, espera un momento...</span>
+          </p>
+        </div>
+      )}
+      
       <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
         {messages.length === 0 && (
           <div className="text-center text-gray-500 dark:text-gray-400 mt-8">
